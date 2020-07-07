@@ -1,0 +1,234 @@
+/*orange D35D31, blue 1A4D6D, purple 4C1938*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: white;
+}
+
+header {
+  height: 3.5rem;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 50px 0;
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+nav.stroke ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #333;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+p {
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3;
+}
+
+.slogan {
+  font-size: 1.6rem;
+  margin-top: .5rem;
+  line-height: 1.7;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-family: 'Solway', serif;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.container {
+  background-color: white;
+  margin: 0 auto;
+  width: 90%;
+  overflow: hidden;
+}
+
+section {
+  color: black;
+  margin-top: 2rem;
+  padding: 5rem 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+section.logo {
+  background: url(../images/KClogo.png) center;
+  height: 15vh;
+  justify-content: center;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  padding-left: 91rem;
+  padding-top: 40rem;
+  padding-bottom: 0;
+}
+
+section.hero {
+  font-weight: bold;
+  background-color: white;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+section.billow {
+  background-color: #D35D31;
+  color: white;
+}
+
+section.capstone {
+  background-color: #4C1938;
+  color: white;
+  margin-bottom: 290px;
+}
+
+.section img {
+  width: 100%;
+}
+
+.button1 {
+	background-color: #1A4D6D;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 3.5rem;
+  margin-top: 4rem;
+	padding: 3rem 9rem;
+	text-decoration:none;
+}
+.button1:hover {
+	background-color: #1A4D6D;
+}
+.button1:active {
+	position:relative;
+	top:1px;
+}
+
+.button2 {
+	background-color:transparent;
+	border:2px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 3.5rem;
+  margin-top: 4rem;
+	padding: 3rem 4rem;
+	text-decoration:none;
+}
+.button2:hover {
+	background-color:transparent;
+}
+.button2:active {
+	position:relative;
+	top:1px;
+}
+
+footer {
+  background-color: white;
+  bottom: 0;
+  padding: 10rem;
+  padding-bottom: 20rem;
+  padding-top: 4rem;
+  position: fixed;
+  width: 90%;
+  height: 10vh;
+  font-size: 10rem;
+}
+
+h3 {
+  font-size: 5rem;
+  font-family: 'Solway', serif;
+  text-align: center;
+}
+
+.icons li {
+  display: inline;
+  padding: 4px 10px;
+  margin: 0px 4px;
+  color: #1A4D6D;
+}
+
+@media screen and (mid-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (mid-width: 1025px) {
+  .container {
+    width: 100rem;
+    padding-bottom: 100px
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .section {
+    float: none;
+    margin: 1%
+    width: 98%;
+  }
+
+  h1, h2, h3 {
+    font-size: auto;
+  }
+
+  p {
+    font-size: auto;
+  }
+
+  a.button1, a.button2 {
+    display:block;
+    margin:0.4em auto;
+  }
+}

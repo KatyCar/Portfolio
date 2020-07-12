@@ -3,371 +3,306 @@
   <head>
     <meta charset="utf-8">
     <title>Work | Katy Carmichael</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Solway:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-      .mySlides {display:none}
-      .w3-left, .w3-right, .w3-badge {cursor:pointer}
-      .w3-badge {height:13px;width:13px;padding:0}
-    </style>
   </head>
   <div class="container">
-    <section class="logo"></section>
-    <nav>
-      <h1>Katy Carmichael</h1>
-      <a href="project.html">
-        <h2>Work</h2>
-      </a>
-      <a href="experience.html">
-        <h2>Experience</h2>
-      </a>
-      <a href="about.html">
-        <h2>About</h2>
-      </a>
-      <a href="contact.html">
-        <h2>Contact</h2>
-      </a>
-    </nav>
+    <header>
+      <img src="images/KClogo.png" alt="KC logo" style="float:left;height:10rem;">
+      <h1 style="font-size:4.5rem; float:left;">Katy<br>Carmichael</h1>
+      <div class="topnav" id="myTopnav" style="float:right;">
+        <a href="index.html" class="active">Home</a>
+        <a href="project.html">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
     <main>
       <section class="hero">
-        <h1>Case Study:</h1>
+        <h1 style="text-align:center;padding-top: 12rem;">Case Study:</h1>
         <br>
         <h3>billow</h3>
         <img src="images/billow_work.png" alt="Billow Inspiration Flow">
-        <button>See the final prototype</button>
+        <a href="https://invis.io/63X2NY8FZAM" class="button1" style="background:#4C1938;">See the final prototype</a>
       </section>
       <section class= "what">
-        <h1>So what is it?</h1>
+        <h1 style="background:#1A4D6D;color:#FFFFFF;">So what is it?</h1>
         <p class="summary">Billow goes above and beyond just cloud storage. It’s an idea-sharing, adventure-planning, business-running, home-improving, confidence-boosting community for women who are far from basic.</p>
       </section>
-      <section class="case study">
-      <article>
-        <h4>The Problem</h4>
-        <p>The majority of cloud storage apps on the market offer the same basic features, in the same, strictly functional ways. They’re designed in a “one size fits all” manner that lacks personality and style.</p>
+      <section class="casestudy">
+        <article>
+          <h4>The Problem</h4>
+          <p>The majority of cloud storage apps on the market offer the same basic features, in the same, strictly functional ways. They’re designed in a “one size fits all” manner that lacks personality and style.</p>
+          <img class="divider" src="images/squiggle.png" alt="squiggle">
+        </article>
+        <article>
+          <h4>The Solution</h4>
+          <p>Build a new cloud storage platform that is thoughtfully and stylishly designed so that it is fun and inspiring to use.<br>
+            <br>Focus on creative and motivated female users age 25-54, who are looking for a community of like-minded individuals.<br>
+            <br>Leverage “the network effect” to generate growth through collaboration.
+          </p>
+          <hr>
+        </article>
+        <article>
+          <h4>My Role</h4>
+          <p>In my role as designer, I was responsible for making all of the design and branding decisions and for producing all of the deliverables.</p>
+        </article>
+        <article>
+          <br>
+          <h4>My Process</h4>
+          <p>My process consisted of 3 phases: <br>
+            <em>Discovery & Research <br>Information Architecture <br>Visual Design</em>
+          </p>
+        </article>
+        <!-- Discovery & Research -->
+        <h5>Discovery & Research</h5>
+        <article>
+          <p>I began by conducting a <em>User Survey</em> based on cloud storage usage. I wanted to find out what features are most important to users and how receptive they would be to the addition of a social network aspect.  Here are some of the most valuable findings:</p>
+          <!-- figure out results box -->
+          <h6>Results</h6>
+          <p>Most important features for cloud storage users<br>
+            - easy to use<br>
+            - ability to share large files<br>
+            - free<br>
+          </p>
+          <p><em>97%</em> said they would be interested in an app that fostered connection and collaboration among users</p>
+        </article>
+        <article>
+          <p>From there, I wanted to take a closer look at the cloud storage market landscape. In order to gain a better understanding of current options, I performed a <em>Competitive Analysis</em> on three popular brands:</p>
+          <ul>
+            <li><img class="competitor" src="images/box-logo.png" alt="Box logo"></li>
+            <li><img class="competitor" src="images/google-drive_0.png" alt="Google Drive logo"></li>
+            <li><img class="competitor" src="images/opendrive-logo1.png" alt="OpenDrive logo"></li>
+          </ul>
+          <p>I discovered that advanced storage and security functionalities serve as the major selling points for these platforms. Paid subscriptions come with additional protections, higher storage limits, and business operation functions. For Billow, secure file storage would be important, but it would be performed with individuals in mind, as opposed to large businesses and corporations.</p>
+          <br>
+          <p>Also, while the interfaces of the Box, Google Drive and OpenDrive prove to be intuitive with simple and bold design choices, they exhibit little character.  With this observation, I knew that creating a bright, stylish and playful interface for Billow would be a key attraction for our target users.</p>
+          <img class="divider" src="images/squiggle.png" alt="squiggle">
+          <p>I developed a <em>User Persona</em> in order to guide my decisions moving forward.  By carefully considering her lifestyle, interests and tastes, it was easier for me to stay on the right track.</p>
+          <img src="images/grace.png" alt="user persona">
+        </article>
+        <h5>Information Architecture</h5>
+        <article>
+          <p>At this point in the process, I brainstormed and evaluated the tasks that would be completed by an “Inspired & Organized” user of Billow. After listing them in order of importance, I created accompanying <em>User Flows</em> to serve as guides for creating the wireframes.</p>
+          <br>
+          <h1>High Priority User Stories</h1>
+          <section class ="pyramid">
+            <p>I want to upload and store files in the cloud.<br>I want to share files with others.<br>I want to organize files into categories.<br>I want to edit existing files.<br>I want to create new files.<br>I want inspiration for my projects.<br>I want to collaborate with others on projects.<br></p>
+            <h1>Medium Priority User Stories</h1>
+          </section>
+        </article>
+        <!-- User Flows slide show-->
+        <h4>User Flows</h4>
+        <div class="slideshow-container">
+          <div class="mySlides1">
+            <img src="images/mySlides1/uf1.png" alt="Logging in" style="width:100%">
+          </div>
+          <div class="mySlides1">
+            <img src="images/mySlides1/uf2.png" alt="Organizing files" style="width:100%">
+          </div>
+          <div class="mySlides1">
+            <img src="images/mySlides1/uf3.png" alt="Sharing files" style="width:100%">
+          </div>
+          <div class="mySlides1">
+            <img src="images/mySlides1/uf4.png" alt="Editing files" style="width:100%">
+          </div>
+          <div class="mySlides1">
+            <img src="images/mySlides1/uf5.png" alt="Getting inspiration" style="width:100%">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+        <!-- Wireframe Sketches slide show-->
+        <h4>Wireframe Sketches</h4>
+        <div class="slideshow-container">
+          <div class="mySlides2">
+            <img src="images/mySlides2/wfs1.png" alt="Log in" style="width:100%">
+          </div>
+          <div class="mySlides2">
+            <img src="images/mySlides2/wfs2.png" alt="Sign up" style="width:100%">
+          </div>
+          <div class="mySlides2">
+            <img src="images/mySlides2/wfs3.png" alt="Insp Stream" style="width:100%">
+          </div>
+          <div class="mySlides2">
+            <img src="images/mySlides2/wfs4.png" alt="File maker" style="width:100%">
+          </div>
+          <div class="mySlides2">
+            <img src="images/mySlides2/wfs5.png" alt="Table maker" style="width:100%">
+          </div>
+          <div class="mySlides2">
+            <img src="images/mySlides2/wfs6.png" alt="Inbox" style="width:100%">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+        <!-- Low-fidelity Digital Wireframes slide show-->
+        <h4>Low-fidelity Digital Wireframes</h4>
+        <div class="slideshow-container">
+          <div class="mySlides3">
+            <img src="images/mySlides3/ldw1.png" alt="Homepage" style="width:100%">
+          </div>
+          <div class="mySlides3">
+            <img src="images/mySlides3/ldw2.png" alt="Log-in" style="width:100%">
+          </div>
+          <div class="mySlides3">
+            <img src="images/mySlides3/ldw3.png" alt="Create account" style="width:100%">
+          </div>
+          <div class="mySlides3">
+            <img src="images/mySlides3/ldw4.png" alt="Dashboard" style="width:100%">
+          </div>
+          <div class="mySlides3">
+            <img src="images/mySlides3/ldw5.png" alt="Inspiration" style="width:100%">
+          </div>
+          <div class="mySlides3">
+            <img src="images/mySlides3/ldw6.png" alt="Posting" style="width:100%">
+          </div>
+          <div class="mySlides3">
+            <img src="images/mySlides3/ldw7.png" alt="Message" style="width:100%">
+          </div>
+          <div class="mySlides3">
+            <img src="images/mySlides3/ldw8.png" alt="New post" style="width:100%">
+          </div>
+          <div class="mySlides3">
+            <img src="images/mySlides3/ldw9.png" alt="New table" style="width:100%">
+          </div>
+          <div class="mySlides3">
+            <img src="images/mySlides3/ldw10.png" alt="New message" style="width:100%">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+        </div>
+        <article>
+          <p>Building the wireframes help me to reevaluate and clarify the scope of the project. However, in order to truly gauge my progress, I knew I needed the insights gained from <em>Usability Testing</em>.</p>
+          <p>I recruited random internet users to perform a series of tasks (logging in, creating an account, uploading a file, etc.). I observed their interactions with the prototype and asked follow-up questions.</p>
+          <h6>Findings from Usability Testing</h6>
+          <p> - Combine/eliminate the landing page.<br>
+            - Replace some icons to increase clarification.<br>
+            - Simplify certain features in the Inspiration Flow/Stream.
+          </p>
+        </article>
+        <!--Visual Design -->
+        <h5>Visual Design</h5>
+        <article>
+          <p>Earlier examination of the competition showed that instituting a visually-appealing design would help to make Billow stand out. I created a <em>Moodboard</em> to establish the vibe and themes that would represent the brand as strong, artistic, quirky, creative, happy, energetic, and bold.  The color palette and typography followed suit.</p>
+          <img src="images/BillowMood.png" alt="Moodboard">
+          <hr>
+          <h2>Color Palette:</h2>
+          <img src="images/colorpalette.png" alt="Color palette">
+          <h2>Typography:</h2>
+          <img src="images/typography.png" alt="Fonts">
+          <button>See complete style guide</button>
+        </article>
+        <!-- Logo Development slide show-->
+        <h4>Logo Development</h4>
+        <div class="slideshow-container">
+          <div class="mySlides4">
+            <img src="images/mySlides4/ld1.jpg" alt="First sketches" style="width:100%;">
+          </div>
+          <div class="mySlides4">
+            <img src="images/mySlides4/ld2.jpg" alt="Second sketches" style="width:100%">
+          </div>
+          <div class="mySlides4">
+            <img src="images/mySlides4/ld3.png" alt="Digital sketches" style="width:100%">
+          </div>
+          <div class="mySlides4">
+            <img src="images/mySlides4/ld4.png" alt="Logo pieces" style="width:100%">
+          </div>
+          <div class="mySlides4">
+            <img src="images/mySlides4/ld5.png" alt="Final version" style="width:100%">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+        </div>
+        <h2>Final Color Logo:</h2>
+        <img src="images/billow_logo.png" alt="Final logo" style="margin:2rem 0rem 10rem 22rem;width:50%;"><br>
         <img class="divider" src="images/squiggle.png" alt="squiggle">
-      </article>
-      <article>
-        <h4>The Solution</h4>
-        <p>Build a new cloud storage platform that is thoughtfully and stylishly designed so that it is fun and inspiring to use.<br>
-          <br>Focus on creative and motivated female users age 25-54, who are looking for a community of like-minded individuals.<br>
-          <br>Leverage “the network effect” to generate growth through collaboration.
-        </p>
-        <hr>
-      </article>
-      <article>
-        <h4>My Role</h4>
-        <p>In my role as designer, I was responsible for making all of the design and branding decisions and for producing all of the deliverables.</p>
-      </article>
-      <article>
-        <br>
-        <h4>My Process</h4>
-        <p>My process consisted of 3 phases: <br>
-          <em>Discovery & Research <br>Information Architecture <br>Visual Design</em>
-        </p>
-      </article>
-      <!-- Discovery & Research -->
-      <h5>Discovery & Research</h5>
-      <article>
-      <p>I began by conducting a <em>User Survey</em> based on cloud storage usage. I wanted to find out what features are most important to users and how receptive they would be to the addition of a social network aspect.  Here are some of the most valuable findings:</p>
-      <!-- figure out results box -->
-      <h6>Results</h6>
-      <p>Most important features for cloud storage users<br>
-        - easy to use<br>
-        - ability to share large files<br>
-        - free<br>
-      </p>
-      <p><em>97%</em> said they would be interested in an app that fostered connection and collaboration among users</p>
-    </article>
-    <article>
-      <p>From there, I wanted to take a closer look at the cloud storage market landscape. In order to gain a better understanding of current options, I performed a <em>Competitive Analysis</em> on three popular brands:</p>
-      <ul>
-        <li><img class="competitor" src="images/box-logo.png" alt="Box logo"></li>
-        <li><img class="competitor" src="images/google-drive_0.png" alt="Google Drive logo"></li>
-        <li><img class="competitor" src="images/opendrive-logo1.png" alt="OpenDrive logo"></li>
-      </ul>
-      <p>I discovered that advanced storage and security functionalities serve as the major selling points for these platforms. Paid subscriptions come with additional protections, higher storage limits, and business operation functions. For Billow, secure file storage would be important, but it would be performed with individuals in mind, as opposed to large businesses and corporations.</p>
-      <br>
-      <p>Also, while the interfaces of the Box, Google Drive and OpenDrive prove to be intuitive with simple and bold design choices, they exhibit little character.  With this observation, I knew that creating a bright, stylish and playful interface for Billow would be a key attraction for our target users.</p>
-      <img class="divider" src="images/squiggle.png" alt="squiggle">
-      <p>I developed a <em>User Persona</em> in order to guide my decisions moving forward.  By carefully considering her lifestyle, interests and tastes, it was easier for me to stay on the right track.</p>
-      <img src="images/grace.png" alt="user persona">
-    </article>
-      <h5>Information Architecture</h5>
-      <article>
-        <p>At this point in the process, I brainstormed and evaluated the tasks that would be completed by an “Inspired & Organized” user of Billow. After listing them in order of importance, I created accompanying <em>User Flows</em> to serve as guides for creating the wireframes.</p>
-        <br>
-        <h1>High Priority User Stories</h1>
-        <section class ="pyramid">
-          <p>I want to upload and store files in the cloud.<br>I want to share files with others.<br>I want to organize files into categories.<br>I want to edit existing files.<br>I want to create new files.<br>I want inspiration for my projects.<br>I want to collaborate with others on projects.<br></p>
-          <h1>Medium Priority User Stories</h1>
-        </section>
-      </article>
-      <!-- User Flows slide show-->
-      <div class="w3-container">
-      <h4>User Flows</h4>
-      </div>
-      <div class="w3-content w3-display-container" style="max-width:800px">
-      <img class="mySlides1" src="images/mySlides1/uf1.png" alt="Logging in" style="width:100%">
-      <img class="mySlides1" src="images/mySlides1/uf2.png" alt="Organizing files" style="width:100%">
-      <img class="mySlides1" src="images/mySlides1/uf3.png" alt="Sharing files" style="width:100%">
-      <img class="mySlides1" src="images/mySlides1/uf4.png" alt="Editing files" style="width:100%">
-      <img class="mySlides1" src="images/mySlides1/uf5.png" alt="Getting inspiration" style="width:100%">
-      <div class="w3-center w3-container w3-section w3-large w3-text-black w3-display-bottommiddle" style="width:100%">
-      <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-      <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(2)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(3)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(4)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(5)"></span>
-      </div>
-      </div>
-      <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-
-        function currentDiv(n) {
-          showDivs(slideIndex = n);
-        }
-
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides1");
-          var dots = document.getElementsByClassName("demo");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" w3-black", "");
-          }
-          x[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " w3-black";
-        }
-      </script>
-      <!-- Wireframe Sketches slide show-->
-      <div class="w3-container">
-      <h4>Wireframe Sketches</h4>
-      </div>
-      <div class="w3-content w3-display-container" style="max-width:800px">
-      <img class="mySlides2" src="images/mySlides2/wfs1.png" alt="Log in" style="width:100%">
-      <img class="mySlides2" src="images/mySlides2/wfs2.png" alt="Sign up" style="width:100%">
-      <img class="mySlides2" src="images/mySlides2/wfs3.png" alt="Insp Stream" style="width:100%">
-      <img class="mySlides2" src="images/mySlides2/wfs4.png" alt="File maker" style="width:100%">
-      <img class="mySlides2" src="images/mySlides2/wfs5.png" alt="Table maker" style="width:100%">
-      <img class="mySlides2" src="images/mySlides2/wfs6.png" alt="Inbox" style="width:100%">
-      <div class="w3-center w3-container w3-section w3-large w3-text-black w3-display-bottommiddle" style="width:100%">
-      <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-      <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(2)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(3)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(4)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(5)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(6)"></span>
-      </div>
-      </div>
-      <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-
-        function currentDiv(n) {
-          showDivs(slideIndex = n);
-        }
-
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides2");
-          var dots = document.getElementsByClassName("demo");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" w3-black", "");
-          }
-          x[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " w3-black";
-        }
-      </script>
-      <!-- Low-fidelity Digital Wireframes slide show-->
-      <div class="w3-container">
-      <h4>Low-fidelity Digital Wireframes</h4>
-      </div>
-      <div class="w3-content w3-display-container" style="max-width:800px">
-      <img class="mySlides3" src="images/mySlides3/ldw1.png" alt="Homepage" style="width:100%">
-      <img class="mySlides3" src="images/mySlides3/ldw2.png" alt="Log-in" style="width:100%">
-      <img class="mySlides3" src="images/mySlides3/ldw3.png" alt="Create account" style="width:100%">
-      <img class="mySlides3" src="images/mySlides3/ldw4.png" alt="Dashboard" style="width:100%">
-      <img class="mySlides3" src="images/mySlides3/ldw5.png" alt="Inspiration" style="width:100%">
-      <img class="mySlides3" src="images/mySlides3/ldw6.png" alt="Posting" style="width:100%">
-      <img class="mySlides3" src="images/mySlides3/ldw7.png" alt="Message" style="width:100%">
-      <img class="mySlides3" src="images/mySlides3/ldw8.png" alt="New post" style="width:100%">
-      <img class="mySlides3" src="images/mySlides3/ldw9.png" alt="New table" style="width:100%">
-      <img class="mySlides3" src="images/mySlides3/ldw10.png" alt="New message" style="width:100%">
-      <div class="w3-center w3-container w3-section w3-large w3-text-black w3-display-bottommiddle" style="width:100%">
-      <div class="w3-left w3-hover-text-gray" onclick="plusDivs(-1)">&#10094;</div>
-      <div class="w3-right w3-hover-text-gray" onclick="plusDivs(1)">&#10095;</div>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(2)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(3)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(4)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(5)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(6)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(7)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(8)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(9)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(10)"></span>
-      </div>
-      </div>
-      <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-
-        function currentDiv(n) {
-          showDivs(slideIndex = n);
-        }
-
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides3");
-          var dots = document.getElementsByClassName("demo");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" w3-black", "");
-          }
-          x[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " w3-black";
-        }
-      </script>
-      <article>
-      <p>Building the wireframes help me to reevaluate and clarify the scope of the project. However, in order to truly gauge my progress, I knew I needed the insights gained from <em>Usability Testing</em>.</p>
-      <p>I recruited random internet users to perform a series of tasks (logging in, creating an account, uploading a file, etc.). I observed their interactions with the prototype and asked follow-up questions.</p>
-      <h6>Findings from Usability Testing</h6>
-      <p> - Combine/eliminate the landing page.<br>
-      - Replace some icons to increase clarification.<br>
-      - Simplify certain features in the Inspiration Flow/Stream.</p>
-      </article>
-      <!--Visual Design -->
-      <h5>Visual Design</h5>
-      <article>
-      <p>Earlier examination of the competition showed that instituting a visually-appealing design would help to make Billow stand out. I created a <em>Moodboard</em> to establish the vibe and themes that would represent the brand as strong, artistic, quirky, creative, happy, energetic, and bold.  The color palette and typography followed suit.</p>
-      <img src="images/BillowMood.png" alt="Moodboard">
-      <hr>
-      <h2>Color Palette:</h2>
-      <img src="images/colorpalette.png" alt="Color palette">
-      <h2>Typography:</h2>
-      <img src="images/typography.png" alt="Fonts">
-      <button>See complete style guide</button>
-      </article>
-      <!-- Logo Development slide show-->
-      <div class="w3-container">
-      <h4>Logo Development</h4>
-      </div>
-      <div class="w3-content w3-display-container" style="max-width:800px">
-      <img class="mySlides4" src="images/mySlides4/ld1.jpg" alt="First sketches" style="width:100%">
-      <img class="mySlides4" src="images/mySlides4/ld2.jpg" alt="Second sketches" style="width:100%">
-      <img class="mySlides4" src="images/mySlides4/ld3.png" alt="Digital sketches" style="width:100%">
-      <img class="mySlides4" src="images/mySlides4/ld4.png" alt="Logo pieces" style="width:100%">
-      <img class="mySlides4" src="images/mySlides4/ld5.png" alt="Final version" style="width:100%">
-      <div class="w3-center w3-container w3-section w3-large w3-text-black w3-display-bottommiddle" style="width:100%">
-      <div class="w3-left w3-hover-text-gray" onclick="plusDivs(-1)">&#10094;</div>
-      <div class="w3-right w3-hover-text-gray" onclick="plusDivs(1)">&#10095;</div>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(2)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(3)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(4)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(5)"></span>
-      </div>
-      </div>
-      <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-
-        function currentDiv(n) {
-          showDivs(slideIndex = n);
-        }
-
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides4");
-          var dots = document.getElementsByClassName("demo");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" w3-black", "");
-          }
-          x[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " w3-black";
-        }
-      </script>
-      <h2>Final Color Logo:</h2>
-      <img src="images/billow_logo.png" alt="Final logo">
-      <img class="divider" src="images/squiggle.png" alt="squiggle">
-      <article>
-      <p>With the important visual elements in place, I was ready to dive in to the <em>High-Fidelity Mockups</em>. With the wireframes as my base, I added color, fonts, imagery and icons. For instances when I wavered between designs, I instituted <em>Preference Tests</em> for outside opinions.</p>
-      <p>For example,  out of these two designs this homepage was preferred by 71% of respondents.</p>
-      <img src="images/billow_option1.png" alt="Option one"><br>
-      <p>While only 29% chose this design:</p>
-      <img src="images/billow_option2.png" alt="Option two"><br>
-      </article>
-      <article>
-      <p>And finally, with my high-fidelity mockups converted into a clickable prototype, it was time for another round of <em>Usability Testing</em>.  Like before, I asked users to complete certain tasks so that I could observe any potential issues or pain points before finalizing the design.</p><br>
-      <br><p>While the overall results were encouraging, the participants’ experiences led to  some well-received changes.</p>
-      <h6>Findings from 2nd Round of Usability Testing</h6>
-      <p> - Add a site summary on the homepage.<br>
-      - Tidy up the layout of the onboarding pop-ups.<br>
-      - Move the logo down in the left navigation menu.<br>
-      - Show the recipient’s username and photo when sending a message.<br>
-      - Offer another layout to view files.</p>
-      </article>
-      <!-- Conclusion -->
-      <h5>Conclusion</h5>
-      <button>See final prototype</button>
-      <article>
-      <p>Careful consideration of the features lacking from current cloud storage offerings, along with direct interactions with potential users, has led to a fully developed and highly intuitive website. Billow’s unique personality also helps it to stand out among other websites and will attract enthusiastic users into its community.</p><br>
-      <br><p>Reflecting upon the process, I learned which activities to prioritize when developing future projects. Speaking with potential users and allowing them to test initial designs was incredibly helpful in staying within scope and eliminating unimportant features. Moving forward, I hope to engage in even more rounds of testing and surveys.</p><br>
-      </article>
-      <button>Back to top</button>
-    </section>
-  </main>
-</div>
+        <article>
+          <p>With the important visual elements in place, I was ready to dive in to the <em>High-Fidelity Mockups</em>. With the wireframes as my base, I added color, fonts, imagery and icons. For instances when I wavered between designs, I instituted <em>Preference Tests</em> for outside opinions.</p>
+          <p>For example,  out of these two designs this homepage was preferred by 71% of respondents.</p>
+          <img src="images/billow_option1.png" alt="Option one" style="width:100%;"><br>
+          <p>While only 29% chose this design:</p>
+          <img src="images/billow_option2.png" alt="Option two"><br>
+        </article>
+        <article>
+          <p>And finally, with my high-fidelity mockups converted into a clickable prototype, it was time for another round of <em>Usability Testing</em>.  Like before, I asked users to complete certain tasks so that I could observe any potential issues or pain points before finalizing the design.</p>
+          <br>
+          <br>
+          <p>While the overall results were encouraging, the participants’ experiences led to  some well-received changes.</p>
+          <h6>Findings from 2nd Round of Usability Testing</h6>
+          <p> - Add a site summary on the homepage.<br>
+            - Tidy up the layout of the onboarding pop-ups.<br>
+            - Move the logo down in the left navigation menu.<br>
+            - Show the recipient’s username and photo when sending a message.<br>
+            - Offer another layout to view files.
+          </p>
+        </article>
+        <!-- Conclusion -->
+        <h5>Conclusion</h5>
+        <button>See final prototype</button>
+        <article>
+          <p>Careful consideration of the features lacking from current cloud storage offerings, along with direct interactions with potential users, has led to a fully developed and highly intuitive website. Billow’s unique personality also helps it to stand out among other websites and will attract enthusiastic users into its community.</p>
+          <br>
+          <br>
+          <p>Reflecting upon the process, I learned which activities to prioritize when developing future projects. Speaking with potential users and allowing them to test initial designs was incredibly helpful in staying within scope and eliminating unimportant features. Moving forward, I hope to engage in even more rounds of testing and surveys.</p>
+          <br>
+        </article>
+        <button>Back to top</button>
+      </section>
+    </main>
     <footer>
-      <h1>Let's connect.</h1>
-      <div class="social">
-        <ul>
-          <li><a href="https://www.linkedin.com/in/katy-carmichael2020/">LinkedIn</a></li>
-          <li><a href="https://github.com/KatyCar">GitHub</a></li>
-          <li><a href="https://www.facebook.com/katy.carmichael.37">Facebook</a></li>
-          <li><a href="https://twitter.com/KatyCarmichael">Twitter</a></li>
-          <li><a href="mailto:carmichaelkaty@gmail.com">Email</a></li>
-        </ul>
-      </div>
+      <h1 style="text-align:center;font-size:4rem;">Let's connect.</h1>
+      <ul class="socialicons" style="display:flex;align-items:center;justify-content:center;">
+        <li><a href="https://www.linkedin.com/in/katy-carmichael2020/"></a>
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </li>
+        <li><a href="https://github.com/KatyCar"></a>
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </li>
+        <li><a href="https://www.facebook.com/katy.carmichael.37"></a>
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </li>
+        <li><a href="https://twitter.com/KatyCarmichael"></a>
+          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </li>
+        <li><a href="mailto:carmichaelkaty@gmail.com"></a>
+          <i class="fa fa-envelope-square" aria-hidden="true"></i>
+        </li>
+      </ul>
     </footer>
+  </div>
+  <script>
+    var slideIndex = [1,1,1,1];
+    var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    showSlides(1, 2);
+    showSlides(1, 3);
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      x[slideIndex[no]-1].style.display = "block";
+    }
+  </script>
+  </body>
 </html>

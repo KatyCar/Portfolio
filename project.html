@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Work | Katy Carmichael</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,9 +19,9 @@
       <img src="images/KClogo.png" alt="KC logo" style="float:left;height:10rem;">
       <h1 style="font-size:4.5rem; float:left;">Katy<br>Carmichael</h1>
       <div class="topnav" id="myTopnav" style="float:right;">
-        <a href="index.html" class="active">Home</a>
-        <a href="project.html">Work</a>
-        <a href="#experience">Experience</a>
+        <a href="index.html">Home</a>
+        <a href="project.html" class="active">Work</a>
+        <a href="experience.html">Experience</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -36,15 +37,13 @@
         <img src="images/billow_work.png" alt="Billow Inspiration Flow">
         <a href="https://invis.io/63X2NY8FZAM" class="button1" style="background:#4C1938;">See the final prototype</a>
       </section>
-      <section class= "what">
-        <h1 style="background:#1A4D6D;color:#FFFFFF;">So what is it?</h1>
-        <p class="summary">Billow goes above and beyond just cloud storage. It’s an idea-sharing, adventure-planning, business-running, home-improving, confidence-boosting community for women who are far from basic.</p>
-      </section>
+        <h4>So what is it?</h4>
+        <p>Billow goes above and beyond just cloud storage. It’s an idea-sharing, adventure-planning, business-running, home-improving, confidence-boosting community for women who are far from basic.</p>
+       <img src="images/squiggle.png" alt="squiggle" class="center">
       <section class="casestudy">
         <article>
           <h4>The Problem</h4>
           <p>The majority of cloud storage apps on the market offer the same basic features, in the same, strictly functional ways. They’re designed in a “one size fits all” manner that lacks personality and style.</p>
-          <img class="divider" src="images/squiggle.png" alt="squiggle">
         </article>
         <article>
           <h4>The Solution</h4>
@@ -62,63 +61,60 @@
           <br>
           <h4>My Process</h4>
           <p>My process consisted of 3 phases: <br>
-            <em>Discovery & Research <br>Information Architecture <br>Visual Design</em>
+            <a id="Discovery"><em>Discovery & Research</a> <br>Information Architecture <br>Visual Design</em>
           </p>
         </article>
         <!-- Discovery & Research -->
-        <h5>Discovery & Research</h5>
+        <h5 id="Discovery">Discovery & Research</h5>
         <article>
           <p>I began by conducting a <em>User Survey</em> based on cloud storage usage. I wanted to find out what features are most important to users and how receptive they would be to the addition of a social network aspect.  Here are some of the most valuable findings:</p>
-          <!-- figure out results box -->
+          <img src="images/zigzag.png" alt="zigzag" class="center">
           <h6>Results</h6>
-          <p>Most important features for cloud storage users<br>
+          <p style="text-align:center;">Most important features for cloud storage users<br>
             - easy to use<br>
             - ability to share large files<br>
-            - free<br>
-          </p>
-          <p><em>97%</em> said they would be interested in an app that fostered connection and collaboration among users</p>
+            - free<br><br>
+          <em>97%</em> said they would be interested in an app that fostered connection and collaboration among users</p>
         </article>
+        <img src="images/zigzag.png" alt="zigzag" class="center">
         <article>
           <p>From there, I wanted to take a closer look at the cloud storage market landscape. In order to gain a better understanding of current options, I performed a <em>Competitive Analysis</em> on three popular brands:</p>
-          <ul>
-            <li><img class="competitor" src="images/box-logo.png" alt="Box logo"></li>
-            <li><img class="competitor" src="images/google-drive_0.png" alt="Google Drive logo"></li>
-            <li><img class="competitor" src="images/opendrive-logo1.png" alt="OpenDrive logo"></li>
+          <ul class="competition" style="display:flex;align-items:center;justify-content:center;">
+            <li><img src="images/box-logo.png" alt="Box logo"></li>
+            <li><img src="images/google-drive_0.png" alt="Google Drive logo"></li>
+            <li><img src="images/opendrive.png" alt="OpenDrive logo"></li>
           </ul>
           <p>I discovered that advanced storage and security functionalities serve as the major selling points for these platforms. Paid subscriptions come with additional protections, higher storage limits, and business operation functions. For Billow, secure file storage would be important, but it would be performed with individuals in mind, as opposed to large businesses and corporations.</p>
           <br>
           <p>Also, while the interfaces of the Box, Google Drive and OpenDrive prove to be intuitive with simple and bold design choices, they exhibit little character.  With this observation, I knew that creating a bright, stylish and playful interface for Billow would be a key attraction for our target users.</p>
-          <img class="divider" src="images/squiggle.png" alt="squiggle">
+          <img src="images/squiggle.png" alt="squiggle" class="center">
           <p>I developed a <em>User Persona</em> in order to guide my decisions moving forward.  By carefully considering her lifestyle, interests and tastes, it was easier for me to stay on the right track.</p>
-          <img src="images/grace.png" alt="user persona">
+          <img src="images/grace.png" alt="user persona" class="center">
         </article>
         <h5>Information Architecture</h5>
         <article>
           <p>At this point in the process, I brainstormed and evaluated the tasks that would be completed by an “Inspired & Organized” user of Billow. After listing them in order of importance, I created accompanying <em>User Flows</em> to serve as guides for creating the wireframes.</p>
           <br>
-          <h1>High Priority User Stories</h1>
-          <section class ="pyramid">
-            <p>I want to upload and store files in the cloud.<br>I want to share files with others.<br>I want to organize files into categories.<br>I want to edit existing files.<br>I want to create new files.<br>I want inspiration for my projects.<br>I want to collaborate with others on projects.<br></p>
-            <h1>Medium Priority User Stories</h1>
+            <p class="stories"><em>High Priority User Stories</em><br>I want to upload and store files in the cloud.<br>I want to share files with others.<br>I want to organize files into categories.<br>I want to edit existing files.<br>I want to create new files.<br>I want inspiration for my projects.<br>I want to collaborate with others on projects.<br><em>Medium Priority User Stories</em></p>
           </section>
         </article>
         <!-- User Flows slide show-->
         <h4>User Flows</h4>
         <div class="slideshow-container">
           <div class="mySlides1">
-            <img src="images/mySlides1/uf1.png" alt="Logging in" style="width:100%">
+            <img src="images/mySlides1/uf1.png" alt="Logging in" style="padding:1rem;width:100%;">
           </div>
           <div class="mySlides1">
-            <img src="images/mySlides1/uf2.png" alt="Organizing files" style="width:100%">
+            <img src="images/mySlides1/uf2.png" alt="Organizing files" style="padding:1rem;width:100%">
           </div>
           <div class="mySlides1">
-            <img src="images/mySlides1/uf3.png" alt="Sharing files" style="width:100%">
+            <img src="images/mySlides1/uf3.png" alt="Sharing files" style="padding:1rem;width:100%">
           </div>
           <div class="mySlides1">
-            <img src="images/mySlides1/uf4.png" alt="Editing files" style="width:100%">
+            <img src="images/mySlides1/uf4.png" alt="Editing files" style="padding:1rem;width:100%">
           </div>
           <div class="mySlides1">
-            <img src="images/mySlides1/uf5.png" alt="Getting inspiration" style="width:100%">
+            <img src="images/mySlides1/uf5.png" alt="Getting inspiration" style="padding:1rem;width:100%">
           </div>
           <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
           <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
@@ -127,22 +123,22 @@
         <h4>Wireframe Sketches</h4>
         <div class="slideshow-container">
           <div class="mySlides2">
-            <img src="images/mySlides2/wfs1.png" alt="Log in" style="width:100%">
+            <img src="images/mySlides2/wfs1.png" alt="Log in" style="padding:1rem;width:100%">
           </div>
           <div class="mySlides2">
-            <img src="images/mySlides2/wfs2.png" alt="Sign up" style="width:100%">
+            <img src="images/mySlides2/wfs2.png" alt="Sign up" style="padding:1rem;width:100%">
           </div>
           <div class="mySlides2">
-            <img src="images/mySlides2/wfs3.png" alt="Insp Stream" style="width:100%">
+            <img src="images/mySlides2/wfs3.png" alt="Insp Stream" style="padding:1rem;width:100%">
           </div>
           <div class="mySlides2">
-            <img src="images/mySlides2/wfs4.png" alt="File maker" style="width:100%">
+            <img src="images/mySlides2/wfs4.png" alt="File maker" style="padding:1rem;width:100%">
           </div>
           <div class="mySlides2">
-            <img src="images/mySlides2/wfs5.png" alt="Table maker" style="width:100%">
+            <img src="images/mySlides2/wfs5.png" alt="Table maker" style="padding:1rem;width:100%">
           </div>
           <div class="mySlides2">
-            <img src="images/mySlides2/wfs6.png" alt="Inbox" style="width:100%">
+            <img src="images/mySlides2/wfs6.png" alt="Inbox" style="padding:1rem;width:100%">
           </div>
           <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
@@ -186,51 +182,53 @@
         <article>
           <p>Building the wireframes help me to reevaluate and clarify the scope of the project. However, in order to truly gauge my progress, I knew I needed the insights gained from <em>Usability Testing</em>.</p>
           <p>I recruited random internet users to perform a series of tasks (logging in, creating an account, uploading a file, etc.). I observed their interactions with the prototype and asked follow-up questions.</p>
-          <h6>Findings from Usability Testing</h6>
-          <p> - Combine/eliminate the landing page.<br>
+          <img src="images/zigzag.png" alt="zigzag" class="center">
+          <h6>Findings from Usability Testing</h6><br>
+          <p style="text-align:center;"> - Combine/eliminate the landing page.<br>
             - Replace some icons to increase clarification.<br>
             - Simplify certain features in the Inspiration Flow/Stream.
           </p>
+          <img src="images/zigzag.png" alt="zigzag" class="center">
         </article>
         <!--Visual Design -->
         <h5>Visual Design</h5>
         <article>
           <p>Earlier examination of the competition showed that instituting a visually-appealing design would help to make Billow stand out. I created a <em>Moodboard</em> to establish the vibe and themes that would represent the brand as strong, artistic, quirky, creative, happy, energetic, and bold.  The color palette and typography followed suit.</p>
-          <img src="images/BillowMood.png" alt="Moodboard">
+          <img src="images/BillowMood.png" alt="Moodboard" class="center">
           <hr>
-          <h2>Color Palette:</h2>
-          <img src="images/colorpalette.png" alt="Color palette">
-          <h2>Typography:</h2>
-          <img src="images/typography.png" alt="Fonts">
-          <button>See complete style guide</button>
+          <h1>Color Palette:</h1>
+          <img src="images/colorpalette.png" alt="Color palette" class="center">
+          <h1>Typography:</h1>
+          <img src="images/typography.png" alt="Fonts" class="center">
+          <a href="https://drive.google.com/file/d/1TebOvDwOHUqYRCVMIW4w_PlsAPoIk5aw/view?usp=sharing" class="button1" style="background:#4C1938;">See complete style guide</a>
         </article>
         <!-- Logo Development slide show-->
         <h4>Logo Development</h4>
         <div class="slideshow-container">
           <div class="mySlides4">
-            <img src="images/mySlides4/ld1.jpg" alt="First sketches" style="width:100%;">
+            <img src="images/mySlides4/ld1.jpg" alt="First sketches" style="padding:1rem;width:100%;">
           </div>
           <div class="mySlides4">
-            <img src="images/mySlides4/ld2.jpg" alt="Second sketches" style="width:100%">
+            <img src="images/mySlides4/ld2.jpg" alt="Second sketches" style="padding:1rem;width:100%">
           </div>
           <div class="mySlides4">
-            <img src="images/mySlides4/ld3.png" alt="Digital sketches" style="width:100%">
+            <img src="images/mySlides4/ld3.png" alt="Digital sketches" style="padding:1rem;width:100%">
           </div>
           <div class="mySlides4">
-            <img src="images/mySlides4/ld4.png" alt="Logo pieces" style="width:100%">
+            <img src="images/mySlides4/ld4.png" alt="Logo pieces" style="padding:1rem;width:100%">
           </div>
           <div class="mySlides4">
-            <img src="images/mySlides4/ld5.png" alt="Final version" style="width:100%">
+            <img src="images/mySlides4/ld5.png" alt="Final version" style="padding:1rem;width:100%">
           </div>
           <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
           <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
         </div>
-        <h2>Final Color Logo:</h2>
-        <img src="images/billow_logo.png" alt="Final logo" style="margin:2rem 0rem 10rem 22rem;width:50%;"><br>
-        <img class="divider" src="images/squiggle.png" alt="squiggle">
+        <h1>Final Color Logo:</h1>
+        <img src="images/billow_logo.png" alt="Final logo" style="margin:2rem 0rem 10rem 29rem;">
+        <img src="images/squiggle.png" alt="squiggle" class="center">
         <article>
           <p>With the important visual elements in place, I was ready to dive in to the <em>High-Fidelity Mockups</em>. With the wireframes as my base, I added color, fonts, imagery and icons. For instances when I wavered between designs, I instituted <em>Preference Tests</em> for outside opinions.</p>
-          <p>For example,  out of these two designs this homepage was preferred by 71% of respondents.</p>
+          <br><p>For example,  out of these two designs this homepage was preferred by 71% of respondents.</p>
           <img src="images/billow_option1.png" alt="Option one" style="width:100%;"><br>
           <p>While only 29% chose this design:</p>
           <img src="images/billow_option2.png" alt="Option two"><br>
@@ -240,17 +238,19 @@
           <br>
           <br>
           <p>While the overall results were encouraging, the participants’ experiences led to  some well-received changes.</p>
-          <h6>Findings from 2nd Round of Usability Testing</h6>
-          <p> - Add a site summary on the homepage.<br>
+          <img src="images/zigzag.png" alt="zigzag" class="center">
+          <h6>Findings from 2nd Round of Usability Testing</h6><br>
+          <p style="text-align:center;"> - Add a site summary on the homepage.<br>
             - Tidy up the layout of the onboarding pop-ups.<br>
             - Move the logo down in the left navigation menu.<br>
             - Show the recipient’s username and photo when sending a message.<br>
             - Offer another layout to view files.
           </p>
+          <img src="images/zigzag.png" alt="zigzag" class="center">
         </article>
         <!-- Conclusion -->
         <h5>Conclusion</h5>
-        <button>See final prototype</button>
+        <a href="https://invis.io/63X2NY8FZAM" class="button1" style="background:#4C1938;">See the final prototype</a>
         <article>
           <p>Careful consideration of the features lacking from current cloud storage offerings, along with direct interactions with potential users, has led to a fully developed and highly intuitive website. Billow’s unique personality also helps it to stand out among other websites and will attract enthusiastic users into its community.</p>
           <br>
@@ -262,7 +262,7 @@
       </section>
     </main>
     <footer>
-      <h1 style="text-align:center;font-size:4rem;">Let's connect.</h1>
+      <h1 style="text-align:center;font-size:3rem;">Let's connect.</h1>
       <ul class="socialicons" style="display:flex;align-items:center;justify-content:center;">
         <li><a href="https://www.linkedin.com/in/katy-carmichael2020/"></a>
           <i class="fa fa-linkedin-square" aria-hidden="true"></i>
@@ -281,6 +281,7 @@
         </li>
       </ul>
     </footer>
+
   </div>
   <script>
     var slideIndex = [1,1,1,1];

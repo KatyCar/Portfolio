@@ -1,4 +1,5 @@
 /* CORE STYLES */
+
 :root {
   --primary-color: rgba(26, 77, 109, 1);
   --overlay-color: rgba(76, 25, 56, 0.85);
@@ -72,7 +73,9 @@ body {
   opacity: 0.7;
 }
 
+
 /* MENU STYLES */
+
 .menu-wrap {
   position: fixed;
   top: 0;
@@ -86,8 +89,8 @@ body {
   right: 0;
   z-index: 2;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
   opacity: 0;
 }
 
@@ -96,8 +99,8 @@ body {
   top: 0;
   right: 0;
   z-index: 1;
-  width: 60px;
-  height: 60px;
+  width: 6rem;
+  height: 6rem;
   padding: 1rem;
   background: var(--primary-color);
   display: flex;
@@ -105,12 +108,14 @@ body {
   justify-content: center;
 }
 
+
 /* Hamburger Line */
-.menu-wrap .hamburger > div {
+
+.menu-wrap .hamburger>div {
   position: relative;
   flex: none;
   width: 100%;
-  height: 2px;
+  height: .2rem;
   background: #fff;
   display: flex;
   align-items: center;
@@ -118,53 +123,65 @@ body {
   transition: all 0.4s ease;
 }
 
+
 /* Hamburger Lines - Top & Bottom */
-.menu-wrap .hamburger > div::before,
-.menu-wrap .hamburger > div::after {
+
+.menu-wrap .hamburger>div::before,
+.menu-wrap .hamburger>div::after {
   content: '';
   position: absolute;
   z-index: 1;
-  top: -10px;
+  top: -1rem;
   width: 100%;
-  height: 2px;
+  height: .2rem;
   background: inherit;
 }
 
+
 /* Moves Line Down */
-.menu-wrap .hamburger > div::after {
-  top: 10px;
+
+.menu-wrap .hamburger>div::after {
+  top: 1rem;
 }
 
+
 /* Toggler Animation */
-.menu-wrap .toggler:checked + .hamburger > div {
+
+.menu-wrap .toggler:checked+.hamburger>div {
   transform: rotate(135deg);
 }
 
+
 /* Turns Lines Into X */
-.menu-wrap .toggler:checked + .hamburger > div:before,
-.menu-wrap .toggler:checked + .hamburger > div:after {
+
+.menu-wrap .toggler:checked+.hamburger>div:before,
+.menu-wrap .toggler:checked+.hamburger>div:after {
   top: 0;
   transform: rotate(90deg);
 }
 
+
 /* Rotate On Hover When Checked */
-.menu-wrap .toggler:checked:hover + .hamburger > div {
+
+.menu-wrap .toggler:checked:hover+.hamburger>div {
   transform: rotate(225deg);
 }
 
+
 /* Show Menu */
-.menu-wrap .toggler:checked ~ .menu {
+
+.menu-wrap .toggler:checked~.menu {
   visibility: visible;
 }
 
-.menu-wrap .toggler:checked ~ .menu > div {
+.menu-wrap .toggler:checked~.menu>div {
   transform: scale(1);
   transition-duration: var(--menu-speed);
 }
 
-.menu-wrap .toggler:checked ~ .menu > div > div {
+.menu-wrap .toggler:checked~.menu>div>div {
   opacity: 1;
-  transition:  opacity 0.4s ease 0.4s;
+  transition: opacity 0.4s ease 0.4s;
 }
 
 .menu-wrap .menu {
@@ -180,7 +197,7 @@ body {
   justify-content: center;
 }
 
-.menu-wrap .menu > div {
+.menu-wrap .menu>div {
   background: var(--overlay-color);
   border-radius: 0%;
   width: 200vw;
@@ -193,7 +210,7 @@ body {
   transition: all 0.4s ease;
 }
 
-.menu-wrap .menu > div > div {
+.menu-wrap .menu>div>div {
   text-align: center;
   max-width: 90vw;
   max-height: 100vh;
@@ -201,14 +218,14 @@ body {
   transition: opacity 0.4s ease;
 }
 
-.menu-wrap .menu > div > div > ul > li {
+.menu-wrap .menu>div>div>ul>li {
   list-style: none;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 3rem;
   padding: 1rem;
 }
 
-.menu-wrap .menu > div > div > ul > li > a {
+.menu-wrap .menu>div>div>ul>li>a {
   color: inherit;
   text-decoration: none;
   transition: color 0.4s ease;

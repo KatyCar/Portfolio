@@ -1,6 +1,6 @@
 /* CORE STYLES */
 :root {
-  --primary-color: rgba(76, 25, 56, 1);
+  --primary-color: rgba(26, 77, 109, 1);
   --overlay-color: rgba(76, 25, 56, 0.85);
   --menu-speed: 0.75s;
 }
@@ -182,7 +182,7 @@ body {
 
 .menu-wrap .menu > div {
   background: var(--overlay-color);
-  border-radius: 50%;
+  border-radius: 0%;
   width: 200vw;
   height: 200vw;
   display: flex;

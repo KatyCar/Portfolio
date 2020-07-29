@@ -29,18 +29,14 @@ body {
 .logo {
   background-color: #ffffff;
   grid-area: logo;
-  font-size: 2.4rem;
-  padding: 2rem;
 }
-
-
 
 .hero {
   background-color: #ffffff;
   grid-area: hero;
 }
 
-.projects {
+.process {
   background-color: #ffffff;
   grid-area: process;
   display: flex;
@@ -49,35 +45,37 @@ body {
 
 /*move projects side by side*/
 .billow {
-  background-color: #4C1938;
-  flex: 25%;
-  max-width: 100%;
+  flex: 50%;
 }
-
-.billowsum{
-  background-color: #4C1938;
-  flex: 25%;
-  padding-top: 8rem;
-  padding-bottom: 3rem;
-}
-
 .capstone {
-  background-color: #D35D31;
-  flex: 25%;
-  max-width: 100%;
-}
-
-.capstonesum {
-  background-color: #D35D31;
-  flex: 25%;
-  padding-top: 8rem;
-  padding-bottom: 3rem;
+  flex: 50%;
 }
 
 .footer {
   background-color: #ffffff;
   grid-area: footer;
 }
+
+.billowimg {
+  background-color: #4C1938;
+}
+
+.billowsum {
+  background-color: #4C1938;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.capstonesum {
+  background-color: #D35D31;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.capstoneimg {
+  background-color: #D35D31;
+}
+
 
 /**for project pages**/
 
@@ -104,17 +102,12 @@ body {
   text-align: left;
 }
 
-img.me-pic{
-  float:left;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
 
-/*Typography*/
+/*Category*/
 
 h1 {
-  font-family: 'Solway', serif;
-  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
   text-align: left;
 }
 
@@ -193,28 +186,6 @@ p.summary {
   padding: 2rem;
 }
 
-p.stories {
-  text-align: center;
-}
-
-p.centered {
-  background-color:white;
-  font-family: 'Solway', serif;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.quote {
-  align-self: center;
-  display: block;
-  height: auto;
-  max-width: 100%;
-  position: relative;
-  text-align: center;
-}
-
 .a li{
   font-size: 1.4rem;
   list-style-type:square;
@@ -225,9 +196,6 @@ em {
   font-style: italic;
 }
 
-.preference {
-  position: relative;
-}
 
 .text-block {
   position: absolute;
@@ -237,22 +205,6 @@ em {
   color: white;
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-
-/*Structure*/
-
-img {
-  height: auto;
-  max-width: 100%;
-  display: block;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 3rem;
 }
 
 
@@ -318,58 +270,7 @@ hr {
   height: 1rem;
 }
 
-.mySlides1,
-.mySlides2,
-.mySlides3,
-.mySlides4 {
-  display: none;
-}
 
-
-/* Slideshow container */
-
-.slideshow-container {
-  background-color: #EE9B7C;
-  max-width: 70rem;
-  position: relative;
-  margin-bottom: 3rem;
-}
-
-
-/* Next & previous buttons */
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 1.6rem;
-  margin-top: -2.2rem;
-  color: black;
-  font-weight: bold;
-  font-size: 3.2rem;
-  transition: 0.6s ease;
-  border-radius: 0 .3rem .3rem 0;
-  user-select: none;
-}
-
-
-/* Position the "next button" to the right */
-
-.next {
-  right: 0;
-  border-radius: .3rem 0 0 .3rem;
-}
-
-
-/* On hover, add a grey background color */
-
-.prev:hover,
-.next:hover {
-  background-color: #f1f1f1;
-  color: black;
-}
 
 .socialicons li {
   color: #1A4D6D;
@@ -383,7 +284,11 @@ hr {
       width:10rem;
     }
 
-  h1, h2, h4 {
+  .billow, .capstone {
+    flex-direction: column;
+  }
+
+  h2, h4 {
     font-size:1.8rem;
   }
 
@@ -396,9 +301,8 @@ hr {
     width: 14rem;
   }
 
-  .billow, .billowsum, .capstone, .capstonesum {
-    display: flex;
-    flex-direction: column;
+  footer {
+
   }
 
   .socialicons li {
@@ -406,4 +310,12 @@ hr {
   }
 }
 
+@media screen and (min-width: 1340px){
+  .billow, .capstone {
+    max-width: none;
+  }
+
+  .logoname {
+    font-size: 3.6rem;
+  }
 }

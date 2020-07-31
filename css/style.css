@@ -8,16 +8,25 @@ html {
   font-size: 10px;
 }
 
+.container {
+  width: 80%;
+}
+
 img.kc-logo {
   float:left;
-  max-width: 50%;
+  max-width: 40rem;
   height:auto;
 }
 
 img.katy {
-  width: 50%;
-  height:auto;
-  margin: 3rem;
+  width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+.hero {
+  margin-top: 10rem;
 }
 
 .projects {
@@ -319,7 +328,7 @@ footer {
 
 @media screen and (max-width: 1200px) {
   kc-logo{
-    max-width:40rem;
+    min-width:40rem;
   }
 
   h1, h2, h4 {

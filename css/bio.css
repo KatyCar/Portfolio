@@ -51,13 +51,17 @@ img.border {
 .footer {
   background-color: #1A4D6D;
   color: #ffffff;
-  font-size: 4rem;
+  font-size: 5rem;
   grid-area: footer;
   text-align:center;
   margin-top: 6rem;
-  padding: 2rem;
+  padding: 3rem;
 }
 
+.foot-text {
+  color: #ffffff;
+  font-size: 2.4rem;
+}
 .icons li {
 	display: inline;
   margin-left: auto;
@@ -67,7 +71,7 @@ img.border {
 
 h1 {
   font-family:"Solway", serif;
-  font-size: 2.3rem;
+  font-size: 3.2rem;
   line-height: 4rem;
   text-align: center;
 }
@@ -81,24 +85,24 @@ h2 {
 
 h2.menu-label {
   color: #000000;
-  font-size: 1.5rem;
+  font-size: 2rem;
   position: absolute;
   font-style: italic;
-  right: 60px;
+  right:80px;
   top: 0px;
 }
 
 p {
   color: #000000;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.8rem;
-  line-height: 3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  font-size: 2.7rem;
+  line-height: 4.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 img.bio-pic {
-  width: 20rem;
+  width: 60%;
 }
 
 @media (min-width: 70rem) {

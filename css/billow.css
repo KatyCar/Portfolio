@@ -45,7 +45,7 @@ body {
 
 img.kc-logo {
 	float: left;
-	max-width: 30rem;
+	max-width: 40rem;
 	height: auto;
 }
 
@@ -125,16 +125,9 @@ img.center, img.divider {
 	padding: 3rem;
 }
 
-img.grace.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2rem;
-}
-
 .slideshow-container1, .slideshow-container2, .slideshow-container3, .slideshow-container4 {
   background-color: #EE9B7C;
-	max-width: 40%;
+	max-width: 80%;
 	position: relative;
 	margin-bottom: 3rem;
 	display: block;
@@ -171,7 +164,7 @@ img.grace.center {
 	margin-top: -2.2rem;
 	color: black;
 	font-weight: bold;
-	font-size: 3.2rem;
+	font-size: 4rem;
 	transition: 0.6s ease;
 	border-radius: 0 .3rem .3rem 0;
 	user-select: none;
@@ -194,17 +187,18 @@ img.grace.center {
   position: relative;
   text-align: center;
   width: 100%;
-  margin: 3rem;
+  margin-top: 12rem;
+  margin-bottom: 10rem;
 }
 
 p.pyra {
   line-height: 3rem;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
 }
 
 .centered {
   position: absolute;
-  top:45%;
+  top:35%;
   left:50%;
   transform: translate(-50%, -50%);
 }
@@ -232,31 +226,32 @@ p.pyra {
 
 h1 {
   font-family:"Solway", serif;
-  font-size: 2.3rem;
+  font-size: 3.5rem;
   line-height: 4rem;
   text-align: center;
 }
 
 h2 {
   font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 3.2rem;
+  line-height: 4rem;
   text-align: center;
+  padding: 3rem;
 }
 
 h2.menu-label {
   color: #000000;
-  font-size: 1.5rem;
+  font-size: 3rem;
   position: absolute;
   font-style: italic;
-  right: 60px;
+  right:80px;
   top: 0px;
 }
 
 h3 {
   color:#ffffff;
   font-family:"Solway", serif;
-  font-size: 2.3rem;
+  font-size: 3.2rem;
 }
 
 h4{
@@ -278,10 +273,12 @@ h6 {
 
 
 p {
+  color: #000000;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.6rem;
-  line-height: 3rem;
-  padding: 1rem;
+  font-size: 2.7rem;
+  line-height: 4.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .footer {
@@ -294,6 +291,11 @@ p {
   padding: 2rem;
 }
 
+.foot-text {
+  color: #ffffff;
+  font-size: 2.4rem;
+}
+
 /*buttons*/
 .button1 {
 	background-color: #D35D31;
@@ -303,9 +305,10 @@ p {
 	cursor: pointer;
 	display: block;
 	font-family: 'Solway', serif;
-	font-size: 1.8rem;
-	margin: 2rem auto;
-	margin-top: 1rem;
+	font-size: 2.5rem;
+  line-height:3rem;
+  margin: 2rem auto;
+	margin-top: 2rem;
 	outline: none;
   padding: 1rem;
 	text-align: center;
@@ -331,7 +334,7 @@ p {
 	cursor: pointer;
 	display: block;
 	font-family: 'Solway', serif;
-	font-size: 1.8rem;
+	font-size: 2.5rem;
 	margin: 2rem auto;
 	outline: none;
 	padding: 1rem;
@@ -470,13 +473,6 @@ p {
 
   img.divider {
     max-width: 30%;
-  }
-
-  img.grace.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 3rem;
   }
 
   .slideshow-container1, .slideshow-container2, .slideshow-container3, .slideshow-container4 {

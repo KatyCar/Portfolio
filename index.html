@@ -9,87 +9,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Solway:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="images/kcfavicon.png" sizes="50x50" type="image/png">
     <!-- Custom Styles -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
   </head>
   <body>
-    <div class="container1">
-      <div class="logo">
-        <a href="#"><img src="images/KClogo.png" alt="KC logo"></a>
-      </div>
-      <div class="navbar">
-        <div class="icon-bar" onclick="Show()">
-          <i></i>
-          <i></i>
-          <i></i>
+    <nav class="navbar">
+      <a href="index.html"><img src="images/index/finallogo.png" alt="KC logo" class="kc-logo"></a>
+      <div class="menu-wrap">
+        <h2 class="menu-label">Menu</h2>
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+          <div></div>
         </div>
-        <ul id="nav-lists">
-          <li class="close"><span onclick="Hide()">×</span></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="project.html">Work</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1><img src="images/index/katy.png" alt="circle katy" class="katy"><br>Hello, my name is Katy.</h1><br>
+        <br><br><h2>I'm a web designer from Cleveland, Ohio. I specialize in user experience and content strategy for web and mobile.
+         <a href="bio.html" class="button1" style="margin-top:3rem">Get to know me</a></h2>
+    </section>
+
+    <section class="process-intro">
+      <h3>Here's a look at some of the work I've done...</h3>
+    </section>
+
+    <section class="billow">
+      <img src="images/index/billowimg.png" class="billowhome" alt="Billow homepage">
+    </section>
+
+    <section class="billowsum">
+      <h1 class="caption" >Billow</h1>
+      <p style="color:#ffffff;text-align:center">A cloud storage app and collaborative community for creative women.</p>
+      <a href="billow.html" class="button2">Check out Billow</a>
+    </section>
+
+    <section class="capstone">
+      <img src="images/index/capstone_homepage.png" class="caphome" alt="Capstone image">
+    </section>
+
+    <section class="capsum">
+      <h1 class="caption">Capstone</h1>
+      <p style="color:#ffffff;text-align:center">This is where I will provide a description of my capstone project.</p>
+      <a href="capstone.html" class="button2">See my Capstone</a>
+    </section>
+
+    <footer class="footer">
+      <p style="color:#ffffff;">&copy; Designed and Developed by Katy Carmichael</p>
+      <div class="icons">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/katy-carmichael2020/"></a>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </li>
+          <li><a href="https://github.com/KatyCar"></a>
+            <i class="fa fa-github-square" aria-hidden="true"></i>
+          </li>
+          <li><a href="https://www.facebook.com/katy.carmichael.37"></a>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          </li>
+          <li><a href="https://twitter.com/KatyCarmichael"></a>
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          </li>
+          <li><a href="mailto:carmichaelkaty@gmail.com"></a>
+            <i class="fa fa-envelope-square" aria-hidden="true"></i>
+          </li>
         </ul>
       </div>
-    </div>
-    <div class="container2">
-      <main>
-        <section class="hero">
-          <h1 style="text-align:center;padding-top:7rem;font-size:2.3rem;">Welcome to my portfolio.</h1>
-          <br>
-          <p style="font-size:2.3rem;">My name is Katy Carmichael.</p>
-          <br>
-          <p>I'm a Web Designer from Cleveland.<br>
-            I specialize in user experience and <br>
-            content strategy for web and mobile.
-          </p>
-          <a href="about.html" class="button1" style="margin-top:4rem;">Get to know me</a>
-        </section>
-        <section class= "billow">
-          <img src="/images/billow_homepage.png" alt="Billow homepage">
-          <h1 style="text-align:center;">Billow</h1>
-          <p>A cloud storage app that is also a collaborative community for creative women.</p>
-          <a href="project.html" class="button2">Check out Billow</a>
-        </section>
-        <section class="capstone">
-          <img src="images/capstone_homepage.png" alt="Capstone image">
-          <h1 style="text-align:center;">Capstone Project</h1>
-          <p>This is where I will include whatever it is that I decide to do for my final project.</p>
-          <a href="project.html" class="button2">See my<br>Capstone Project</a>
-        </section>
-        <footer>
-          <h1>Let's connect.</h1>
-          <ul class="socialicons" style="display:flex;align-items:center;justify-content:center;">
-            <li><a href="https://www.linkedin.com/in/katy-carmichael2020/"></a>
-              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            </li>
-            <li><a href="https://github.com/KatyCar"></a>
-              <i class="fa fa-github-square" aria-hidden="true"></i>
-            </li>
-            <li><a href="https://www.facebook.com/katy.carmichael.37"></a>
-              <i class="fa fa-facebook-square" aria-hidden="true"></i>
-            </li>
-            <li><a href="https://twitter.com/KatyCarmichael"></a>
-              <i class="fa fa-twitter-square" aria-hidden="true"></i>
-            </li>
-            <li><a href="mailto:carmichaelkaty@gmail.com"></a>
-              <i class="fa fa-envelope-square" aria-hidden="true"></i>
-            </li>
-          </ul>
-        </footer>
-      </main>
-    </div>
-    <script>
-      var navList = document.getElementById("nav-lists");
-      function Show() {
-      navList.classList.add("_Menus-show");
-      }
+    </footer>
 
-      function Hide(){
-      navList.classList.remove("_Menus-show");
-      }
-    </script>
   </body>
 </html>

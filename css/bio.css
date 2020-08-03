@@ -1,0 +1,156 @@
+/*orange D35D31, blue 1A4D6D, purple 4C1938, light purple 993271*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+  "navbar"
+  "hero"
+  "biotext"
+  "quote"
+  "footer";
+}
+
+.navbar {
+  background-color: #ffffff;
+  grid-area: navbar;
+  padding: 2rem 2rem;
+}
+
+img.kc-logo {
+	float: left;
+	max-width: 30rem;
+	height: auto;
+}
+
+.hero {
+  background-color: #ffffff;
+  grid-area: hero;
+}
+
+.biotext {
+  grid-area: biotext;
+}
+
+.quote {
+  grid-area: quote;
+}
+
+img.border {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer {
+  background-color: #1A4D6D;
+  color: #ffffff;
+  font-size: 4rem;
+  grid-area: footer;
+  text-align:center;
+  margin-top: 6rem;
+  padding: 2rem;
+}
+
+.icons li {
+	display: inline;
+  margin-left: auto;
+  margin-right:auto;
+	padding: .4rem 1rem;
+}
+
+h1 {
+  font-family:"Solway", serif;
+  font-size: 2.3rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+h2.menu-label {
+  color: #000000;
+  font-size: 1.5rem;
+  position: absolute;
+  font-style: italic;
+  right: 60px;
+  top: 0px;
+}
+
+p {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+img.bio-pic {
+  width: 20rem;
+}
+
+@media (min-width: 70rem) {
+
+  body {
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-template-areas:
+    "navbar navbar navbar navbar"
+    ". hero hero ."
+    ". biotext biotext ."
+    ". quote quote ."
+    "footer footer footer footer";
+  }
+
+
+  h1 {
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    line-height: 5rem;
+  }
+
+  h3 {
+    font-size: 2.1rem;
+    line-height: 4rem;
+  }
+
+  p {
+    font-size: 2.1rem;
+    line-height: 4rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  img.kc-logo {
+  	float: left;
+  	max-width: 35rem;
+  	height: auto;
+  }
+
+  h2.menu-label {
+    color: #000000;
+    font-size: 2rem;
+    position: absolute;
+    right: 80px;
+    top: 0px;
+  }
+
+  img.bio-pic {
+    width: 50rem;
+  }
+}

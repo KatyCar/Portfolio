@@ -99,8 +99,13 @@ body {
   top: 0;
   right: 0;
   z-index: 1;
+<<<<<<< HEAD
   width: 4rem;
   height: 4rem;
+=======
+  width: 6rem;
+  height: 6rem;
+>>>>>>> 6a122a51359e4725cdf7dfd1ab9c3ce598fc255f
   padding: 1rem;
   background: var(--primary-color);
   display: flex;
@@ -230,6 +235,7 @@ body {
   text-decoration: none;
   transition: color 0.4s ease;
 }
+<<<<<<< HEAD
 
 @media (min-width: 70rem) {
   .menu-wrap .hamburger {
@@ -237,3 +243,5 @@ body {
     height: 7rem;
   }
 }
+=======
+>>>>>>> 6a122a51359e4725cdf7dfd1ab9c3ce598fc255f

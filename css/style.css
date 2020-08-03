@@ -1,0 +1,386 @@
+/*orange D35D31, blue 1A4D6D, purple 4C1938*/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+.container {
+	max-width: 100%;
+	height: auto;
+}
+
+img.kc-logo {
+	float: left;
+	max-width: 40rem;
+	height: auto;
+}
+
+img.katy {
+	width: 20rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3rem;
+}
+
+.hero {
+	margin-top: 10rem;
+}
+
+.projects {
+	background-color: #ffffff;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+/*move projects side by side*/
+
+.billow {
+	background-color: #4C1938;
+	flex: 25%;
+	max-width: 100%;
+}
+
+.billowsum {
+	background-color: #4C1938;
+	flex: 25%;
+	padding-top: 8rem;
+	padding-bottom: 3rem;
+}
+
+.capstone {
+	background-color: #D35D31;
+	flex: 25%;
+	max-width: 100%;
+}
+
+.capstonesum {
+	background-color: #D35D31;
+	flex: 25%;
+	padding-top: 8rem;
+	padding-bottom: 3rem;
+}
+
+
+/**for project pages**/
+
+.project-intro {
+	font-size: 2.3rem;
+	text-align: center;
+}
+
+.project-summary {
+	font-size: 2.3rem;
+	padding-top: 3rem;
+	text-align: left;
+}
+
+img.me-pic {
+	float: left;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+
+/*Typography*/
+
+h1 {
+	font-family: 'Solway', serif;
+	font-size: 4rem;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 3rem;
+	text-align: center;
+}
+
+
+/*Billow font*/
+
+h3 {
+	font-family: 'Righteous', cursive;
+	font-size: 3.6rem;
+	text-align: center;
+	line-height: 1.4;
+	margin: .5rem;
+	padding: .5rem;
+}
+
+
+/*Case Study Sub-section header*/
+
+h4 {
+	color: #1A4D6D;
+	font-family: 'Solway', serif;
+	font-size: 2.8rem;
+	line-height: 1.3;
+	text-align: center;
+	margin: .5rem;
+	padding: .5rem;
+}
+
+
+/*Case Study Section header*/
+
+h5 {
+	color: #FFFFFF;
+	background-color: #1A4D6D;
+	font-family: 'Solway', serif;
+	font-size: 2.3rem;
+	height: 4.8rem;
+	margin-top: 6rem;
+	margin-bottom: 1.5rem;
+	padding: 1.3rem;
+	text-align: center;
+}
+
+
+/*Results*/
+
+h6 {
+	color: #D35D31;
+	font-family: 'Solway', serif;
+	font-size: 2rem;
+	line-height: 3rem;
+	text-align: center;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.8rem;
+	line-height: 1.4;
+	margin: .5rem;
+	padding: .5rem;
+}
+
+p.summary {
+	background-color: #D35D31;
+	color: #FFFFFF;
+	margin-bottom: 2rem;
+	padding: 2rem;
+}
+
+p.stories {
+	text-align: center;
+}
+
+p.quote {
+	color: #1A4D6D;
+	text-align: center;
+}
+
+.a li {
+	font-size: 1.4rem;
+	list-style-type: square;
+	text-indent: 5rem;
+}
+
+em {
+	font-style: italic;
+}
+
+.preference {
+	position: relative;
+}
+
+.text-block {
+	position: absolute;
+	bottom: 2rem;
+	left: 2rem;
+	background-color: black;
+	color: white;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+
+/*Structure*/
+
+img {
+	height: auto;
+	max-width: 100%;
+	display: block;
+}
+
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3rem;
+}
+
+
+/*buttons*/
+
+.button1 {
+	background-color: #D35D31;
+	border: none;
+	box-shadow: 0 .5rem #000000;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: block;
+	font-family: 'Solway', serif;
+	font-size: 1.8rem;
+	margin: 0 auto;
+	margin-top: 1rem;
+	outline: none;
+	padding: 1.2rem 1.5rem;
+	text-align: center;
+	text-decoration: none;
+	width: 18rem;
+}
+
+.button1:hover {
+	background-color: #1A4D6D
+}
+
+.button1:active {
+	background-color: #1A4D6D;
+	box-shadow: 0 .5rem #666;
+	transform: translateY(.4rem);
+}
+
+.button2 {
+	background-color: #1A4D6D;
+	border: none;
+	box-shadow: 0 .5rem #000000;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: block;
+	font-family: 'Solway', serif;
+	font-size: 1.8rem;
+	margin: 0 auto;
+	outline: none;
+	padding: 1.2rem 1.5rem;
+	text-align: center;
+	text-decoration: none;
+	width: 18rem;
+}
+
+.button2:hover {
+	background-color: #1A4D6D
+}
+
+.button2:active {
+	background-color: #1A4D6D;
+	box-shadow: 0 .5rem #666;
+	transform: translateY(.4rem);
+}
+
+hr {
+	background-color: #4C1938;
+	height: 1rem;
+}
+
+.mySlides1,
+.mySlides2,
+.mySlides3,
+.mySlides4 {
+	display: none;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+	background-color: #EE9B7C;
+	max-width: 70rem;
+	position: relative;
+	margin-bottom: 3rem;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 1.6rem;
+	margin-top: -2.2rem;
+	color: black;
+	font-weight: bold;
+	font-size: 3.2rem;
+	transition: 0.6s ease;
+	border-radius: 0 .3rem .3rem 0;
+	user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+	right: 0;
+	border-radius: .3rem 0 0 .3rem;
+}
+
+
+/* On hover, add a grey background color */
+
+.prev:hover,
+.next:hover {
+	background-color: #f1f1f1;
+	color: black;
+}
+
+footer {
+	background-color: white;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	font-size: 5rem;
+	text-align: center;
+}
+
+.icons li {
+	display: inline;
+	padding: .4rem 1rem;
+	margin: 0rem .4rem;
+	color: #1A4D6D;
+}
+
+@media screen and (max-width: 1200px) {
+	kc-logo {
+		min-width: 40rem;
+	}
+	h1,
+	h2,
+	h4 {
+		font-size: 1.8rem;
+	}
+	p {
+		font-size: 1.4rem;
+	}
+	.button1,
+	.button2 {
+		font-size: 1.4rem;
+		width: 14rem;
+	}
+	.billow,
+	.billowsum,
+	.capstone,
+	.capstonesum {
+		display: flex;
+		flex-direction: column;
+	}
+	img.center {
+		min-width: 20rem;
+	}
+	.socialicons li {
+		font-size: 3rem;
+	}
+	footer {
+		display: none;
+	}
+}

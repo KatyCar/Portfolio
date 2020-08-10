@@ -1,0 +1,152 @@
+/*orange D35D31, blue 1A4D6D, purple 4C1938, light purple 993271*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+  "navbar"
+  "hero"
+  "social-icons"
+  "contact-form"
+  "footer";
+}
+
+.navbar {
+  background-color: #ffffff;
+  grid-area: navbar;
+  padding: 2rem 2rem;
+}
+
+img.kc-logo {
+	float: right;
+	width: 50%;
+}
+
+.hero {
+  background-color: #ffffff;
+  grid-area: hero;
+  margin-top: 3rem;
+}
+
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  padding-top: 1rem;
+  width: 60%;
+  height: auto;
+}
+
+.social-icons {
+  background-color: #D35D31;
+  grid-area: social-icons;
+}
+
+.icons {
+  margin-left:auto;
+  margin-right:auto;
+  padding-left: .4rem;
+}
+
+.icons li {
+  color: #ffffff;
+	display: inline;
+  font-size: 5rem;
+  padding: 1rem;
+}
+
+h1 {
+  font-family:"Solway", serif;
+  font-size: 3rem;
+  font-weight:700;
+  line-height: 4rem;
+  text-align: center;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  padding: 1rem;
+}
+
+h2.menu-label {
+  display: none;
+}
+
+p {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.7rem;
+  line-height: 4.5rem;
+  padding: 1rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+.contact-form {
+  grid-area: contact-form;
+}
+
+
+form {margin:5rem auto; }
+
+.feedback-input {
+  color:white;
+  font-family:'Roboto', sans-serif;
+  font-size: 1.8rem;
+  border-radius: .5rem;
+  line-height: 2.2rem;
+  background-color: transparent;
+  border:.2rem solid #4C1938;
+  transition: all 0.3s;
+  padding: 1.3rem;
+  margin-bottom: 1.5rem;
+  width:100%;
+  outline:0;
+}
+
+.feedback-input:focus { border:.2rem solid #4C1938; }
+
+textarea {
+  height: 15rem;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Roboto', sans-serif;
+  width: 70%;
+  background:#4C1938;
+  border-radius:.5rem;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:2.4rem;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  transition: all 0.3s;
+  margin-top:-.4rem;
+}
+[type="submit"]:hover { background:#993271; }
+
+.footer {
+  background-color: #1A4D6D;
+  color: #ffffff;
+  grid-area: footer;
+  text-align:center;
+  margin-top: 2rem;
+}
+
+p.foot-text {
+  color: #ffffff;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}

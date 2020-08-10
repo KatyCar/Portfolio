@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio | Katy Carmichael</title>
+    <title>Bio | Katy Carmichael</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Solway:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -17,30 +18,24 @@
     <link rel="stylesheet" type="text/css" href="css/menu.css">
   </head>
   <body>
-    <nav class="navbar">
-      <a href="index.html"><img src="images/index/finallogo.png" alt="KC logo" class="kc-logo"></a>
-      <div class="menu-wrap">
-        <h2 class="menu-label">Menu</h2>
-        <input type="checkbox" class="toggler">
-        <div class="hamburger">
-          <div></div>
-        </div>
-        <div class="menu">
-          <div>
-            <div>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <nav class="navbar" role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+      <ul id="menu">
+         <a href="index.html"><li>Home</li></a>
+         <a href="billow.html"><li>Case Studies</li></a>
+         <a href="resume.html"><li>Resume</li></a>
+         <a href="contact.html"><li>Contact</li></a>
+      </ul>
       </div>
+      <img src="images/finallogo.png" alt="main logo" class="kc-logo">
     </nav>
 
     <section class="hero">
-      <h1>It's nice to meet you.<br>
+      <h1 style="font-weight:700;">It's nice to meet you.<br>
       <img src="images/bio/katybio.png" alt="katy and arnold" class="bio-pic"></h1><br>
     </section>
 
@@ -63,34 +58,33 @@
 
     <section class="quote">
       <img class="border" src="images/bio/memphistop.png" alt="quote topper" style="margin-top:5rem;">
-      <h1>“When I was young, all we ever heard about was<br>functionalism, functionalism, functionalism.<br>It’s not enough. Design should also be
+      <h1>“When I was young, all we ever heard about was functionalism, functionalism, functionalism.<br>It’s not enough. Design should also be
       sensual and exciting.”<br> - Ettore Sottsass</h1>
       <img class="border" src="images/bio/memphisbottom.png" alt="quote bottom">
     </section>
 
+    <footer class="footer">
+      <p class="foot-text">&copy; 2020 Designed and Developed by Katy Carmichael</p>
+      <div class="icons">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/katy-carmichael2020/"></a>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </li>
+          <li><a href="https://github.com/KatyCar"></a>
+            <i class="fa fa-github-square" aria-hidden="true"></i>
+          </li>
+          <li><a href="https://www.facebook.com/katy.carmichael.37"></a>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          </li>
+          <li><a href="https://twitter.com/KatyCarmichael"></a>
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          </li>
+          <li><a href="mailto:carmichaelkaty@gmail.com"></a>
+            <i class="fa fa-envelope-square" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
-        <footer class="footer">
-          <p class="foot-text">&copy; Designed and Developed by Katy Carmichael</p>
-          <div class="icons">
-            <ul>
-              <li><a href="https://www.linkedin.com/in/katy-carmichael2020/"></a>
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              </li>
-              <li><a href="https://github.com/KatyCar"></a>
-                <i class="fa fa-github-square" aria-hidden="true"></i>
-              </li>
-              <li><a href="https://www.facebook.com/katy.carmichael.37"></a>
-                <i class="fa fa-facebook-square" aria-hidden="true"></i>
-              </li>
-              <li><a href="https://twitter.com/KatyCarmichael"></a>
-                <i class="fa fa-twitter-square" aria-hidden="true"></i>
-              </li>
-              <li><a href="mailto:carmichaelkaty@gmail.com"></a>
-                <i class="fa fa-envelope-square" aria-hidden="true"></i>
-              </li>
-            </ul>
-          </div>
-        </footer>
-
-      </body>
-    </html>
+  </body>
+</html>

@@ -7,6 +7,7 @@
     <title>Portfolio | Katy Carmichael</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Solway:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="icon" href="images/kcfavicon.png" sizes="50x50" type="image/png">
@@ -16,31 +17,25 @@
     <link rel="stylesheet" type="text/css" href="css/menu.css">
   </head>
   <body>
-    <nav class="navbar">
-      <a href="index.html"><img src="images/index/finallogo.png" alt="KC logo" class="kc-logo"></a>
-      <div class="menu-wrap">
-        <h2 class="menu-label">Menu</h2>
-        <input type="checkbox" class="toggler">
-        <div class="hamburger">
-          <div></div>
-        </div>
-        <div class="menu">
-          <div>
-            <div>
-              <ul>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="bio.html">Bio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <nav class="navbar" role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+      <ul id="menu">
+         <a href="billow.html"><li>Case Studies</li></a>
+         <a href="resume.html"><li>Resume</li></a>
+         <a href="bio.html"><li>Bio</li></a>
+         <a href="contact.html"><li>Contact</li></a>
+      </ul>
       </div>
     </nav>
 
     <section class="hero">
-      <h1><img src="images/index/katy.png" alt="circle katy" class="katy"><br>Hello, my name is Katy.</h1><br>
-        <br><br><h2>I'm a web designer from Cleveland, Ohio. I specialize in user experience and content strategy for web and mobile.
+      <img src="images/index/justKC.png" alt="KC logo" class="kc-logo-index"><br>
+      <h1>Hello, my name is Katy Carmichael.</h1><br>
+        <h2>I'm a web designer from Cleveland, Ohio.<br>I specialize in user experience and content strategy for web and mobile.
          <a href="bio.html" class="button1" style="margin-top:3rem">Get to know me</a></h2>
     </section>
 
@@ -69,7 +64,7 @@
     </section>
 
     <footer class="footer">
-      <p class="foot-text">&copy; Designed and Developed by Katy Carmichael</p>
+      <p class="foot-text">&copy; 2020 Designed and Developed by Katy Carmichael</p>
       <div class="icons">
         <ul>
           <li><a href="https://www.linkedin.com/in/katy-carmichael2020/"></a>
@@ -90,6 +85,9 @@
         </ul>
       </div>
     </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+      <script src="menu-opener.js"></script>
 
   </body>
 </html>

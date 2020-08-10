@@ -1,239 +1,142 @@
-/* CORE STYLES */
-
-:root {
-  --primary-color: rgba(26, 77, 109, 1);
-  --overlay-color: rgba(26, 77, 109, 0.85);
-  --menu-speed: 0.75s;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-}
-
-.container {
-  max-width: 960px;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 3rem;
-}
-
-.showcase {
-  background: var(--primary-color);
-  color: #fff;
-  height: 100vh;
+#menuToggle
+{
+  display: block;
   position: relative;
-}
+  top: 5rem;
+  left: 5rem;
 
-.showcase:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.showcase .showcase-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
-}
-
-.showcase h1 {
-  font-size: 4rem;
-}
-
-.showcase p {
-  font-size: 1.3rem;
-}
-
-.btn {
-  display: inline-block;
-  border: none;
-  background: var(--primary-color);
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  margin-top: 1rem;
-  transition: opacity 1s ease-in-out;
-  text-decoration: none;
-}
-
-.btn:hover {
-  opacity: 0.7;
-}
-
-
-/* MENU STYLES */
-
-.menu-wrap {
-  position: fixed;
-  top: 0;
-  right: 0;
   z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
 }
 
-.menu-wrap .toggler {
+#menuToggle a
+{
+  text-decoration: none;
+  color: #1A4D6D;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #D35D31;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 4rem;
+  height: 3.2rem;
   position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
+  top: -.7rem;
+  left: -.2rem;
+
   cursor: pointer;
-  width: 6rem;
-  height: 6rem;
-  opacity: 0;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
 }
 
-.menu-wrap .hamburger {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  width: 6rem;
-  height:6rem;
-  padding: 2rem;
-  background: var(--primary-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-/* Hamburger Line */
-
-.menu-wrap .hamburger>div {
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 3.3rem;
+  height: .4rem;
+  margin-bottom: .5rem;
   position: relative;
-  flex: none;
-  width: 100%;
-  height: .2rem;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s ease;
-}
 
+  background: #1A4D6D;
+  border-radius: .3rem;
 
-/* Hamburger Lines - Top & Bottom */
-
-.menu-wrap .hamburger>div::before,
-.menu-wrap .hamburger>div::after {
-  content: '';
-  position: absolute;
   z-index: 1;
-  top: -1rem;
-  width: 100%;
-  height: .2rem;
-  background: inherit;
+
+  transform-origin: .4rem 0rem;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
 }
 
-
-/* Moves Line Down */
-
-.menu-wrap .hamburger>div::after {
-  top: 1rem;
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
 }
 
-
-/* Toggler Animation */
-
-.menu-wrap .toggler:checked+.hamburger>div {
-  transform: rotate(135deg);
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
 }
 
-
-/* Turns Lines Into X */
-
-.menu-wrap .toggler:checked+.hamburger>div:before,
-.menu-wrap .toggler:checked+.hamburger>div:after {
-  top: 0;
-  transform: rotate(90deg);
-}
-
-
-/* Rotate On Hover When Checked */
-
-.menu-wrap .toggler:checked:hover+.hamburger>div {
-  transform: rotate(225deg);
-}
-
-
-/* Show Menu */
-
-.menu-wrap .toggler:checked~.menu {
-  visibility: visible;
-}
-
-.menu-wrap .toggler:checked~.menu>div {
-  transform: scale(1);
-  transition-duration: var(--menu-speed);
-}
-
-.menu-wrap .toggler:checked~.menu>div>div {
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
   opacity: 1;
-  transition: opacity 0.4s ease 0.4s;
+  transform: rotate(45deg) translate(-.2rem, -.1rem);
+  background: #1A4D6D;
 }
 
-.menu-wrap .menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  visibility: hidden;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu-wrap .menu>div {
-  background: var(--overlay-color);
-  border-radius: 0%;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex: none;
-  align-items: center;
-  justify-content: center;
-  transform: scale(0);
-  transition: all 0.4s ease;
-}
-
-.menu-wrap .menu>div>div {
-  text-align: center;
-  max-width: 90vw;
-  max-height: 100vh;
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-.menu-wrap .menu>div>div>ul>li {
-  list-style: none;
-  color: #fff;
-  font-size: 3rem;
-  padding: 1rem;
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
 }
 
-.menu-wrap .menu>div>div>ul>li>a {
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.4s ease;
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 100%;
+  margin: -10rem 0 0 -5rem;
+  padding: 5rem;
+  padding-top: 13rem;
+  padding-bottom: 3rem;
+  font-family:'Roboto', sans-serif;
+  background: #ffffff;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-@media (min-width: 70rem) {
-  .menu-wrap .hamburger {
-    width: 6rem;
-    height: 6rem;
-  }
+#menu li
+{
+  padding: 1rem 0;
+  font-size: 3.2rem;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
 }

@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Work | Katy Carmichael</title>
+    <title>Case Study | Katy Carmichael</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Solway:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Solway:wght@300&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap">
@@ -19,27 +20,20 @@
     <link rel="stylesheet" type="text/css" href="css/menu.css">
   </head>
   <body>
-    <nav class="navbar">
-      <a href="index.html"><img src="images/index/finallogo.png" alt="KC logo" class="kc-logo"></a>
-      <div class="menu-wrap">
-        <h2 class="menu-label">Menu</h2>
-        <input type="checkbox" class="toggler">
-        <div class="hamburger">
-          <div></div>
-        </div>
-        <div class="menu">
-          <div>
-            <div>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="bio.html">Bio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <nav class="navbar" role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+      <ul id="menu">
+         <a href="index.html"><li>Home</li></a>
+         <a href="resume.html"><li>Resume</li></a>
+         <a href="billow.html"><li>Bio</li></a>
+         <a href="contact.html"><li>Contact</li></a>
+      </ul>
       </div>
+      <img src="images/finallogo.png" alt="main logo" class="kc-logo">
     </nav>
 
         <section class="hero">
@@ -87,14 +81,8 @@
         </section>
         <section class="process5">
             <p>I began by conducting a <em>User Survey</em> based on cloud storage usage. I wanted to find out what features are most important to users and how receptive they would be to the addition of a social network aspect.  Here are some of the most valuable findings:</p>
-            <img src="images/zigzag.png" alt="zigzag" class="divider">
-            <h2><u>Most important</u> features for cloud storage users:<br>
-              1. easy to use<br>
-              2. ability to share large files<br>
-              3. free<br><br>
-              <em>97%</em> said they would be interested in an app that fostered connection and collaboration among users.
-            </h2>
-          <img src="images/zigzag.png" alt="zigzag" class="divider">
+            <img src="images/billow/DRresults.png" alt="results1" class="center">
+            <p><em>97%</em> said they would be interested in an app that fostered connection and collaboration among users.</p><br>
             <p>From there, I wanted to take a closer look at the cloud storage market landscape. In order to gain a better understanding of current options, I performed a <em>Competitive Analysis</em> on three popular brands:</p>
             <img src="images/billow/compets.png" alt="competitors" class="center">
             <p>I discovered that advanced storage and security functionalities serve as the major selling points for these platforms. Paid subscriptions come with additional protections, higher storage limits, and business operation functions. For Billow, secure file storage would be important, but it would be performed with individuals in mind, as opposed to large businesses and corporations.</p>
@@ -110,20 +98,17 @@
         </section>
         <section class="process6">
             <p>At this point in the process, I brainstormed and evaluated the tasks that would be completed by an “Inspired & Organized” user of Billow. After listing them in order of importance, I created accompanying <em>User Flows</em> to serve as guides for creating the wireframes.</p><br>
-            <div class="pyramid">
-              <img src="images/billow/pyramid.png" alt="story pyramid" style="margin-bottom: 2rem;" width="60%">
-            <div class="centered">
               <br><br><h4 style="color:green;text-align:center;"><em>High Priority User Stories</em></h4>
-               <p class="pyra">I want to upload and store files in the cloud.<br>I want to share files with others.<br>I want to organize files into categories.<br>I want to edit existing files.<br>I want to create new files.</p>
+               <p style="background-color:green; color:white;">I want to upload and store files in the cloud.<br>I want to share files with others.<br>I want to organize files into categories.<br>I want to edit existing files.<br>I want to create new files.</p>
               <h4 style="color:orange;text-align:center;"><em>Medium Priority User Stories</em></h4>
-               <p class="pyra">I want inspiration for my projects.<br>I want to collaborate with others on projects.</p>
-              <h4 style="color:red;text-align:center;"><em>Lower Priority User Stories</em></h4>
-               <p class="pyra">I want to control the permissions of those I share files with.<br>I want to know my files are secure.</p>
+               <p style="background-color:orange; color:white;">I want inspiration for my projects.<br>I want to collaborate with others on projects.</p>
+              <h4 style="color:#CD0000;text-align:center;"><em>Lower Priority User Stories</em></h4>
+               <p style="background-color:#CD0000; color:white;">I want to control the permissions of those I share files with.<br>I want to know my files are secure.</p>
             </div>
             </div>
          </section>
         <!-- User Flows slide show-->
-        <div class="slideshow-container1">
+        <div class="slideshow-container1" style="margin-top:5rem;">
          <h4 style="padding:2rem;">User Flow Slides</h4>
           <div class="mySlides1">
             <img src="images/mySlides1/uf1.png" alt="Logging in" style="padding:1rem;width:100%">
@@ -205,15 +190,8 @@
         </div>
         <section class="process7">
           <p>Building the wireframes help me to reevaluate and clarify the scope of the project. However, in order to truly gauge my progress, I knew I needed the insights gained from <em>Usability Testing</em>.</p>
-          <p>I recruited random internet users to perform a series of tasks (logging in, creating an account, uploading a file, etc.). I observed their interactions with the prototype and asked follow-up questions.</p>
-          <img src="images/zigzag.png" alt="zigzag" class="divider">
-          <h2>Findings from<br>Usability Testing</h2>
-          <br>
-          <p style="text-align:center;"> 1. Combine/eliminate the landing page.<br>
-            2. Replace some icons to increase clarification.<br>
-            3. Simplify certain features in the Inspiration Flow/Stream.
-          </p>
-          <img src="images/zigzag.png" alt="zigzag" class="divider">
+          <br><p>I recruited random internet users to perform a series of tasks (logging in, creating an account, uploading a file, etc.). I observed their interactions with the prototype and asked follow-up questions.</p>
+          <img src="images/billow/UTresults.png" alt="UT results" class="center">
         </section>
 
         <!--Visual Design -->
@@ -223,13 +201,13 @@
         <section class="process8">
           <p>Earlier examination of the competition showed that instituting a visually-appealing design would help to make Billow stand out. I created a <em>Moodboard</em> to establish the vibe and themes that would represent the brand as strong, artistic, quirky, creative, happy, energetic, and bold.  The color palette and typography followed suit.</p>
           <br>
-          <h1>Moodboard:</h1>
-          <img src="images/billow/BillowMood.png" alt="Moodboard" class="center" style="max-width:80%;">
+          <h6>Moodboard:</h6>
+          <img src="images/billow/BillowMood.png" alt="Moodboard" class="divider">
           <hr>
-          <h1>Color Palette:</h1>
-          <img src="images/billow/colorpalette.png" alt="Color palette" class="center">
+          <h6>Color Palette:</h6>
+          <img src="images/billow/colorpalette.png" alt="Color palette" class="divider">
           <hr>
-          <h1>Typography:</h1>
+          <h6>Typography:</h6>
           <br>
           <h5 style="font-family:'Righteous',cursive;font-size:4.8rem;">Headline</h5>
           <p style="text-align:center;">(Righteous font / Bold / Size 48)</p>
@@ -237,8 +215,8 @@
           <h5 style="font-family:'Righteous',cursive;font-size:2.4rem;">Subheadings</h5>
           <p style="text-align:center;">(Righteous font / Regular / Size 24)</p>
           <br>
-          <h5 style="font-family:'Varela Round',sans-serif;font-size:1.4rem;">Body text should look like this.</h5>
-          <p style="text-align:center;">(Varela Round / Regular / Size 14)</p>
+          <h5 style="font-family:'Varela Round',sans-serif;font-size:2.1rem;">Body text should look like this.</h5>
+          <p style="text-align:center;">(Varela Round / Regular / Size 21)</p>
           <br>
           <a href="https://drive.google.com/file/d/1TebOvDwOHUqYRCVMIW4w_PlsAPoIk5aw/view?usp=sharing" class="button1" style="margin-bottom:7rem;">See the complete<br>Style Guide</a>
         </section>
@@ -264,34 +242,25 @@
           <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
         </div>
         <section class="process9">
-          <h1>Final Color Logo:</h1>
-          <img src="images/billow/billow_logo.png" alt="Final logo" class="center" style="width:20%;">
+          <h6>Final Color Logo:</h6>
+          <img src="images/billow/billow_logo.png" alt="Final logo" class="center" style="max-width:40%;">
           <p>With the important visual elements in place, I was ready to dive in to the <em>High-Fidelity Mockups</em>. With the wireframes as my base, I added color, fonts, imagery and icons. For instances when I wavered between designs, I instituted <em>Preference Tests</em> for outside opinions.</p>
           <br>
           <p>For example, out of the two below designs, the first option was the clear preference among the majority of those questioned (with 79% of the vote).</p>
 
            <div class="preference1">
-             <img src="images/billow/billow_option1.png" alt="Option one" style="width:50%;padding:2rem;float:left;">
+             <img src="images/billow/billow_option1.png" alt="Option one" class="center" style="width:65%;float:left;padding-left:6rem;"><h1 style="font-size:6rem;padding-bottom:20rem;padding-top:13rem;">79%</h1>
            </div>
 
            <div class="preference2">
-             <img src="images/billow/billow_option2.png" alt="Option two" style="width:50%;padding:2rem;float:left;">
+             <img src="images/billow/billow_option2.png" alt="Option two" class="center" style="width:65%;float:left;padding-left:6rem;"><h1 style="font-size:6rem;padding-bottom:18rem;padding-top:13rem;">21%</h1>
            </div>
 
           <br>
           <p>And finally, with my high-fidelity mockups converted into a clickable prototype, it was time for another round of <em>Usability Testing</em>.  Like before, I asked users to complete certain tasks so that I could observe any potential issues or pain points before finalizing the design.</p>
           <br>
           <p>While the overall results were encouraging, the participants’ experiences led to  some well-received changes.</p>
-          <img src="images/zigzag.png" alt="zigzag" class="divider">
-          <h2>Findings from 2nd Round<br>of Usability Testing</h2>
-          <br>
-          <p style="text-align:center;"> 1. Add a site summary on the homepage.<br>
-            2. Tidy up the layout of the onboarding pop-ups.<br>
-            3. Move the logo down in the left navigation menu.<br>
-            4. Show the recipient’s username and photo when sending a message.<br>
-            5. Offer another layout to view files.
-          </p>
-          <img src="images/zigzag.png" alt="zigzag" class="divider">
+          <img src="images/billow/UT2results.png" alt="UT2 results" class="divider">
         </section>
 
 
@@ -312,7 +281,7 @@
       </section>
 
       <footer class="footer">
-        <p class="foot-text">&copy; Designed and Developed by Katy Carmichael</p>
+        <p class="foot-text">&copy; 2020 Designed and Developed by Katy Carmichael</p>
         <div class="icons">
           <ul>
             <li><a href="https://www.linkedin.com/in/katy-carmichael2020/"></a>

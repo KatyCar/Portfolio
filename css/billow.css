@@ -44,9 +44,8 @@ body {
 }
 
 img.kc-logo {
-	float: left;
-	max-width: 40rem;
-	height: auto;
+	float: right;
+	width: 50%;
 }
 
 .hero {
@@ -118,10 +117,21 @@ img.kc-logo {
   grid-area: process10;
 }
 
-img.center, img.divider {
+img.center {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+  width: 80%;
+  height: auto;
+	padding: 3rem;
+}
+
+img.divider {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  max-width: 80%;
+  height: auto;
 	padding: 3rem;
 }
 
@@ -183,19 +193,6 @@ img.center, img.divider {
 	color: black;
 }
 
-.pyramid {
-  position: relative;
-  text-align: center;
-  width: 100%;
-  margin-top: 12rem;
-  margin-bottom: 10rem;
-}
-
-p.pyra {
-  line-height: 3rem;
-  font-size: 2.4rem;
-}
-
 .centered {
   position: absolute;
   top:35%;
@@ -207,57 +204,38 @@ p.pyra {
 	position: relative;
 }
 
-.text-block1{
-	position: absolute;
-	background-color: black;
-  bottom: 2rem;
-  right: 2rem;
-  padding-left: 2rem;
-  padding-left: 2rem;
-	color: white;
-}
-
-.icons li {
-	display: inline;
-  margin-left: auto;
-  margin-right:auto;
-	padding: .4rem 1rem;
-}
-
 h1 {
   font-family:"Solway", serif;
-  font-size: 3.5rem;
+  font-size: 3.3rem;
+  font-weight: 700;
   line-height: 4rem;
   text-align: center;
 }
 
 h2 {
   font-family: 'Roboto', sans-serif;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   line-height: 4rem;
   text-align: center;
   padding: 3rem;
 }
 
 h2.menu-label {
-  color: #000000;
-  font-size: 3rem;
-  position: absolute;
-  font-style: italic;
-  right:80px;
-  top: 0px;
+  display: none;
 }
 
 h3 {
   color:#ffffff;
   font-family:"Solway", serif;
   font-size: 3.2rem;
+  font-weight: 700;
+  padding-left: 3rem;
 }
 
 h4{
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.7rem;
   text-align: left;
 }
 
@@ -267,8 +245,12 @@ h5 {
 }
 
 h6 {
-  font-family: "Solway", serif;
-  font-size: 2.4rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.7rem;
+  font-style: italic;
+  padding-left: 5rem;
+  padding-top: 5rem;
+  text-align: left;
 }
 
 
@@ -277,23 +259,13 @@ p {
   font-family: 'Roboto', sans-serif;
   font-size: 2.7rem;
   line-height: 4.5rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding: 3rem;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
 }
 
-.footer {
-  background-color: #1A4D6D;
-  color: #ffffff;
-  font-size: 4rem;
-  grid-area: footer;
-  text-align:center;
-  margin-top: 6rem;
-  padding: 2rem;
-}
-
-.foot-text {
-  color: #ffffff;
-  font-size: 2.4rem;
+em {
+  font-style: italic;
 }
 
 /*buttons*/
@@ -305,15 +277,16 @@ p {
 	cursor: pointer;
 	display: block;
 	font-family: 'Solway', serif;
-	font-size: 2.5rem;
-  line-height:3rem;
+	font-size: 2.8rem;
+  font-weight: 300;
+  line-height:3.5rem;
   margin: 2rem auto;
 	margin-top: 2rem;
 	outline: none;
-  padding: 1rem;
+  padding: 1.7rem;
 	text-align: center;
 	text-decoration: none;
-	width: 20rem;
+	width: 40%;
 }
 
 .button1:hover {
@@ -334,13 +307,14 @@ p {
 	cursor: pointer;
 	display: block;
 	font-family: 'Solway', serif;
-	font-size: 2.5rem;
-	margin: 2rem auto;
+	font-size: 2.3rem;
+  font-weight: 300;
+	margin: 4rem auto;
 	outline: none;
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
-	width: 18rem;
+	width: 40%;
 }
 
 .button2:hover {
@@ -351,6 +325,32 @@ p {
 	background-color: #1A4D6D;
 	box-shadow: 0 .5rem #666;
 	transform: translateY(.4rem);
+}
+
+.footer {
+  background-color: #1A4D6D;
+  color: #ffffff;
+  font-size: 5rem;
+  grid-area: footer;
+  text-align:center;
+  margin-top: 6rem;
+  padding: 3rem;
+}
+
+p.foot-text {
+  color: #ffffff;
+  font-size: 2.4rem;
+  line-height: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.icons li {
+	display: inline;
+  margin-left: auto;
+  margin-right:auto;
+	padding: .4rem 1rem;
 }
 
 @media (min-width: 70rem) {
@@ -417,11 +417,7 @@ p {
   }
 
   h2.menu-label {
-    color: #000000;
-    font-size: 2rem;
-    position: absolute;
-    right: 80px;
-    top: 0px;
+    display: none;
   }
 
   em {

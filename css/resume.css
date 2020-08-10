@@ -1,0 +1,178 @@
+/*orange D35D31, blue 1A4D6D, purple 4C1938, light purple 993271*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+  "navbar"
+  "career-highlights"
+  "skills"
+  "education"
+  "full-resume"
+  "footer";
+}
+
+.navbar {
+  background-color: #ffffff;
+  grid-area: navbar;
+  padding: 2rem 2rem;
+}
+
+img.kc-logo {
+	float: left;
+	width: 50%;
+}
+
+.career-highlights {
+  background-color: #ffffff;
+  border-color: #4C1938;
+  border-style: solid;
+  border-width: .5rem;
+  grid-area: career-highlights;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.skills {
+  background-color: #ffffff;
+  grid-area: skills;
+  border-color: #D35D31;
+  border-style: solid;
+  border-width: .5rem;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.education {
+  background-color: #ffffff;
+  grid-area: education;
+  border-color: #1A4D6D;
+  border-style: solid;
+  border-width: .5rem;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.full-resume {
+  grid-area: full-resume;
+}
+
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  width: 80%;
+  height: auto;
+	padding: 3rem;
+}
+
+img.divider {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  max-width: 80%;
+  height: auto;
+	padding: 3rem;
+}
+
+h1 {
+  font-family:"Solway", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 3rem;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.1rem;
+  font-style: italic;
+  padding-left: 3rem;
+  text-align: left;
+}
+
+h2.menu-label {
+  display: none;
+}
+
+h3 {
+  font-family:'Roboto', sans-serif;
+  font-size: 2.1rem;
+  padding-left: 3rem;
+}
+
+p {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  text-align: left;
+}
+
+em {
+  font-style: italic;
+}
+
+/*buttons*/
+.button1 {
+	background-color: #D35D31;
+	border: none;
+	box-shadow: 0 .5rem #000000;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: block;
+	font-family: 'Solway', serif;
+	font-size: 1.8rem;
+  font-weight: 300;
+  margin: 2rem auto;
+	margin-top: 2rem;
+	outline: none;
+  padding: 1.7rem;
+	text-align: center;
+	text-decoration: none;
+	width: 70%;
+}
+
+.button1:hover {
+	background-color: #1A4D6D
+}
+
+.button1:active {
+	background-color: #1A4D6D;
+	box-shadow: 0 .5rem #666;
+	transform: translateY(.4rem);
+}
+
+.footer {
+  background-color: #1A4D6D;
+  color: #ffffff;
+  font-size: 5rem;
+  grid-area: footer;
+  text-align:center;
+  margin-top: 6rem;
+  padding: 3rem;
+}
+
+p.foot-text {
+  color: #ffffff;
+  font-size: 2.4rem;
+  line-height: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.icons li {
+	display: inline;
+  margin-left: auto;
+  margin-right:auto;
+	padding: .4rem 1rem;
+}

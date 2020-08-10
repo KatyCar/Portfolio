@@ -18,6 +18,8 @@ body {
   "capstone"
   "capsum"
   "footer";
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
@@ -26,10 +28,25 @@ body {
   padding: 2rem 2rem;
 }
 
+img.kc-logo-index {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 40%;
+}
+
 img.kc-logo {
 	float: left;
-	max-width: 30rem;
-	height: auto;
+	width: 50%;
+}
+
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  width: 80%;
+  height: auto;
+	padding: 3rem;
 }
 
 .hero {
@@ -40,14 +57,14 @@ img.kc-logo {
 }
 
 img.katy {
-  float:left;
-  max-width: 20rem;
-  height: auto;
-  padding: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
 }
 
 .process-intro {
-  background-color: #1A4D6D;
+  background-color: #4C1938;
   grid-area: process-intro;
   padding: 3rem 2rem;
 }
@@ -78,74 +95,50 @@ img.katy {
   padding-bottom: 4rem;
 }
 
+
+h1 {
+  font-family:"Solway", serif;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 4rem;
+  text-align: center;
+}
+
 h1.caption {
   color:#ffffff;
   padding: 2rem;
 }
 
-p.caption2 {
-  color:#ffffff;
-  padding: 5rem;
-}
-
-.icons li {
-	display: inline;
-  margin-left: auto;
-  margin-right:auto;
-	padding: .4rem 1rem;
-}
-
-h1 {
-  font-family:"Solway", serif;
-  font-size: 2.5rem;
-  line-height: 4rem;
-  text-align: center;
-}
-
 h2 {
   font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
+  font-size: 2.8rem;
   line-height: 4rem;
   text-align: center;
 }
 
 h2.menu-label {
-  color: #000000;
-  font-size: 2rem;
-  position: absolute;
-  font-style: italic;
-  right: 80px;
-  top: 0px;
+  display: none;
 }
 
 h3 {
   color:#ffffff;
   font-family:'Roboto', sans-serif;
-  font-size: 2.3rem;
+  font-size: 2.7rem;
 }
 
 p {
   color: #000000;
   font-family: 'Roboto', sans-serif;
-  font-size: 2.3rem;
-  line-height: 3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  font-size: 2.7rem;
+  line-height: 4.5rem;
+  padding: 3rem;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
 }
 
-.footer {
-  background-color: #1A4D6D;
-  color: #ffffff;
-  font-size: 4rem;
-  grid-area: footer;
-  text-align:center;
-  margin-top: 6rem;
-  padding: 2rem;
-}
-
-.foot-text {
-  color: #ffffff;
-  font-size: 2.4rem;
+p.caption2 {
+  color:#ffffff;
+  padding: 5rem;
 }
 
 /*buttons*/
@@ -158,14 +151,15 @@ p {
 	display: block;
 	font-family: 'Solway', serif;
 	font-size: 2.5rem;
+  font-weight: 300;
   line-height:3rem;
   margin: 2rem auto;
 	margin-top: 2rem;
 	outline: none;
-  padding: 1rem;
+  padding: 1.7rem;
 	text-align: center;
 	text-decoration: none;
-	width: 20rem;
+	width: 40%;
 }
 
 .button1:hover {
@@ -186,13 +180,14 @@ p {
 	cursor: pointer;
 	display: block;
 	font-family: 'Solway', serif;
-	font-size: 1.8rem;
+	font-size: 2.3rem;
+  font-weight: 300;
 	margin: 4rem auto;
 	outline: none;
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
-	width: 18rem;
+	width: 40%;
 }
 
 .button2:hover {
@@ -205,7 +200,101 @@ p {
 	transform: translateY(.4rem);
 }
 
-@media (min-width: 70rem) {
+.footer {
+  background-color: #1A4D6D;
+  color: #ffffff;
+  font-size: 5rem;
+  grid-area: footer;
+  text-align:center;
+  margin-top: 6rem;
+  padding: 3rem;
+}
+
+p.foot-text {
+  color: #ffffff;
+  font-size: 2.4rem;
+  line-height: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.icons li {
+	display: inline;
+  margin-left: auto;
+  margin-right:auto;
+	padding: .4rem 1rem;
+}
+
+/* tablet */
+@media screen and (min-width: 600px) {
+
+  body {
+    grid-template-columns: 1fr 8fr 8fr 1fr;
+    grid-template-areas:
+    "navbar navbar navbar navbar"
+    ". hero hero ."
+    "process-intro process-intro process-intro process-intro"
+    "billow billow billowsum billowsum"
+    "capsum capsum capstone capstone"
+    "footer footer footer footer";
+  }
+
+  h1 {
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    line-height: 5rem;
+  }
+
+  h3 {
+    font-size: 2.1rem;
+    line-height: 4rem;
+  }
+
+  p {
+    font-size: 2.1rem;
+    line-height: 3rem;
+  }
+
+  img.kc-logo {
+  	float: left;
+  	max-width: 35rem;
+  	height: auto;
+  }
+
+  h2.menu-label {
+    color: #000000;
+    font-size: 2rem;
+    position: absolute;
+    right: 80px;
+    top: 0px;
+  }
+
+  img.katy {
+    max-width: 40rem;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .billow, .capstone {
+    padding-bottom: 0;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .billowsum, .capsum {
+    padding-top: 4rem;
+    padding-bottom: 0;
+  }
+}
+
+/*desktop*/
+@media screen and (min-width: 900px) {
 
   body {
     grid-template-columns: 1fr 8fr 8fr 1fr;

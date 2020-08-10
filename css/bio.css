@@ -24,14 +24,22 @@ body {
 }
 
 img.kc-logo {
-	float: left;
-	max-width: 30rem;
-	height: auto;
+	float: right;
+	width: 50%;
 }
 
 .hero {
   background-color: #ffffff;
   grid-area: hero;
+  margin-top: 3rem;
+}
+
+img.bio-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+  width: 60%;
 }
 
 .biotext {
@@ -48,6 +56,38 @@ img.border {
 	margin-right: auto;
 }
 
+h1 {
+  font-family:"Solway", serif;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 4rem;
+  text-align: center;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  padding: 3rem;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+h2.menu-label {
+  display: none;
+}
+
+p {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.7rem;
+  line-height: 4.5rem;
+  padding: 3rem;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
 .footer {
   background-color: #1A4D6D;
   color: #ffffff;
@@ -58,51 +98,20 @@ img.border {
   padding: 3rem;
 }
 
-.foot-text {
+p.foot-text {
   color: #ffffff;
   font-size: 2.4rem;
+  line-height: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
 }
+
 .icons li {
 	display: inline;
   margin-left: auto;
   margin-right:auto;
 	padding: .4rem 1rem;
-}
-
-h1 {
-  font-family:"Solway", serif;
-  font-size: 3.2rem;
-  line-height: 4rem;
-  text-align: center;
-}
-
-h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  line-height: 4rem;
-  text-align: center;
-}
-
-h2.menu-label {
-  color: #000000;
-  font-size: 2rem;
-  position: absolute;
-  font-style: italic;
-  right:80px;
-  top: 0px;
-}
-
-p {
-  color: #000000;
-  font-family: 'Roboto', sans-serif;
-  font-size: 2.7rem;
-  line-height: 4.5rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-img.bio-pic {
-  width: 60%;
 }
 
 @media (min-width: 70rem) {
@@ -117,8 +126,8 @@ img.bio-pic {
     "footer footer footer footer";
   }
 
-
   h1 {
+    font-weight: 700;
     font-size: 3.6rem;
     line-height: 5rem;
   }
@@ -142,7 +151,7 @@ img.bio-pic {
 
   img.kc-logo {
   	float: left;
-  	max-width: 35rem;
+  	max-width: 30%;
   	height: auto;
   }
 
@@ -155,6 +164,6 @@ img.bio-pic {
   }
 
   img.bio-pic {
-    width: 50rem;
+    width: 50%;
   }
 }

@@ -14,55 +14,48 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/topnav.css">
   </head>
   <body>
-    <nav class="navbar" role="navigation">
-      <div id="menuToggle">
-        <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-      <ul id="menu">
-         <a href="billow.html"><li>Case Studies</li></a>
-         <a href="resume.html"><li>Resume</li></a>
-         <a href="bio.html"><li>Bio</li></a>
-         <a href="contact.html"><li>Contact</li></a>
-      </ul>
+    <nav class="navbar">
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="billow.html">Case Studies</a>
+        <a href="resume.html">Resume</a>
+        <a href="bio.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
       </div>
     </nav>
-
     <section class="hero">
       <img src="images/index/justKC.png" alt="KC logo" class="kc-logo-index"><br>
-      <h1>Hello, my name is Katy Carmichael.</h1><br>
-        <h2>I'm a web designer from Cleveland, Ohio.<br>I specialize in user experience and content strategy for web and mobile.
-         <a href="bio.html" class="button1" style="margin-top:3rem">Get to know me</a></h2>
+      <h1>Hello, my name is Katy Carmichael.</h1>
+      <br>
+      <h2>I'm a web designer from Cleveland, Ohio.<br>I specialize in user experience and content strategy for web and mobile.
+        <a href="bio.html" class="button1" style="margin-top:3rem">Get to know me</a>
+      </h2>
     </section>
-
     <section class="process-intro">
       <h3>Here's a look at some of the work I've done...</h3>
     </section>
-
     <section class="billow">
-      <img src="images/index/billowimg.png" class="billowhome" alt="Billow homepage">
+      <img src="images/index/billow_home.png" class="billowhome" alt="Billow homepage">
     </section>
-
     <section class="billowsum">
       <h1 class="caption" >Billow</h1>
       <p style="color:#ffffff;text-align:center">A cloud storage app and collaborative community for creative women.</p>
       <a href="billow.html" class="button2">Check out Billow</a>
     </section>
-
     <section class="capstone">
-      <img src="images/index/capstone_homepage.png" class="caphome" alt="Capstone image">
+      <img src="images/index/capstone_home.png" class="caphome" alt="Capstone image">
     </section>
-
     <section class="capsum">
       <h1 class="caption">Capstone</h1>
       <p style="color:#ffffff;text-align:center">This is where I will provide a description of my capstone project.</p>
       <a href="capstone.html" class="button2">See my Capstone</a>
     </section>
-
     <footer class="footer">
       <p class="foot-text">&copy; 2020 Designed and Developed by Katy Carmichael</p>
       <div class="icons">
@@ -85,9 +78,15 @@
         </ul>
       </div>
     </footer>
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
-      <script src="menu-opener.js"></script>
-
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
   </body>
 </html>

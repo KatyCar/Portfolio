@@ -1,4 +1,5 @@
 /*orange D35D31, blue 1A4D6D, purple 4C1938, light purple 993271*/
+
 * {
   box-sizing: border-box;
 }
@@ -9,15 +10,7 @@ html {
 
 body {
   display: grid;
-  grid-template-areas:
-  "navbar"
-  "hero"
-  "process-intro"
-  "billow"
-  "billowsum"
-  "capstone"
-  "capsum"
-  "footer";
+  grid-template-areas: "navbar" "hero" "process-intro" "billow" "billowsum" "capstone" "capsum" "footer";
   margin: 0;
   padding: 0;
 }
@@ -32,35 +25,23 @@ img.kc-logo-index {
   display: block;
   margin-left: auto;
   margin-right: auto;
-	width: 40%;
-}
-
-img.kc-logo {
-	float: left;
-	width: 50%;
+  width: 40%;
 }
 
 img.center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 80%;
   height: auto;
-	padding: 3rem;
+  padding: 3rem;
 }
 
 .hero {
   background-color: #ffffff;
   grid-area: hero;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
   padding: 5rem 2rem;
-}
-
-img.katy {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
 }
 
 .process-intro {
@@ -69,61 +50,64 @@ img.katy {
   padding: 3rem 2rem;
 }
 
-.billow{
+.billow {
   background-color: #D35D31;
+  background-image: url("../images/index/sprinkles.png");
+  background-repeat: repeat;
   grid-area: billow;
-  padding-bottom: 4rem;
+  padding-top: 4rem;
   width: 100%;
 }
 
-.billowsum{
+.billowsum {
   grid-area: billowsum;
-  background-color:#D35D31;
+  background-color: #D35D31;
   padding-bottom: 4rem;
 }
 
 .capstone {
   background-color: #993271;
+  background-image: url("../images/index/grid.png");
+  background-repeat: no-repeat;
+  display: block;
   grid-area: capstone;
-  padding-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4rem;
   width: 100%;
 }
 
-.capsum{
+.capsum {
   background-color: #993271;
   grid-area: capsum;
   padding-bottom: 4rem;
 }
 
-
 h1 {
-  font-family:"Solway", serif;
-  font-size: 3.3rem;
+  font-family: "Solway", serif;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 4rem;
   text-align: center;
 }
 
 h1.caption {
-  color:#ffffff;
+  color: #ffffff;
+  font-size: 3.5rem;
   padding: 2rem;
 }
 
 h2 {
   font-family: 'Roboto', sans-serif;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   line-height: 4rem;
   text-align: center;
 }
 
-h2.menu-label {
-  display: none;
-}
-
 h3 {
-  color:#ffffff;
-  font-family:'Roboto', sans-serif;
-  font-size: 2.7rem;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.3rem;
 }
 
 p {
@@ -137,67 +121,70 @@ p {
 }
 
 p.caption2 {
-  color:#ffffff;
+  color: #ffffff;
   padding: 5rem;
 }
 
+
 /*buttons*/
+
 .button1 {
-	background-color: #D35D31;
-	border: none;
-	box-shadow: 0 .5rem #000000;
-	color: #FFFFFF;
-	cursor: pointer;
-	display: block;
-	font-family: 'Solway', serif;
-	font-size: 2.5rem;
+  background-color: #D35D31;
+  border: none;
+  box-shadow: 0 .5rem #000000;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: 'Solway', serif;
+  font-size: 2.5rem;
   font-weight: 300;
-  line-height:3rem;
+  line-height: 3rem;
   margin: 2rem auto;
-	margin-top: 2rem;
-	outline: none;
+  margin-top: 2rem;
+  outline: none;
   padding: 1.7rem;
-	text-align: center;
-	text-decoration: none;
-	width: 40%;
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
 }
 
 .button1:hover {
-	background-color: #1A4D6D
+  background-color: #1A4D6D
 }
 
 .button1:active {
-	background-color: #1A4D6D;
-	box-shadow: 0 .5rem #666;
-	transform: translateY(.4rem);
+  background-color: #1A4D6D;
+  box-shadow: 0 .5rem #666;
+  transform: translateY(.4rem);
 }
 
 .button2 {
-	background-color: #1A4D6D;
-	border: none;
-	box-shadow: 0 .5rem #000000;
-	color: #FFFFFF;
-	cursor: pointer;
-	display: block;
-	font-family: 'Solway', serif;
-	font-size: 2.3rem;
+  background-color: #1A4D6D;
+  border: none;
+  box-shadow: 0 .5rem #000000;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: 'Solway', serif;
+  font-size: 2.3rem;
   font-weight: 300;
-	margin: 4rem auto;
-	outline: none;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	width: 40%;
+  line-height: 3rem;
+  margin: 4rem auto;
+  outline: none;
+  padding: 1.7rem;
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
 }
 
 .button2:hover {
-	background-color: #1A4D6D
+  background-color: #1A4D6D
 }
 
 .button2:active {
-	background-color: #1A4D6D;
-	box-shadow: 0 .5rem #666;
-	transform: translateY(.4rem);
+  background-color: #1A4D6D;
+  box-shadow: 0 .5rem #666;
+  transform: translateY(.4rem);
 }
 
 .footer {
@@ -205,8 +192,8 @@ p.caption2 {
   color: #ffffff;
   font-size: 5rem;
   grid-area: footer;
-  text-align:center;
-  margin-top: 6rem;
+  text-align: center;
+  margin-top: 1rem;
   padding: 3rem;
 }
 
@@ -220,143 +207,93 @@ p.foot-text {
 }
 
 .icons li {
-	display: inline;
+  display: inline;
   margin-left: auto;
-  margin-right:auto;
-	padding: .4rem 1rem;
+  margin-right: auto;
+  padding: .4rem 1rem;
 }
+
 
 /* tablet */
+
 @media screen and (min-width: 600px) {
-
-  body {
-    grid-template-columns: 1fr 8fr 8fr 1fr;
-    grid-template-areas:
-    "navbar navbar navbar navbar"
-    ". hero hero ."
-    "process-intro process-intro process-intro process-intro"
-    "billow billow billowsum billowsum"
-    "capsum capsum capstone capstone"
-    "footer footer footer footer";
-  }
-
   h1 {
-    font-size: 3.6rem;
+    font-size: 2.7rem;
     line-height: 5rem;
   }
-
+  h1.caption {
+    font-size: 4rem;
+  }
   h2 {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     line-height: 5rem;
   }
-
   h3 {
-    font-size: 2.1rem;
-    line-height: 4rem;
+    font-size: 2.5rem;
+    line-height: 5rem;
   }
-
   p {
-    font-size: 2.1rem;
-    line-height: 3rem;
+    font-size: 2.5rem;
+    line-height: 5rem;
   }
-
-  img.kc-logo {
-  	float: left;
-  	max-width: 35rem;
-  	height: auto;
+  .billowhome {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-
-  h2.menu-label {
-    color: #000000;
-    font-size: 2rem;
-    position: absolute;
-    right: 80px;
-    top: 0px;
-  }
-
-  img.katy {
-    max-width: 40rem;
-    height: auto;
-    padding: 2rem;
-  }
-
-  .billow, .capstone {
-    padding-bottom: 0;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  .billowsum, .capsum {
-    padding-top: 4rem;
-    padding-bottom: 0;
+  .caphome {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-/*desktop*/
-@media screen and (min-width: 900px) {
 
+/*desktop*/
+
+@media screen and (min-width: 900px) {
   body {
     grid-template-columns: 1fr 8fr 8fr 1fr;
-    grid-template-areas:
-    "navbar navbar navbar navbar"
-    ". hero hero ."
-    "process-intro process-intro process-intro process-intro"
-    "billow billow billowsum billowsum"
-    "capsum capsum capstone capstone"
-    "footer footer footer footer";
+    grid-template-areas: "navbar navbar navbar navbar" ". hero hero ." "process-intro process-intro process-intro process-intro" "billow billow billowsum billowsum" "capsum capsum capstone capstone" "footer footer footer footer";
   }
-
+  img.kc-logo-index {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
+  .button1 {
+    width: 30rem;
+  }
+  .button2 {
+    width: 30rem;
+  }
   h1 {
     font-size: 3.6rem;
     line-height: 5rem;
   }
-
   h2 {
     font-size: 3.2rem;
     line-height: 5rem;
   }
-
   h3 {
     font-size: 2.1rem;
     line-height: 4rem;
   }
-
   p {
     font-size: 2.1rem;
     line-height: 3rem;
   }
-
-  img.kc-logo {
-  	float: left;
-  	max-width: 35rem;
-  	height: auto;
-  }
-
-  h2.menu-label {
-    color: #000000;
-    font-size: 2rem;
-    position: absolute;
-    right: 80px;
-    top: 0px;
-  }
-
-  img.katy {
-    max-width: 40rem;
-    height: auto;
-    padding: 2rem;
-  }
-
-  .billow, .capstone {
+  .billow,
+  .capstone {
     padding-bottom: 0;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-
-  .billowsum, .capsum {
+  .billowsum,
+  .capsum {
     padding-top: 4rem;
     padding-bottom: 0;
   }
-
 }

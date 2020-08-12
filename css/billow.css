@@ -10,24 +10,52 @@ html {
 
 body {
   display: grid;
-  grid-template-areas: "navbar" "hero" "process-intro1" "process1" "process-intro2" "process2" "process-intro3" "process3" "process-intro4" "process4" "process-intro5" "process5" "process-intro6" "process6" "slideshow-container1" "slideshow-container2" "slideshow-container3" "process7" "process-intro8" "process8" "slideshow-container4" "process9" "process-intro10" "process10" "footer";
+  grid-template-areas:
+  "navbar"
+  "hero"
+  "process-intro1"
+  "process1"
+  "process-intro2"
+  "process2"
+  "process-intro3"
+  "process3"
+  "process-intro4"
+  "process4"
+  "process-intro5"
+  "process5"
+  "process-intro6"
+  "process6"
+  "slideshow-container1"
+  "slideshow-container2"
+  "slideshow-container3"
+  "process7"
+  "process-intro8"
+  "process8"
+  "slideshow-container4"
+  "process9"
+  "process-intro10"
+  "process10"
+  "footer";
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
   background-color: #ffffff;
   grid-area: navbar;
-  padding: 2rem 2rem;
+  width: 100%;
 }
 
 img.kc-logo {
   float: left;
-  width: 50%;
+  width: 40%;
 }
 
 .hero {
   background-color: #ffffff;
   grid-area: hero;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
 .process-intro1,
@@ -42,97 +70,118 @@ img.kc-logo {
   background-color: #1A4D6D;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  padding: 1rem 2rem;
+  width: 100%;
 }
 
 .process-intro1 {
   grid-area: process-intro1;
+  width: 100%;
 }
 
 .process-intro2 {
   grid-area: process-intro2;
+  width: 100%;
 }
 
 .process-intro3 {
   grid-area: process-intro3;
+  width: 100%;
 }
 
 .process-intro4 {
   grid-area: process-intro4;
+  width: 100%;
 }
 
 .process-intro5 {
   grid-area: process-intro5;
+  width: 100%;
 }
 
 .process-intro6 {
   grid-area: process-intro6;
+  width: 100%;
 }
 
 .process-intro8 {
   grid-area: process-intro8;
+  width: 100%;
 }
 
 .process-intro10 {
   grid-area: process-intro10;
+  width: 100%;
 }
 
 .process1 {
   grid-area: process1;
+  width: 100%;
 }
 
 .process2 {
   grid-area: process2;
+  width: 100%;
 }
 
 .process3 {
   grid-area: process3;
+  width: 100%;
 }
 
 .process4 {
   grid-area: process4;
+  width: 100%;
 }
 
 .process5 {
   grid-area: process5;
+  width: 100%;
 }
 
 .process6 {
   grid-area: process6;
+  width: 100%;
 }
 
 .process7 {
   grid-area: process7;
+  width: 100%;
 }
 
 .process8 {
   grid-area: process8;
+  width: 100%;
 }
 
 .process9 {
   grid-area: process9;
+  width: 100%;
 }
 
 .process10 {
   grid-area: process10;
+  width: 100%;
 }
 
-img.center {
+img.center, .divider {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  height: auto;
-  padding: 3rem;
 }
 
-img.divider {
+img.billow-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 80%;
-  height: auto;
-  padding: 3rem;
+  width: 40%;
+}
+
+img.results {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 
 .slideshow-container1,
@@ -211,7 +260,7 @@ img.divider {
 
 h1 {
   font-family: "Solway", serif;
-  font-size: 3.3rem;
+  font-size: 1.8rem;
   font-weight: 700;
   line-height: 4rem;
   text-align: center;
@@ -219,7 +268,7 @@ h1 {
 
 h2 {
   font-family: 'Roboto', sans-serif;
-  font-size: 2.8rem;
+  font-size: 1.8rem;
   line-height: 4rem;
   text-align: center;
   padding: 3rem;
@@ -228,7 +277,7 @@ h2 {
 h3 {
   color: #ffffff;
   font-family: "Solway", serif;
-  font-size: 3.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   padding-left: 3rem;
 }
@@ -236,7 +285,7 @@ h3 {
 h4 {
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  font-size: 2.7rem;
+  font-size: 1.8rem;
   text-align: left;
 }
 
@@ -247,9 +296,10 @@ h5 {
 
 h6 {
   font-family: 'Roboto', sans-serif;
-  font-size: 2.7rem;
+  font-size: 1.8rem;
   font-style: italic;
-  padding-left: 5rem;
+  margin-left: 3.5rem;
+  padding-left: 15rem;
   padding-top: 5rem;
   text-align: left;
 }
@@ -257,8 +307,8 @@ h6 {
 p {
   color: #000000;
   font-family: 'Roboto', sans-serif;
-  font-size: 2.7rem;
-  line-height: 4.5rem;
+  font-size: 1.8rem;
+  line-height: 3.5rem;
   padding: 3rem;
   margin-left: 3.5rem;
   margin-right: 3.5rem;
@@ -279,16 +329,15 @@ em {
   cursor: pointer;
   display: block;
   font-family: 'Solway', serif;
-  font-size: 2.8rem;
+  font-size: 1.8rem;
   font-weight: 300;
-  line-height: 3.5rem;
+  line-height: 3rem;
   margin: 2rem auto;
   margin-top: 2rem;
-  outline: none;
   padding: 1.7rem;
   text-align: center;
   text-decoration: none;
-  width: 50%;
+  width: 60%;
 }
 
 .button1:hover {
@@ -309,14 +358,14 @@ em {
   cursor: pointer;
   display: block;
   font-family: 'Solway', serif;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   font-weight: 300;
-  margin: 4rem auto;
-  outline: none;
-  padding: 1rem;
+  line-height: 3rem;
+  margin: 2rem auto;
+  padding: 1.7rem;
   text-align: center;
   text-decoration: none;
-  width: 50%;
+  width: 60%;
 }
 
 .button2:hover {
@@ -332,17 +381,18 @@ em {
 .footer {
   background-color: #1A4D6D;
   color: #ffffff;
-  font-size: 5rem;
+  font-size: 4rem;
   grid-area: footer;
   text-align: center;
-  margin-top: 6rem;
-  padding: 3rem;
+  margin-top: 1rem;
+  padding: 2rem;
+  width: 100%;
 }
 
-p.foot-text {
+.foot-text {
   color: #ffffff;
-  font-size: 2.4rem;
-  line-height: 4.5rem;
+  font-size: 1.8rem;
+  line-height: 4rem;
   margin-left: auto;
   margin-right: auto;
   padding: 1rem;
@@ -359,8 +409,32 @@ p.foot-text {
 /* tablet */
 
 @media screen and (min-width: 600px) {
+  h1 {
+    font-size: 2.7rem;
+    line-height: 5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 5rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    line-height: 5rem;
+  }
+
+  p {
+    font-size: 2.5rem;
+    line-height: 5rem;
+  }
+
   img.kc-logo {
     max-width: 35%;
+  }
+
+  .button1, .button2 {
+    width: 30%;
   }
 }
 
@@ -369,11 +443,36 @@ p.foot-text {
 
 @media screen and (min-width: 900px) {
   body {
-    grid-template-columns: 2fr 8fr 8fr 2fr;
-    grid-template-areas: "navbar navbar navbar navbar" ". hero hero ." "process-intro1 process-intro1 process-intro1 process-intro1" ". process1 process1 ." "process-intro2 process-intro2 process-intro2 process-intro2" ". process2 process2 ." "process-intro3 process-intro3 process-intro3 process-intro3" ". process3 process3 ." "process-intro4 process-intro4 process-intro4 process-intro4" ". process4 process4 ." "process-intro5 process-intro5 process-intro5 process-intro5" ". process5 process5 ." "process-intro6 process-intro6 process-intro6 process-intro6" ". process6 process6 ." ". slideshow-container1 slideshow-container1 ." ". slideshow-container2 slideshow-container2 ." ". slideshow-container3 slideshow-container3 ." ". process7 process7 ." "process-intro8 process-intro8 process-intro8 process-intro8" ". process8 process8 ." ". slideshow-container4 slideshow-container4 ." ". process9 process9 ." "process-intro10 process-intro10 process-intro10 process-intro10" ". process10 process10 ." "footer footer footer footer";
-  }
+    grid-template-columns: 2fr 6fr 6fr 2fr;
+    grid-template-areas:
+    "navbar navbar navbar navbar"
+    ". hero hero ."
+    "process-intro1 process-intro1 process-intro1 process-intro1"
+    ". process1 process1 ."
+    "process-intro2 process-intro2 process-intro2 process-intro2"
+    ". process2 process2 ."
+    "process-intro3 process-intro3 process-intro3 process-intro3"
+    ". process3 process3 ."
+    "process-intro4 process-intro4 process-intro4 process-intro4"
+    ". process4 process4 ."
+    "process-intro5 process-intro5 process-intro5 process-intro5"
+    ". process5 process5 ."
+    "process-intro6 process-intro6 process-intro6 process-intro6"
+    ". process6 process6 ." ". slideshow-container1 slideshow-container1 ."
+    ". slideshow-container2 slideshow-container2 ."
+    ". slideshow-container3 slideshow-container3 ."
+    ". process7 process7 ."
+    "process-intro8 process-intro8 process-intro8 process-intro8"
+    ". process8 process8 ."
+    ". slideshow-container4 slideshow-container4 ."
+    ". process9 process9 ."
+    "process-intro10 process-intro10 process-intro10 process-intro10"
+    ". process10 process10 ."
+    "footer footer footer footer";
+     }
+
   h1 {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     line-height: 5rem;
   }
   h2 {
@@ -389,32 +488,41 @@ p.foot-text {
     line-height: 2rem;
   }
   p {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     line-height: 3rem;
     padding: 3rem;
-    padding-left: 35rem;
-    padding-right: 35rem;
+    margin-left: 20%;
+    margin-right: 20%;
   }
   img.kc-logo {
-    max-width: 25%;
+    max-width: 20%;
   }
   em {
     font-style: italic;
   }
   img.pref-img {
+    display: block;
     width: 50%;
-    float: left;
-    padding-left: 3rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   .button1 {
-    width: 30rem;
+    width: 20rem;
+  }
+  .button2 {
+    width: 20rem;
   }
   img.center {
-    width: 50%;
+    width: 40%;
   }
-  img.divider {
+  img.divider, img.results {
     max-width: 30%;
   }
+
+  img.billow-logo {
+    max-width: 20%;
+  }
+
   .process-intro1,
   .process-intro2,
   .process-intro3,

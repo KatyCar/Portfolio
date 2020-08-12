@@ -10,7 +10,7 @@ html {
 
 body {
   display: grid;
-  grid-template-areas: "navbar" "hero" "process-intro" "billow" "billowsum" "capstone" "capsum" "footer";
+  grid-template-areas: "navbar" "hero" "biotext" "quote" "footer";
   margin: 0;
   padding: 0;
 }
@@ -20,105 +20,51 @@ body {
   grid-area: navbar;
 }
 
-img.kc-logo-index {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+img.kc-logo {
+  float: left;
   width: 40%;
 }
 
-img.center {
+img.bio-pic {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  height: auto;
-  padding: 3rem;
-}
-
-img.caphome {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+  padding-top: 1rem;
+  width: 70%;
 }
 
 .hero {
   background-color: #ffffff;
   grid-area: hero;
   margin-bottom: 1rem;
-  padding: 5rem 2rem;
   width: 100%;
 }
 
-.process-intro {
-  background-color: #4C1938;
-  grid-area: process-intro;
-  padding: 3rem 2rem;
+.biotext {
+  grid-area: biotext;
   width: 100%;
 }
 
-.billow {
-  background-color: #D35D31;
-  background-image: url("../images/index/sprinkles.png");
-  background-repeat: repeat;
-  grid-area: billow;
-  padding-top: 4rem;
+.quote {
+  grid-area: quote;
   width: 100%;
 }
 
-img.billowhome {
+img.border {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
-}
-
-.billowsum {
-  grid-area: billowsum;
-  background-color: #D35D31;
-  padding-bottom: 4rem;
-  width: 100%;
-}
-
-.capstone {
-  background-color: #993271;
-  background-image: url("../images/index/grid.png");
-  background-repeat: no-repeat;
-  display: block;
-  grid-area: capstone;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 4rem;
-  width:100%;
-}
-
-.capsum {
-  background-color: #993271;
-  grid-area: capsum;
-  padding-bottom: 4rem;
-  width: 100%;
-}
-
-img.caphome {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
 }
 
 h1 {
   font-family: "Solway", serif;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 300;
   line-height: 4rem;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  padding: 3rem;
   text-align: center;
-}
-
-h1.caption {
-  color: #ffffff;
-  font-size: 2.7rem;
-  padding: 2rem;
 }
 
 h2 {
@@ -128,27 +74,15 @@ h2 {
   text-align: center;
 }
 
-h3 {
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.6rem;
-}
-
 p {
   color: #000000;
+  display: block;
   font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
   line-height: 3.5rem;
-  padding: 2rem;
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
 }
-
-p.caption2 {
-  color: #ffffff;
-  padding: 5rem;
-}
-
 
 /*buttons*/
 
@@ -246,32 +180,15 @@ p.foot-text {
     font-size: 2.7rem;
     line-height: 5rem;
   }
-  h1.caption {
-    font-size: 4rem;
-  }
+
   h2 {
     font-size: 2.5rem;
     line-height: 5rem;
   }
-  h3 {
-    font-size: 2.5rem;
-    line-height: 5rem;
-  }
+
   p {
     font-size: 2.5rem;
     line-height: 5rem;
-  }
-
-  .billowhome {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .caphome {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .button1, .button2 {
@@ -287,12 +204,7 @@ p.foot-text {
     grid-template-columns: 1fr 8fr 8fr 1fr;
     grid-template-areas: "navbar navbar navbar navbar" ". hero hero ." "process-intro process-intro process-intro process-intro" "billow billow billowsum billowsum" "capsum capsum capstone capstone" "footer footer footer footer";
   }
-  img.kc-logo-index {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-  }
+
   .button1 {
     width: 20rem;
   }
@@ -307,31 +219,11 @@ p.foot-text {
     font-size: 3.2rem;
     line-height: 5rem;
   }
-  h3 {
-    font-size: 2.1rem;
-    line-height: 4rem;
-  }
+
 
   p {
     font-size: 2.1rem;
     line-height: 3rem;
   }
 
-  .billow,
-  .capstone {
-    padding-bottom: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
- .caphome {
-   width: 20%;
- }
-
-  .billowsum,
-  .capsum {
-    padding-top: 4rem;
-    padding-bottom: 0;
-  }
 }

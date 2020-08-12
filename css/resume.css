@@ -18,7 +18,6 @@ body {
 .navbar {
   background-color: #ffffff;
   grid-area: navbar;
-  padding: 2rem 2rem;
 }
 
 img.kc-logo {
@@ -132,7 +131,8 @@ em {
   line-height: 3rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   outline: none;
   padding: 1.7rem;
   text-align: center;

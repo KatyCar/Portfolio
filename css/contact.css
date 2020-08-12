@@ -16,7 +16,6 @@ grid-template-areas: "navbar" "hero" "social-icons" "contact-form" "footer";
 .navbar {
 background-color: #ffffff;
 grid-area: navbar;
-padding: 2rem 2rem;
 }
 
 img.kc-logo {

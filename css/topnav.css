@@ -5,14 +5,14 @@
 }
 
 .topnav a {
-  float: left;
+  float: right;
   font-family: 'Roboto', sans-serif;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 1.4rem 1.6rem;
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 .topnav a:hover {
@@ -43,7 +43,7 @@
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 5;
   }
   .topnav.responsive a {
     float: none;

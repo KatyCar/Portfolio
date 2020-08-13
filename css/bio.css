@@ -209,7 +209,12 @@ p.foot-text {
 @media screen and (min-width: 900px) {
   body {
     grid-template-columns: 1fr 8fr 8fr 1fr;
-    grid-template-areas: "navbar navbar navbar navbar" ". hero hero ." "process-intro process-intro process-intro process-intro" "billow billow billowsum billowsum" "capsum capsum capstone capstone" "footer footer footer footer";
+    grid-template-areas:
+    "navbar navbar navbar navbar"
+    ". hero hero ."
+    ". biotext biotext ."
+    ". quote quote ."
+    "footer footer footer footer";
   }
 
   .button1 {
@@ -235,5 +240,9 @@ p.foot-text {
 
   img.kc-logo {
     max-width: 20%;
+  }
+
+  img.border {
+    width: 45%;
   }
 }

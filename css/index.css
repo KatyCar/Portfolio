@@ -10,14 +10,14 @@ html {
 
 body {
   display: grid;
-  grid-template-areas: "navbar" "hero" "process-intro" "billow" "billowsum" "capstone" "capsum" "footer";
+  grid-template-areas: "navbar1" "hero" "process-intro" "billow" "billowsum" "capstone" "capsum" "footer";
   margin: 0;
   padding: 0;
 }
 
-.navbar {
+.navbar1 {
   background-color: #ffffff;
-  grid-area: navbar;
+  grid-area: navbar1;
 }
 
 img.kc-logo-index {
@@ -202,11 +202,11 @@ p.caption2 {
 }
 
 .button2:hover {
-  background-color: #1A4D6D
+  background-color: #4C1938;
 }
 
 .button2:active {
-  background-color: #1A4D6D;
+  background-color: #4C1938;
   box-shadow: 0 .5rem #666;
   transform: translateY(.4rem);
 }
@@ -285,7 +285,7 @@ p.foot-text {
 @media screen and (min-width: 900px) {
   body {
     grid-template-columns: 1fr 8fr 8fr 1fr;
-    grid-template-areas: "navbar navbar navbar navbar" ". hero hero ." "process-intro process-intro process-intro process-intro" "billow billow billowsum billowsum" "capsum capsum capstone capstone" "footer footer footer footer";
+    grid-template-areas: "navbar1 navbar1 navbar1 navbar1" ". hero hero ." "process-intro process-intro process-intro process-intro" "billow billow billowsum billowsum" "capsum capsum capstone capstone" "footer footer footer footer";
   }
   img.kc-logo-index {
     display: block;

@@ -243,7 +243,7 @@ p.foot-text {
   p {
     font-size: 2.1rem;
     line-height: 3rem;
-    margin-left: 3rem;
+    margin-right: 30%;
     padding-top: 5rem;
   }
 
@@ -255,7 +255,12 @@ p.foot-text {
     padding-top: 2rem;
     max-width: 95%;
   }
+
   img.border {
-    width:85%;
+    max-width: 90%;
+  }
+
+  .quote {
+    padding-right: 30%;
   }
 }

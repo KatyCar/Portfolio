@@ -444,6 +444,16 @@ em {
   padding: .4rem 1rem;
 }
 
+.icons a {
+  color: #ffffff;
+}
+.icons a:visited {
+  color: #ffffff;
+}
+.icons a:hover, a:active, a:focus {
+  color:#D35D31;
+}
+
 img.pref-img {
   display: block;
   width: 80%;

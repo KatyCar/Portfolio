@@ -177,6 +177,15 @@ p.foot-text {
   padding: .4rem 1rem;
 }
 
+.icons a {
+  color: #ffffff;
+}
+.icons a:visited {
+  color: #ffffff;
+}
+.icons a:hover, a:active, a:focus {
+  color:#D35D31;
+}
 
 /* tablet */
 

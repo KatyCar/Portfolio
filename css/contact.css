@@ -60,7 +60,15 @@ display: inline;
 font-size: 5rem;
 padding: 1rem;
 }
-
+.icons a {
+  color: #ffffff;
+}
+.icons a:visited {
+  color: #ffffff;
+}
+.icons a:hover, a:active, a:focus {
+  color:#1A4D6D;
+}
 h1 {
 font-family: "Solway", serif;
 font-size: 3rem;
@@ -91,7 +99,7 @@ margin: 5rem auto;
 }
 
 .feedback-input {
-color: white;
+color: #000000;
 font-family: 'Roboto', sans-serif;
 font-size: 1.8rem;
 border-radius: .5rem;

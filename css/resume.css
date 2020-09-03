@@ -17,6 +17,7 @@ body {
 .navbar {
    background-color: #ffffff;
    grid-area: navbar;
+   position: fixed;
 }
 
 img.kc-logo {

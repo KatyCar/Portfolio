@@ -19,6 +19,7 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Solway:wght@700&display=swap">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Solway:wght@300&display=swap">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,37 +27,39 @@
       <!-- Custom Styles -->
       <link rel="stylesheet" type="text/css" href="css/reset.css">
       <link rel="stylesheet" type="text/css" href="css/billow.css">
-      <link rel="stylesheet" type="text/css" href="css/topnav.css">
+      <link rel="stylesheet" type="text/css" href="css/topnav2.css">
    </head>
    <body>
-      <nav class="navbar">
-         <div class="topnav" id="myTopnav">
-            <a href="#billow" class="active">Case Study: Billow</a>
-            <a href="index.html">Home</a>
-            <a href="resume.html">Resume</a>
-            <a href="bio.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-            </a>
-         </div>
-         <a href="index.html"><img src="images/finallogo.png" alt="main logo" class="kc-logo"></a>
-      </nav>
+     <header>
+      <div class="topnav">
+        <a href="index.html"><img src="images/finallogo.png" alt="main logo" class="kc-logo"></a>
+        <nav class="nav-collapse">
+          <ul>
+             <li class="menu-item"><a href="index.html">Home</a></li>
+             <li class="menu-item active"><a href="#billow" class="active">Case Study: Billow</a></li>
+             <li class="menu-item"><a href="bio.html">About</a></li>
+             <li class="menu-item"><a href="resume.html">Resume</a></li>
+             <li class="menu-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
       <section class="hero-image">
          <img src="images/billow/billow_work.png" alt="Billow Inspiration Flow" style="width:100%;">
       </section>
       <section class="hero">
          <h1>Case Study: Billow</h1>
          <p class="p-hero" style="text-align:center;">Billow goes above and beyond just cloud storage. It’s an idea-sharing, adventure-planning, business-running, home-improving, confidence-boosting community for women who are far from basic.
-            <a href="https://invis.io/63X2NY8FZAM" class="button1">See the final Prototype</a>
+            <a href="https://invis.io/63X2NY8FZAM" class="button1" target="_blank">See the final Prototype</a>
          </p>
       </section>
       <section class="process-intro1">
          <h3>The Problem</h3>
       </section>
       <section class="process1">
-         <p class="p-hero" style="color:white;"><br>The majority of cloud storage apps on the market offer the same basic features, in the same, strictly functional ways. They’re designed in a “one size fits all” manner that lacks personality and style.</p>
-      </section>
+         <p class="p-hero" style="color:white;">The majority of cloud storage apps on the market offer the same basic features, in the same, strictly functional ways. They’re designed in a “one size fits all” manner that lacks personality and style.<br>
+         <br>Different users have different needs and desires that aren't being met by current offerings.
+       </p></section>
       <section class="process-intro2" style="background-color:#D35D31;">
          <h3>The Solution</h3>
       </section>
@@ -71,7 +74,7 @@
       </section>
       <section class="process3">
          <p class>In my role as designer, I was responsible for making all of the design and branding decisions and for producing all of the deliverables.</p>
-         <img src="images/zigzag.png" alt="zig-zag" class="divider">
+         <br><img src="images/zigzag.png" alt="zig-zag" class="divider">
       </section>
       <section class="process-intro4">
          <h3 style="color:#4C1938;">My Process</h3>
@@ -89,11 +92,19 @@
       </section>
       <section class="process5">
          <p>I began by conducting a <em>User Survey</em> based on cloud storage usage. I wanted to find out what features are most important to users and how receptive they would be to the addition of a social network aspect.  Here are some of the most valuable findings:</p>
-         <img src="images/billow/DRresults.png" alt="results1" class="results">
-         <p><em>97%</em> said they would be interested in an app that fostered connection and collaboration among users.</p>
+      </section>
+      <div class="results1">
+         <p style="color:#ffffff;padding-left:20%;"><em>Most important</em> features of a new cloud storage site, according to potential users:<br>
+             1. Easy to use<br>
+             2. Ability to share large<br>
+             3. FREE!</p>
+      </div>
+      <br>
+      <section class="process5-5">
+         <br><p><em>97%</em> said they would be interested in an app that fostered connection and collaboration among users.</p>
          <br>
          <p>From there, I wanted to take a closer look at the cloud storage market landscape. In order to gain a better understanding of current options, I performed a <em>Competitive Analysis</em> on three popular brands:</p>
-         <img src="images/billow/compets.png" alt="competitors" class="center">
+         <img src="images/billow/compets.png" alt="competitors" class="compets">
          <p>I discovered that advanced storage and security functionalities serve as the major selling points for these platforms. Paid subscriptions come with additional protections, higher storage limits, and business operation functions. For Billow, secure file storage would be important, but it would be performed with individuals in mind, as opposed to large businesses and corporations.</p>
          <br>
          <p>Also, while the interfaces of the Box, Google Drive and OpenDrive prove to be intuitive with simple and bold design choices, they exhibit little character.  With this observation, I knew that creating a bright, stylish and playful interface for Billow would be a key attraction for our target users.</p>
@@ -108,12 +119,12 @@
          <p>At this point in the process, I brainstormed and evaluated the tasks that would be completed by an “Inspired & Organized” user of Billow. After listing them in order of importance, I created accompanying <em>User Flows</em> to serve as guides for creating the wireframes.</p>
          <br>
          <br><br>
-         <h4 style="color:#000000;text-align:center;"><em>High Priority User Stories</em></h4>
-         <p style="background-color:#b4ecb4; color:#000000;">I want to upload and store files in the cloud.<br>I want to share files with others.<br>I want to organize files into categories.<br>I want to edit existing files.<br>I want to create new files.</p>
-         <h4 style="color:#000000;text-align:center;"><em>Medium Priority User Stories</em></h4>
-         <p style="background-color:#ffff99; color:#000000">I want inspiration for my projects.<br>I want to collaborate with others on projects.</p>
-         <h4 style="color:#000000;text-align:center;"><em>Lower Priority User Stories</em></h4>
-         <p style="background-color:#e06750; color:white;">I want to control the permissions of those I share files with.<br>I want to know my files are secure.</p>
+         <h4 style="color:#000000;"><em>High Priority User Stories</em></h4>
+         <p>I want to upload and store files in the cloud.<br>I want to share files with others.<br>I want to organize files into categories.<br>I want to edit existing files.<br>I want to create new files.</p>
+         <br><h4 style="color:#000000;"><em>Medium Priority User Stories</em></h4>
+         <p>I want inspiration for my projects.<br>I want to collaborate with others on projects.</p>
+         <br><h4 style="color:#000000;"><em>Lower Priority User Stories</em></h4>
+         <p>I want to control the permissions of those I share files with.<br>I want to know my files are secure.</p>
       </section>
       <!-- User Flows slide show-->
       <div class="slideshow-container1" style="margin-top:5rem;">
@@ -149,7 +160,7 @@
             <img src="images/billow/mySlides2/wfs3.png" alt="Sign Up" style="padding:1rem;width:100%">
          </div>
          <div class="mySlides2">
-            <img src="images/mySlides2/wfs4.png" alt="Main Dashboard" style="padding:1rem;width:100%">
+            <img src="images/billow/mySlides2/wfs4.png" alt="Main Dashboard" style="padding:1rem;width:100%">
          </div>
          <div class="mySlides2">
             <img src="images/billow/mySlides2/wfs5.png" alt="Inspiration Dashboard" style="padding:1rem;width:100%">
@@ -215,8 +226,14 @@
          <p>Building the wireframes help me to reevaluate and clarify the scope of the project. However, in order to truly gauge my progress, I knew I needed the insights gained from <em>Usability Testing</em>.</p>
          <br>
          <p>I recruited random internet users to perform a series of tasks (logging in, creating an account, uploading a file, etc.). I observed their interactions with the prototype and asked follow-up questions.</p>
-         <img src="images/billow/UTresults.png" alt="UT results" class="results">
       </section>
+      <div class="results2">
+         <p style="color:#ffffff;padding-left:20%;"><em>Findings from Usability Testing:</em><br>
+            1. Combine/eliminate the landing page.<br>
+            2. Replace some icons to help clarification of purpose.<br>
+            3. Simplify certain features in Inspiration Flow.</p>
+      </div>
+
       <!--Visual Design -->
       <section class="process-intro8">
          <h3><a id="VisDis">Visual Design</a></h3>
@@ -230,24 +247,24 @@
       <section class="process9">
          <hr>
          <h6>Color Palette:</h6>
-         <img src="images/billow/colorpalette.png" alt="Color palette" class="billow-mood" style="max-width:40%;">
+         <img src="images/billow/colorpalette.png" alt="Color palette" class="color">
       </section>
       <section class="process10">
          <hr>
          <h6>Typography:</h6>
          <br>
-         <h5 style="font-family:'Righteous',cursive;font-size:4.8rem;">Headline</h5>
-         <p style="text-align:center;">(Righteous font / Bold / Size 48)</p>
+         <h5 style="font-family:'Righteous',cursive;font-size:3.8rem;">Headline</h5>
+         <p style="text-align:center;">(Righteous font / Bold / Size 38px)</p>
          <br>
          <h5 style="font-family:'Righteous',cursive;font-size:2.4rem;">Subheadings</h5>
-         <p style="text-align:center;">(Righteous font / Regular / Size 24)</p>
+         <p style="text-align:center;">(Righteous font / Regular / Size 24px)</p>
          <br>
-         <h5 style="font-family:'Varela Round',sans-serif;font-size:2.1rem;">Body text should look like this.</h5>
-         <p style="text-align:center;">(Varela Round / Regular / Size 21)</p>
+         <h5 style="font-family:'Varela Round',sans-serif;font-size:1.8rem;">Body text should look like this.</h5>
+         <p style="text-align:center;">(Varela Round / Regular / Size 18px)</p>
          <br>
       </section>
       <section class="style-button">
-         <a href="https://docs.google.com/presentation/d/1OL9emMYZfo5i6Gj2BFWhCJBDKQk0Yp3EjKF9gjJgJcs/edit?usp=sharing" class="button1" style="margin-bottom:7rem;">See the complete<br>Style Guide</a>
+         <a href="https://docs.google.com/presentation/d/1OL9emMYZfo5i6Gj2BFWhCJBDKQk0Yp3EjKF9gjJgJcs/edit?usp=sharing" class="button1" style="margin-bottom:7rem;" target="_blank">See the complete<br>Style Guide</a>
       </section>
       <!-- Logo Development slide show-->
       <div class="slideshow-container4">
@@ -283,14 +300,22 @@
          <p>And finally, with my high-fidelity mockups converted into a clickable prototype, it was time for another round of <em>Usability Testing</em>.  Like before, I asked users to complete certain tasks so that I could observe any potential issues or pain points before finalizing the design.</p>
          <br>
          <p>While the overall results were encouraging, the participants’ experiences led to  some well-received changes.</p>
-         <img src="images/billow/UT2results.png" alt="UT2 results" class="results">
-      </section>
+       </section>
+       <div class="results3">
+          <p style="color:#ffffff;padding-left:20%;"><em>Findings from 2nd Round of Usability Testing:</em><br>
+             1. Add a site summary to the homepage.<br>
+             2. Tidy up the layout of the onboarding pop-ups.<br>
+             3. Move the logo down on the left navigation menu.<br>
+             4. Show the recipient's username and photo when sending a message.<br>
+             5. Offer additional layout options to view files.</p>
+       </div>
+
       <!-- Conclusion -->
       <section class="process-intro12">
          <h3>Conclusion</h3>
       </section>
       <section class="process12">
-         <a href="https://invis.io/63X2NY8FZAM" class="button1" style="margin-bottom:4rem;margin-top:4rem;">See the<br>final Prototype</a>
+         <a href="https://invis.io/63X2NY8FZAM" class="button1" style="margin-bottom:4rem;margin-top:4rem;" target="_blank">See the<br>final Prototype</a>
          <article>
             <p>Careful consideration of the features lacking from current cloud storage offerings, along with direct interactions with potential users, has led to a fully developed and highly intuitive website. Billow’s unique personality also helps it to stand out among other websites and will attract enthusiastic users into its community.</p>
             <br>
@@ -304,19 +329,19 @@
          <p class="foot-text">&copy; 2020 Designed and Developed by Katy Carmichael</p>
          <div class="icons">
             <ul>
-               <li><a href="https://www.linkedin.com/in/katy-carmichael2020/">
+               <li><a href="https://www.linkedin.com/in/katy-carmichael2020/" target="_blank">
                   <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                </li>
-               <li><a href="https://github.com/KatyCar" link="#ffffff">
+               <li><a href="https://github.com/KatyCar" target="_blank">
                   <i class="fa fa-github-square" aria-hidden="true"></i></a>
                </li>
-               <li><a href="https://www.facebook.com/katy.carmichael.37">
+               <li><a href="https://www.facebook.com/katy.carmichael.37" target="_blank">
                   <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
                </li>
-               <li><a href="https://twitter.com/KatyCarmichael">
+               <li><a href="https://twitter.com/KatyCarmichael" target="_blank">
                   <i class="fa fa-twitter-square" aria-hidden="true"></i></a>
                </li>
-               <li><a href="mailto:carmichaelkaty@gmail.com">
+               <li><a href="mailto:carmichaelkaty@gmail.com" target="_blank">
                   <i class="fa fa-envelope-square" aria-hidden="true"></i></a>
                </li>
             </ul>
@@ -361,6 +386,8 @@
            }
            x[slideIndex[no]-1].style.display = "block";
          }
+
+         var nav = responsiveNav(".nav-collapse");
       </script>
    </body>
 </html>

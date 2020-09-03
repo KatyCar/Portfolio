@@ -225,7 +225,7 @@ a:focus {
 @media screen and (min-width: 900px) {
    body {
       grid-template-columns: 3fr 3fr 4fr 4fr;
-      grid-template-areas: "navbar navbar navbar navbar" "hero hero biotext biotext" ". . quote quote" "footer footer footer footer";
+      grid-template-areas: "navbar navbar navbar navbar" "hero hero biotext biotext" "quote quote quote quote" "footer footer footer footer";
    }
    .button1 {
       width: 20rem;
@@ -257,11 +257,5 @@ a:focus {
    img.bio-pic {
       padding-top: 2rem;
       max-width: 95%;
-   }
-   img.border {
-      max-width: 90%;
-   }
-   .quote {
-      padding-right: 30%;
    }
 }

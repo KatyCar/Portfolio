@@ -9,22 +9,18 @@ html {
 
 body {
    display: grid;
-   grid-template-areas: "navbar1" "hero" "process-intro" "billow" "billowsum" "capstone" "capsum" "footer";
+   grid-template-areas: "header" "hero" "process-intro" "billow" "billowsum" "capstone" "capsum" "footer";
    margin: 0;
-   padding: 0;
 }
 
-.navbar1 {
-   background-color: #ffffff;
-   grid-area: navbar1;
-   position: fixed;
+.header {
+  grid-area: header;
+  width: 100%;
 }
 
-img.kc-logo-index {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 40%;
+img.kc-logo {
+   float: left;
+   width: 50%;
 }
 
 img.center {
@@ -47,21 +43,20 @@ img.caphome {
    background-color: #ffffff;
    grid-area: hero;
    margin-bottom: 1rem;
-   padding: 5rem 2rem;
+   padding: 15rem 2rem 5rem 2rem;
    width: 100%;
 }
 
 .process-intro {
-   background-color: #4C1938;
    grid-area: process-intro;
-   padding: 3rem 2rem;
    width: 100%;
+   background-color: #1A4D6D;
+   height: 3rem;
+   text-align:center;
 }
 
 .billow {
-   background-color: #D35D31;
-   background-image: url("../images/index/sprinkles.png");
-   background-repeat: repeat;
+   background: linear-gradient(to bottom, #de8767 0%, #D35D31 100%);
    grid-area: billow;
    padding-top: 4rem;
    width: 100%;
@@ -75,28 +70,25 @@ img.billowhome {
 }
 
 .billowsum {
+   background: linear-gradient(to bottom, #D35D31 0%, #ab4925 100%);
    grid-area: billowsum;
-   background-color: #D35D31;
+   padding-bottom: 4rem;
+   width: 100%;
+}
+
+.capsum {
+   background: linear-gradient(to bottom, #993271 0%, #7a285a 100%);
+   grid-area: capsum;
    padding-bottom: 4rem;
    width: 100%;
 }
 
 .capstone {
-   background-color: #993271;
-   background-image: url("../images/index/grid.png");
-   background-repeat: no-repeat;
-   display: block;
+  background: linear-gradient(to bottom, #bf3e8d 0%, #993271 100%);
    grid-area: capstone;
    margin-left: auto;
    margin-right: auto;
    padding-top: 4rem;
-   width: 100%;
-}
-
-.capsum {
-   background-color: #993271;
-   grid-area: capsum;
-   padding-bottom: 4rem;
    width: 100%;
 }
 
@@ -173,7 +165,7 @@ p.caption2 {
 }
 
 .button1:hover {
-   background-color: #1A4D6D
+   background-color: #1A4D6D;
 }
 
 .button1:active {
@@ -183,7 +175,7 @@ p.caption2 {
 }
 
 .button2 {
-   background-color: #1A4D6D;
+   background-color: #216088;
    border: none;
    box-shadow: 0 .5rem #000000;
    color: #FFFFFF;
@@ -252,7 +244,9 @@ a:focus {
    color: #D35D31;
 }
 
-
+.active{
+  display: flex;
+}
 /* tablet */
 
 @media screen and (min-width: 600px) {
@@ -274,6 +268,9 @@ a:focus {
    p {
       font-size: 2.5rem;
       line-height: 5rem;
+   }
+   .process-intro {
+     height: 5rem;
    }
    .billowhome {
       display: block;
@@ -297,8 +294,9 @@ a:focus {
 @media screen and (min-width: 900px) {
    body {
       grid-template-columns: 1fr 8fr 8fr 1fr;
-      grid-template-areas: "navbar1 navbar1 navbar1 navbar1" ". hero hero ." "process-intro process-intro process-intro process-intro" "billow billow billowsum billowsum" "capsum capsum capstone capstone" "footer footer footer footer";
+      grid-template-areas: "header header header header" ". hero hero ." "process-intro process-intro process-intro process-intro" "billow billow billowsum billowsum" "capsum capsum capstone capstone" "footer footer footer footer";
    }
+
    img.kc-logo-index {
       display: block;
       margin-left: auto;
@@ -327,6 +325,7 @@ a:focus {
       font-size: 2.1rem;
       line-height: 3rem;
    }
+
    .billow,
    .capstone {
       padding-bottom: 0;
@@ -337,9 +336,26 @@ a:focus {
    .caphome {
       width: 20%;
    }
+
    .billowsum,
    .capsum {
       padding-top: 4rem;
       padding-bottom: 0;
    }
+
+   .billow {
+      background: linear-gradient(to right, #de8767 0%, #D35D31 100%);
+    }
+
+   .billowsum {
+      background: linear-gradient(to right, #D35D31 0%, #ab4925 100%);
+    }
+
+    .capsum {
+      background: linear-gradient(to left, #993271 0%, #7a285a 100%);
+    }
+
+    .capstone {
+      background: linear-gradient(to left, #bf3e8d 0%, #993271 100%);
+    }
 }

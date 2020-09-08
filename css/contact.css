@@ -9,12 +9,13 @@ font-size: 10px;
 
 body {
 display: grid;
-grid-template-areas: "navbar" "hero" "social-icons" "contact-form" "footer";
+grid-template-areas: "header" "hero" "social-icons" "contact-form" "footer";
 }
 
-.navbar {
+.header {
 background-color: #ffffff;
-grid-area: navbar;
+grid-area: header;
+width: 100%;
 position: fixed;
 }
 
@@ -26,7 +27,7 @@ width: 50%;
 .hero {
 background-color: #ffffff;
 grid-area: hero;
-margin-top: 3rem;
+margin-top: 10rem;
 }
 
 img.center {
@@ -39,7 +40,6 @@ height: auto;
 }
 
 .social-icons {
-background-color: #D35D31;
 grid-area: social-icons;
 display: block;
 margin-left: auto;
@@ -55,18 +55,18 @@ padding-bottom: 2rem;
 }
 
 .icons li {
-color: #ffffff;
+color: #D35D31;
 display: inline;
 font-size: 5rem;
 padding: 1rem;
 }
 
 .icons a {
-color: #ffffff;
+color: #D35D31;
 }
 
 .icons a:visited {
-color: #ffffff;
+color: #D35D31;
 }
 
 .icons a:hover,
@@ -171,9 +171,7 @@ margin-right: 2rem;
 /* tablet */
 
 @media screen and (min-width: 600px) {
-img.kc-logo {
-   max-width: 35%;
-}
+
 .icons li {
    padding: 4rem;
 }
@@ -184,14 +182,12 @@ img.kc-logo {
 @media screen and (min-width: 900px) {
    body {
       grid-template-columns: 1fr 5fr 5fr 1fr;
-      grid-template-areas: "navbar navbar navbar navbar" ". hero hero ." ". social-icons social-icons ." ". contact-form contact-form ." "footer footer footer footer";
+      grid-template-areas: "header header header header" ". hero hero ." ". social-icons social-icons ." ". contact-form contact-form ." "footer footer footer footer";
    }
    [type="submit"] {
       width: 20%;
    }
-   img.kc-logo {
-      max-width: 20%;
-   }
+
    img.center {
       width: 20%;
    }

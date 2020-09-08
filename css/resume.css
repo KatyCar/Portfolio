@@ -9,14 +9,14 @@ html {
 
 body {
    display: grid;
-   grid-template-areas: "navbar" "career-highlights" "skills" "education" "full-resume" "footer";
+   grid-template-areas: "header" "career-highlights" "skills" "education" "full-resume" "footer";
    margin: 0;
    padding: 0;
 }
 
-.navbar {
+.header {
    background-color: #ffffff;
-   grid-area: navbar;
+   grid-area: header;
    position: fixed;
 }
 
@@ -32,7 +32,7 @@ img.kc-logo {
    border-width: .5rem;
    display: block;
    grid-area: career-highlights;
-   margin-top: 3rem;
+   margin-top: 10rem;
    margin-left: 2rem;
    margin-right: 2rem;
    padding-bottom: 2rem;
@@ -126,7 +126,7 @@ em {
    cursor: pointer;
    display: block;
    font-family: 'Solway', serif;
-   font-size: 2.5rem;
+   font-size: 1.8rem;
    font-weight: 300;
    line-height: 3rem;
    margin-left: auto;
@@ -137,7 +137,7 @@ em {
    padding: 1.7rem;
    text-align: center;
    text-decoration: none;
-   width: 50%;
+   width: 60%;
 }
 
 .button1:hover {
@@ -153,17 +153,18 @@ em {
 .footer {
    background-color: #1A4D6D;
    color: #ffffff;
-   font-size: 5rem;
+   font-size: 4rem;
    grid-area: footer;
    text-align: center;
    margin-top: 1rem;
-   padding: 3rem;
+   padding: 2rem;
+   width: 100%;
 }
 
 p.foot-text {
    color: #ffffff;
-   font-size: 2.4rem;
-   line-height: 4.5rem;
+   font-size: 1.8rem;
+   line-height: 4rem;
    margin-left: auto;
    margin-right: auto;
    padding: 1rem;
@@ -190,19 +191,22 @@ a:active,
 a:focus {
    color: #D35D31;
 }
-
+.active{
+  display: flex;
+}
 
 /* tablet */
 
 @media screen and (min-width: 600px) {
-   img.kc-logo {
-      max-width: 35%;
-   }
+
    .button1 {
       width: 40%;
    }
    img.divider {
       margin-left: 0;
+   }
+   .career-highlights {
+     margin-top: 15rem;
    }
 }
 
@@ -212,11 +216,9 @@ a:focus {
 @media screen and (min-width: 900px) {
    body {
       grid-template-columns: 1fr 5fr 5fr 1fr;
-      grid-template-areas: "navbar navbar navbar navbar" ". career-highlights career-highlights ." ". skills skills ." ". education education ." ". full-resume full-resume ." "footer footer footer footer";
+      grid-template-areas: "header header header header" ". career-highlights career-highlights ." ". skills skills ." ". education education ." ". full-resume full-resume ." "footer footer footer footer";
    }
-   img.kc-logo {
-      max-width: 20%;
-   }
+
    .button1 {
       width: 20rem;
    }

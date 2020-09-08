@@ -25,38 +25,40 @@
       <link rel="stylesheet" type="text/css" href="css/reset.css">
       <link rel="stylesheet" type="text/css" href="css/resume.css">
       <link rel="stylesheet" type="text/css" href="css/topnav.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
    </head>
    <body>
-      <nav class="navbar">
-         <div class="topnav" id="myTopnav">
-            <a href="index.html">Home</a>
-            <a href="billow.html">Case Study: Billow</a>
-            <a href="bio.html">About</a>
-            <a href="#resume" class="active">Resume</a>
-            <a href="contact.html">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-            </a>
-         </div>
-         <a href="index.html"><img src="images/finallogo.png" alt="main logo" class="kc-logo"></a>
-      </nav>
+     <header class="header">
+       <a class="logo" href="index.html">
+         <img class="kc-logo" src="images/finallogo.png" alt="main logo"></a>
+       <input class="menu-btn" type="checkbox" id="menu-btn" />
+       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+       <ul class="menu">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="billow.html">Case Study: Billow</a></li>
+         <li><a class="active" href="#resume">Resume</a></li>
+         <li><a href="bio.html">About</a></li>
+         <li><a href="contact.html">Contact</a></li>
+       </ul>
+     </header>
+
       <section class="career-highlights">
-         <img src="/images/resume/purptri.png" alt="purple triangle" style="float:left;padding-left:.3rem;padding-top:.3rem;">
+         <img src="images/resume/purptri.png" alt="purple triangle" style="float:left;padding-left:.3rem;padding-top:.3rem;">
          <h1 style="color:#4C1938;">CAREER HIGHLIGHTS</h1>
          <h2 style="padding-top:4rem;">Design Apprentice</h2>
          <h3>Bloc.io | online program<br>2019-Sept.2020</h3>
          <p>Learned industry best practices and design process standards with a focus on UX research, visual design and front-end development.</p>
-         <img src="/images/resume/Line.png" alt="line" class="divider">
+         <img src="images/resume/Line.png" alt="line" class="divider">
          <h2>Administrator, Int'l Franchise Management</h2>
          <h3>Warner Bros. | Burbank,CA<br>2018-2019</h3>
          <p>Led administrative operations for International Theatrical Franchise Marketing department. Oversaw design and fulfillment of promotional product for global Warner Bros. offices, as aligned with marketing campaign strategies.</p>
-         <img src="/images/resume/Line.png" alt="line" class="divider">
+         <img src="images/resume/Line.png" alt="line" class="divider">
          <h2>Junior Research Manager</h2>
          <h3>MarketCast | Los Angeles,CA<br>2015-2018</h3>
          <p>Developed and executed 10+ research projects for movie studio and SVOD clients, including brand and post-release studies. Designed easy-to-understand, accurate and focused data presentations for client audience.</p>
       </section>
       <section class="skills">
-         <img src="/images/resume/orangetri.png" alt="orange triangle" style="float:right;">
+         <img src="images/resume/orangetri.png" alt="orange triangle" style="float:right;">
          <h1 style="color:#D35D31">SKILLS</h1>
          <div style="float: left; width: 50%;">
             <ul>
@@ -126,15 +128,6 @@
             </ul>
          </div>
       </footer>
-      <script>
-         function myFunction() {
-           var x = document.getElementById("myTopnav");
-           if (x.className === "topnav") {
-             x.className += " responsive";
-           } else {
-             x.className = "topnav";
-           }
-         }
-      </script>
+      <script src="js/main.js"></script>
    </body>
 </html>

@@ -18,52 +18,56 @@
       <link href="https://fonts.googleapis.com/css2?family=Solway:wght@700&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Solway:wght@300&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+      <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Voltaire&display=swap" rel="stylesheet">
       <link rel="icon" href="images/kcfavicon.png" sizes="50x50" type="image/png">
       <!-- Custom Styles -->
       <link rel="stylesheet" type="text/css" href="css/reset.css">
       <link rel="stylesheet" type="text/css" href="css/index.css">
       <link rel="stylesheet" type="text/css" href="css/topnav.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
    </head>
    <body>
-      <nav class="navbar1">
-         <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <a href="billow.html">Case Study: Billow</a>
-            <a href="resume.html">Resume</a>
-            <a href="bio.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-            </a>
-         </div>
-      </nav>
+     <header class="header">
+       <a class="logo" href="index.html">
+         <img class="kc-logo" src="images/finallogo.png" alt="main logo"></a>
+       <input class="menu-btn" type="checkbox" id="menu-btn" />
+       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+       <ul class="menu">
+         <li><a class="active" href="#index">Home</a></li>
+         <li><a href="billow.html">Case Study: Billow</a></li>
+         <li><a href="resume.html">Resume</a></li>
+         <li><a href="bio.html">About</a></li>
+         <li><a href="contact.html">Contact</a></li>
+       </ul>
+     </header>
+
       <section class="hero">
-         <img src="images/index/justKC.png" alt="KC logo" class="kc-logo-index"><br>
-         <h1>Hello, my name is Katy Carmichael.</h1>
+         <h1>Hello, my name is Katy.</h1>
          <br>
-         <h2>I'm a web designer from Cleveland, Ohio.<br>I specialize in user experience and content strategy for web and mobile.
+         <h2>I'm a web designer from Cleveland, Ohio.<br>I specialize in user experience and content strategy for web and mobile.<br>My goal is to join a team as passionate about design as I am.
             <a href="bio.html" class="button1" style="margin-top:3rem">Get to know me</a>
          </h2>
       </section>
       <section class="process-intro">
-         <h3 style="text-align:center;">Here's a look at some of the work I've done...</h3>
+         <h3 style="padding: 1rem 0;">Case Studies</h3>
       </section>
       <section class="billow">
          <img src="images/index/billow_home.png" class="billowhome" alt="Billow homepage">
       </section>
       <section class="billowsum">
-         <h1 class="caption" >Billow</h1>
+         <h1 class="caption" style="font-family:'Righteous', cursive;">billow</h1>
          <p style="color:#ffffff;text-align:center">A cloud storage app and collaborative community for creative women.</p>
-         <a href="billow.html" class="button2">Check out Billow</a>
+         <a href="billow.html" class="button2">Check out<br>Billow</a>
       </section>
       <section class="capstone">
          <img src="images/index/capstone_home.png" class="caphome" alt="Capstone image">
       </section>
       <section class="capsum">
-         <h1 class="caption">Capstone</h1>
+         <h1 class="caption" style="font-family: 'Voltaire', sans-serif;">The Gory Details</h1>
          <p style="color:#ffffff;text-align:center">This is where I will provide a description of my capstone project.</p>
-         <a href="capstone.html" class="button2">See my Capstone</a>
+         <a href="capstone.html" class="button2">See<br>The Gory Details</a>
       </section>
       <footer class="footer">
          <p class="foot-text">&copy; 2020 Designed and Developed by Katy Carmichael</p>
@@ -87,15 +91,6 @@
             </ul>
          </div>
       </footer>
-      <script>
-         function myFunction() {
-           var x = document.getElementById("myTopnav");
-           if (x.className === "topnav") {
-             x.className += " responsive";
-           } else {
-             x.className = "topnav";
-           }
-         }
-      </script>
+      <script src="js/main.js"></script>
    </body>
 </html>

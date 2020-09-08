@@ -27,28 +27,29 @@
       <!-- Custom Styles -->
       <link rel="stylesheet" type="text/css" href="css/reset.css">
       <link rel="stylesheet" type="text/css" href="css/billow.css">
-      <link rel="stylesheet" type="text/css" href="css/topnav2.css">
+      <link rel="stylesheet" type="text/css" href="css/topnav.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
    </head>
    <body>
-     <header>
-      <div class="topnav">
-        <a href="index.html"><img src="images/finallogo.png" alt="main logo" class="kc-logo"></a>
-        <nav class="nav-collapse">
-          <ul>
-             <li class="menu-item"><a href="index.html">Home</a></li>
-             <li class="menu-item active"><a href="#billow" class="active">Case Study: Billow</a></li>
-             <li class="menu-item"><a href="bio.html">About</a></li>
-             <li class="menu-item"><a href="resume.html">Resume</a></li>
-             <li class="menu-item"><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+     <header class="header">
+       <a class="logo" href="index.html">
+         <img class="kc-logo" src="images/finallogo.png" alt="main logo"></a>
+       <input class="menu-btn" type="checkbox" id="menu-btn" />
+       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+       <ul class="menu">
+         <li><a href="index.html">Home</a></li>
+         <li><a class="active" href="#billow">Case Study: Billow</a></li>
+         <li><a href="resume.html">Resume</a></li>
+         <li><a href="bio.html">About</a></li>
+         <li><a href="contact.html">Contact</a></li>
+       </ul>
+     </header>
+
       <section class="hero-image">
          <img src="images/billow/billow_work.png" alt="Billow Inspiration Flow" style="width:100%;">
       </section>
       <section class="hero">
-         <h1>Case Study: Billow</h1>
+         <h1>Case Study:<span style="font-family:'Righteous', cursive;font-size:3.6rem;"> billow</span></h1>
          <p class="p-hero" style="text-align:center;">Billow goes above and beyond just cloud storage. It’s an idea-sharing, adventure-planning, business-running, home-improving, confidence-boosting community for women who are far from basic.
             <a href="https://invis.io/63X2NY8FZAM" class="button1" target="_blank">See the final Prototype</a>
          </p>
@@ -80,7 +81,7 @@
          <h3 style="color:#4C1938;">My Process</h3>
       </section>
       <section class="process4">
-         <p>My process consisted of 3 phases:<br><br>
+         <p>My process consisted of 3 phases:<br>
             <a href="#Discovery"><em>Discovery & Research</em></a><br>
             <a href="#InfoArch"><em>Information Architecture</em></a><br>
             <a href="#VisDis"><em>Visual Design</em></a>
@@ -94,7 +95,7 @@
          <p>I began by conducting a <em>User Survey</em> based on cloud storage usage. I wanted to find out what features are most important to users and how receptive they would be to the addition of a social network aspect.  Here are some of the most valuable findings:</p>
       </section>
       <div class="results1">
-         <p style="color:#ffffff;padding-left:20%;"><em>Most important</em> features of a new cloud storage site, according to potential users:<br>
+         <p style="color:#ffffff;"><em>Most important</em> features of a new cloud storage site, according to potential users:<br>
              1. Easy to use<br>
              2. Ability to share large<br>
              3. FREE!</p>
@@ -110,7 +111,24 @@
          <p>Also, while the interfaces of the Box, Google Drive and OpenDrive prove to be intuitive with simple and bold design choices, they exhibit little character.  With this observation, I knew that creating a bright, stylish and playful interface for Billow would be a key attraction for our target users.</p>
          <img src="images/squiggle.png" alt="squiggle" class="divider">
          <p>I developed a <em>User Persona</em> in order to guide my decisions moving forward.  By carefully considering her lifestyle, interests and tastes, it was easier for me to stay on the right track.</p>
-         <img src="images/billow/grace.png" alt="user persona" class="center" style="max-width:80%;">
+      </section>
+      <section class="user-persona">
+           <p class="Grace"><img src="images/billow/grace.png" alt="user persona" class="GraceUP">
+           <br>Grace, 30 years old<br>
+           <span style="font-style:italic;">Elementary School Art Teacher</span><br>
+           Long Beach, CA</p>
+           <p style="margin-top:4rem;"><em>Motivations</em><br>
+           Grace is looking for a website to store and organize new lesson ideas on, that also provides a platform for inspiration and feedback. Pinterest has been her go-to, but she finds the interface a little confusing and doesn’t like that she has to use another site for collaboration. She also creates pottery and sculpture in her spare time and hopes to be able to one day sell her pieces for extra income.</p>
+           <p><em>Goals</em><br>
+             1. Free to use<br>
+             2. Inspiration for lessons<br>
+             3. Handy organization features</p>
+           <p><em>Frustrations</em><br>
+             1. Not able to share files easily<br>
+             2. Too many unnecessary features<br>
+             3. Boring and uninspired design</p>
+           <p><em>Bio</em><br>
+           Grace is single with no children. She is very dedicated and invested in her job, but often frustrated by a lack of resources. She is “just tech savvy enough” and isn’t interested in an app with complicated features.</p>
       </section>
       <section class="process-intro6">
          <h3><a id="InfoArch">Information Architecture</a></h3>
@@ -223,12 +241,12 @@
          <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
       </div>
       <section class="process7">
-         <p>Building the wireframes help me to reevaluate and clarify the scope of the project. However, in order to truly gauge my progress, I knew I needed the insights gained from <em>Usability Testing</em>.</p>
+         <p>Building the wireframes helped me to reevaluate and clarify the scope of the project. However, in order to truly gauge my progress, I knew I needed the insights gained from <em>Usability Testing</em>.</p>
          <br>
          <p>I recruited random internet users to perform a series of tasks (logging in, creating an account, uploading a file, etc.). I observed their interactions with the prototype and asked follow-up questions.</p>
       </section>
       <div class="results2">
-         <p style="color:#ffffff;padding-left:20%;"><em>Findings from Usability Testing:</em><br>
+         <p style="color:#ffffff;"><em>Findings from Usability Testing:</em><br>
             1. Combine/eliminate the landing page.<br>
             2. Replace some icons to help clarification of purpose.<br>
             3. Simplify certain features in Inspiration Flow.</p>
@@ -292,9 +310,9 @@
          <img src="images/billow/billow_logo.png" alt="Final logo" class="billow-logo">
       </section>
       <section class="process11">
-         <p>With the important visual elements in place, I was ready to dive in to the <em>High-Fidelity Mockups</em>. With the wireframes as my base, I added color, fonts, imagery and icons. For instances when I wavered between designs, I instituted <em>Preference Tests</em> for outside opinions.</p>
+         <p>After the most important visual elements were in place, I was ready to dive in to the <em>High-Fidelity Mockups</em>. With the wireframes as my base, I added color, fonts, imagery and icons. For instances when I wavered between designs, I instituted <em>Preference Tests</em> for outside opinions.</p>
          <br>
-         <p>For example, out of the two below designs, the first option was the clear preference among the majority of those questioned (with 79% of the vote).</p>
+         <p>For example, out of the two below designs, the first option was the preference among the majority of those questioned (with 71% of the vote).</p>
          <img src="images/billow/preftest.png" alt="Options" class="pref-img">
          <br>
          <p>And finally, with my high-fidelity mockups converted into a clickable prototype, it was time for another round of <em>Usability Testing</em>.  Like before, I asked users to complete certain tasks so that I could observe any potential issues or pain points before finalizing the design.</p>
@@ -302,7 +320,7 @@
          <p>While the overall results were encouraging, the participants’ experiences led to  some well-received changes.</p>
        </section>
        <div class="results3">
-          <p style="color:#ffffff;padding-left:20%;"><em>Findings from 2nd Round of Usability Testing:</em><br>
+          <p style="color:#ffffff;"><em>Findings from 2nd Round of Usability Testing:</em><br>
              1. Add a site summary to the homepage.<br>
              2. Tidy up the layout of the onboarding pop-ups.<br>
              3. Move the logo down on the left navigation menu.<br>

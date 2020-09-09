@@ -1,4 +1,3 @@
-/*orange D35D31, blue 1A4D6D, purple 4C1938, light purple 993271*/
 * {
    box-sizing: border-box;
 }
@@ -9,7 +8,7 @@ html {
 
 body {
    display: grid;
-   grid-template-areas: "header" "hero" "biotext1" "biotext2" "quote" "footer";
+   grid-template-areas: "header" "hero" "biotext1" "topbord" "quote" "endbord" "footer";
    margin: 0;
    padding: 0;
 }
@@ -31,14 +30,14 @@ img.bio-pic {
    margin-left: auto;
    margin-right: auto;
    padding-top: 1rem;
-   max-width: 80%;
+   width: 90%;
 }
 
 .hero {
    background-color: #ffffff;
    grid-area: hero;
    margin-bottom: 1rem;
-   margin-top: 10rem;
+   margin-top: 7rem;
    width: 100%;
 }
 
@@ -46,21 +45,31 @@ img.bio-pic {
    grid-area: biotext1;
    width: 100%;
 }
-.biotext2 {
-   grid-area: biotext2;
+
+.topbord {
+   grid-area: topbord;
    width: 100%;
 }
+
 .quote {
    grid-area: quote;
    width: 100%;
 }
 
+.endbord {
+   grid-area: endbord;
+   width: 100%;
+   margin-bottom: 3rem;
+}
+
 img.border1 {
    width: 100%;
 }
+
 img.border2 {
    display: none;
 }
+
 h1,
 h1.greeting {
    font-family: "Solway", serif;
@@ -78,28 +87,17 @@ h1.greeting {
    font-weight: 700;
 }
 
-h2 {
-   font-family: 'Roboto', sans-serif;
-   font-size: 1.8rem;
-   line-height: 4rem;
-   text-align: center;
-}
-
 p {
    color: #000000;
    display: block;
    font-family: 'Roboto', sans-serif;
-   font-size: 1.8rem;
+   font-size: 1.6rem;
    line-height: 3.5rem;
    margin-left: 3.5rem;
    margin-right: 3.5rem;
    margin-bottom: 3rem;
 }
 
-p.wide {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
 
 /*buttons*/
 
@@ -208,23 +206,31 @@ a:focus {
 
 @media screen and (min-width: 600px) {
    h1 {
-      font-size: 3.6rem;
+      font-size: 2.3rem;
       line-height: 5rem;
    }
    h1.greeting {
       font-size: 3.6rem;
-  }
+   }
    h2 {
       font-size: 2.5rem;
       line-height: 5rem;
    }
    p {
-      font-size: 2.5rem;
+      font-size: 1.8rem;
       line-height: 5rem;
+      margin-left: 10rem;
+      margin-right: 10rem;
    }
    .button1,
    .button2 {
       width: 30%;
+   }
+   .hero {
+      margin-top: 12rem;
+   }
+   img.bio-pic {
+      width: 55%;
    }
 }
 
@@ -233,8 +239,8 @@ a:focus {
 
 @media screen and (min-width: 900px) {
    body {
-      grid-template-columns: 3fr 3fr 4fr 4fr;
-      grid-template-areas: "header header header header" "hero hero biotext1 biotext1" "biotext2 biotext2 biotext2 biotext2" "quote quote quote quote" "footer footer footer footer";
+      grid-template-columns: 1fr 8fr 8fr 1fr;
+      grid-template-areas: "header header header header" "hero hero biotext1 biotext" "topbord topbord topbord topbord" ". quote quote ." "endbord endbord endbord endbord" "footer footer footer footer";
    }
    .button1 {
       width: 20rem;
@@ -244,34 +250,29 @@ a:focus {
    }
    h1,
    h1.greeting {
-      font-size: 3.6rem;
+      font-size: 2.7rem;
       line-height: 5rem;
    }
-   h1.greeting {
-      padding-top: 7rem;
-   }
-   h2 {
-      font-size: 3.2rem;
-      line-height: 5rem;
+   .hero {
+      margin-top: 18rem;
    }
    p {
-      font-size: 2.1rem;
+      font-size: 1.8rem;
       line-height: 3rem;
-      margin-right: 30%;
-      padding-top: 3rem;
+      padding-top: 2rem;
    }
    .biotext1 {
-     margin-top: 13rem;
+      margin-top: 23rem;
    }
    img.bio-pic {
-      padding-top: 4rem;
-      max-width: 100%;
+      padding-top: 2rem;
+      width: 60%;
    }
    img.border1 {
-     display: none;
+      display: none;
    }
    img.border2 {
-     display:inline;
-     width: 100%;
+      display: inline;
+      width: 100%;
    }
 }

@@ -1,4 +1,5 @@
 /*orange D35D31, blue 1A4D6D, purple 4C1938, light purple 993271*/
+
 * {
    box-sizing: border-box;
 }
@@ -14,8 +15,8 @@ body {
 }
 
 .header {
-  grid-area: header;
-  width: 100%;
+   grid-area: header;
+   width: 100%;
 }
 
 img.kc-logo {
@@ -52,7 +53,7 @@ img.caphome {
    width: 100%;
    background-color: #1A4D6D;
    height: 3rem;
-   text-align:center;
+   text-align: center;
 }
 
 .billow {
@@ -84,7 +85,7 @@ img.billowhome {
 }
 
 .capstone {
-  background: linear-gradient(to bottom, #bf3e8d 0%, #993271 100%);
+   background: linear-gradient(to bottom, #bf3e8d 0%, #993271 100%);
    grid-area: capstone;
    margin-left: auto;
    margin-right: auto;
@@ -244,9 +245,11 @@ a:focus {
    color: #D35D31;
 }
 
-.active{
-  display: flex;
+.active {
+   display: flex;
 }
+
+
 /* tablet */
 
 @media screen and (min-width: 600px) {
@@ -270,7 +273,7 @@ a:focus {
       line-height: 5rem;
    }
    .process-intro {
-     height: 5rem;
+      height: 5rem;
    }
    .billowhome {
       display: block;
@@ -291,12 +294,11 @@ a:focus {
 
 /*desktop*/
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
    body {
       grid-template-columns: 1fr 8fr 8fr 1fr;
       grid-template-areas: "header header header header" ". hero hero ." "process-intro process-intro process-intro process-intro" "billow billow billowsum billowsum" "capsum capsum capstone capstone" "footer footer footer footer";
    }
-
    img.kc-logo-index {
       display: block;
       margin-left: auto;
@@ -325,7 +327,6 @@ a:focus {
       font-size: 2.1rem;
       line-height: 3rem;
    }
-
    .billow,
    .capstone {
       padding-bottom: 0;
@@ -336,26 +337,21 @@ a:focus {
    .caphome {
       width: 20%;
    }
-
    .billowsum,
    .capsum {
       padding-top: 4rem;
       padding-bottom: 0;
    }
-
    .billow {
       background: linear-gradient(to right, #de8767 0%, #D35D31 100%);
-    }
-
+   }
    .billowsum {
       background: linear-gradient(to right, #D35D31 0%, #ab4925 100%);
-    }
-
-    .capsum {
+   }
+   .capsum {
       background: linear-gradient(to left, #993271 0%, #7a285a 100%);
-    }
-
-    .capstone {
+   }
+   .capstone {
       background: linear-gradient(to left, #bf3e8d 0%, #993271 100%);
-    }
+   }
 }

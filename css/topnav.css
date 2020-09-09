@@ -15,7 +15,7 @@
 .header li a {
   color: #1A4D6D;
   display: block;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   text-decoration: none;
@@ -54,18 +54,19 @@
 
 .header .menu-icon .navicon {
   background: #333;
-  display: block;
+  display: inline-block;
   height: .2rem;
   position: relative;
   transition: background .2s ease-out;
   width: 1.8rem;
+  top:-5rem;
 }
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
   background: #333;
   content: '';
-  display: block;
+  display: inline-block;
   height: 100%;
   position: absolute;
   transition: all .2s ease-out;
@@ -73,13 +74,13 @@
 }
 
 .header .menu-icon .navicon:before {
-  top: .5rem;
+  top: -.5rem;
 }
 
 .header .menu-icon .navicon:after {
-  top: -.5rem;
+  top: -1rem;
 }
-.header .menu-btn {
+header .menu-btn {
   display: none;
 }
 
@@ -106,12 +107,12 @@
 
 /*desktop*/
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 900px) {
   .header li {
     float: left;
   }
   .header li a {
-    padding: 3rem 3rem;
+    padding: 3rem 2rem;
   }
   .header .menu {
     clear: none;

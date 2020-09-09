@@ -1,4 +1,5 @@
 /*orange D35D31, blue 1A4D6D, purple 4C1938, light purple 993271*/
+
 * {
    box-sizing: border-box;
 }
@@ -29,7 +30,7 @@ img.kc-logo {
 .hero-image {
    background-color: #ffffff;
    grid-area: hero-image;
-   margin-top: 6rem;
+   margin-top: 8rem;
    width: 100%;
 }
 
@@ -115,13 +116,13 @@ img.kc-logo {
 
 .process3 {
    grid-area: process3;
-   text-align: center;
+   text-align: left;
    width: 100%;
 }
 
 .process4 {
    grid-area: process4;
-   text-align: center;
+   text-align: left;
    width: 100%;
 }
 
@@ -132,29 +133,31 @@ img.kc-logo {
 }
 
 .results1 {
-  grid-area: results1;
-  width: 100%;
-  background-color: #4C1938;
-  padding-left:5%;
+   grid-area: results1;
+   margin-top: 2rem;
+   width: 100%;
+   line-height: 2rem;
 }
 
 .process5-5 {
-  grid-area: process5-5;
-  width: 100%;
+   grid-area: process5-5;
+   width: 100%;
 }
+
 .user-persona {
-  background-color: #f6ded5;
-  grid-area: user-persona;
-  width: 100%;
+   background-color: #f6ded5;
+   grid-area: user-persona;
+   margin-top: 3rem;
+   width: 100%;
+   padding-bottom: 2rem;
 }
+
 img.GraceUP {
-  float:left;
-  margin-left: .5rem;
-  margin-top: 2rem;
-  max-width: 45%;
-  padding-right:2rem;
-  }
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 45%;
 }
+
 .process6 {
    grid-area: process6;
    width: 100%;
@@ -166,12 +169,12 @@ img.GraceUP {
 }
 
 .results2 {
-  grid-area: results2;
-  width: 100%;
-  background-color: #4C1938;
-  margin-top: 2rem;
-  padding-left:5%;
+   grid-area: results2;
+   width: 100%;
+   margin-top: 2rem;
+   line-height: 2rem;
 }
+
 .process8 {
    grid-area: process8;
    width: 100%;
@@ -179,6 +182,7 @@ img.GraceUP {
 
 .mood {
    grid-area: mood;
+   padding-top: 2rem;
 }
 
 .process9 {
@@ -201,21 +205,20 @@ img.GraceUP {
    grid-area: process11;
    width: 100%;
 }
+
 .results3 {
-  grid-area: results3;
-  width: 100%;
-  background-color: #4C1938;
-  margin-top: 2rem;
-  padding-left:5%;
+   grid-area: results3;
+   width: 100%;
+   margin-top: 2rem;
+   line-height: 2rem;
 }
+
 .process12 {
    grid-area: process12;
    width: 100%;
 }
 
 img.center,
-.divider,
-.compets,
 .billow-mood,
 .color {
    display: block;
@@ -226,7 +229,38 @@ img.center,
 }
 
 img.divider {
-  margin-bottom: 2rem;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 3rem;
+   margin-bottom: 3.5rem;
+   width: 60%;
+}
+
+.column {
+   float: left;
+   width: 33.33%;
+   padding: 5px;
+}
+
+.row {
+   margin-left: 2.5rem;
+   margin-right: 2.5rem;
+   margin-top: 1.5rem;
+   margin-bottom: 1.5rem;
+}
+
+
+/* Clearfix (clear floats) */
+
+.row::after {
+   content: "";
+   clear: both;
+   display: table;
+}
+
+img.divider {
+   margin-bottom: 2rem;
 }
 
 img.billow-logo {
@@ -332,7 +366,7 @@ h3 {
    font-family: "Solway", serif;
    font-size: 1.6rem;
    font-weight: 700;
-   padding-left: 3rem;
+   padding-left: 3.5rem;
 }
 
 h4 {
@@ -340,7 +374,7 @@ h4 {
    font-family: 'Roboto', sans-serif;
    font-size: 1.6rem;
    text-align: left;
-   margin-left: 2rem;
+   margin-left: 3.5rem;
 }
 
 h5 {
@@ -485,6 +519,9 @@ img.pref-img {
 /* tablet */
 
 @media screen and (min-width: 600px) {
+   hero-image {
+      padding-top: 7rem;
+   }
    h1 {
       font-size: 2.7rem;
       line-height: 5rem;
@@ -498,29 +535,29 @@ img.pref-img {
       line-height: 5rem;
    }
    img.GraceUP {
-     width: 35%;
-     padding-top: 1rem;
+      width: 35%;
+      padding-top: 1rem;
    }
    p.Grace {
-     font-size: 2.4rem;
-     line-height: 6rem;
+      font-size: 2.4rem;
+      line-height: 6rem;
    }
    p.p-hero {
       font-size: 1.6rem;
       line-height: 3rem;
    }
    p {
-     padding: 1rem;
+      padding: 1rem;
    }
    .button1,
    .button2 {
       width: 30%;
    }
    .divider {
-     max-width: 30%;
+      max-width: 30%;
    }
    .color {
-     width: 50%;
+      width: 50%;
    }
 }
 
@@ -530,7 +567,7 @@ img.pref-img {
 @media screen and (min-width: 900px) {
    body {
       grid-template-columns: 2fr 4fr 4fr 2fr;
-      grid-template-areas: "header header header header" ". hero-image hero-image ." ". hero hero ." "process-intro1 process-intro1 process-intro2 process-intro2" "process1 process1 process2 process2" "process-intro3 process-intro3 process-intro3 process-intro3" ". process3 process3 ." "process-intro4 process-intro4 process-intro4 process-intro4" ". process4 process4 ." "process-intro5 process-intro5 process-intro5 process-intro5" ". process5 process5 ." "results1 results1 results1 results1" ". process5-5 process5-5 ." ". user-persona user-persona ." "process-intro6 process-intro6 process-intro6 process-intro6" ". process6 process6 ." ". slideshow-container1 slideshow-container1 ." ". slideshow-container2 slideshow-container2 ." ". slideshow-container3 slideshow-container3 ." ". process7 process7 ." "results2 results2 results2 results2" "process-intro8 process-intro8 process-intro8 process-intro8" ". process8 mood ." ". process9 process10 ." ". style-button style-button ." "slideshow-container4 slideshow-container4 finished_logo ." ". process11 process11 ." "results3 results3 results3 results3" "process-intro12 process-intro12 process-intro12 process-intro12" ". process12 process12 ." "footer footer footer footer";
+      grid-template-areas: "header header header header" ". hero-image hero-image ." ". hero hero ." "process-intro1 process-intro1 process-intro2 process-intro2" "process1 process1 process2 process2" "process-intro3 process-intro3 process-intro3 process-intro3" ". process3 process3 ." "process-intro4 process-intro4 process-intro4 process-intro4" ". process4 process4 ." "process-intro5 process-intro5 process-intro5 process-intro5" ". process5 process5 ." ". results1 results1 ." ". process5-5 process5-5 ." ". user-persona user-persona ." "process-intro6 process-intro6 process-intro6 process-intro6" ". process6 process6 ." ". slideshow-container1 slideshow-container1 ." ". slideshow-container2 slideshow-container2 ." ". slideshow-container3 slideshow-container3 ." ". process7 process7 ." ". results2 results2 ." "process-intro8 process-intro8 process-intro8 process-intro8" ". process8 mood ." ". process9 process10 ." ". style-button style-button ." ". slideshow-container4 slideshow-container4 ." ". finished_logo finished_logo ." ". process11 process11 ." ". results3 results3 ." "process-intro12 process-intro12 process-intro12 process-intro12" ". process12 process12 ." "footer footer footer footer";
    }
    h1 {
       font-size: 3.2rem;
@@ -548,6 +585,7 @@ img.pref-img {
    h4 {
       font-size: 1.8rem;
       line-height: 2rem;
+      margin-left: 0;
    }
    h6 {
       margin-left: 16rem;
@@ -557,8 +595,8 @@ img.pref-img {
       margin-right: 10%;
    }
    p.p-hero {
-      margin-left: 3%;
-      margin-right: 3%;
+      margin-left: 20%;
+      margin-right: 20%;
    }
    em {
       font-style: italic;
@@ -571,7 +609,12 @@ img.pref-img {
       margin-right: auto;
    }
    img.GraceUP {
-     width: 30%;
+      width: 20%;
+   }
+   .g-and-f {
+      column-count: 2;
+      column-gap: 2%;
+      margin-left: 5%;
    }
    .button1 {
       width: 20rem;
@@ -582,29 +625,32 @@ img.pref-img {
    img.center {
       width: 40%;
    }
-   img.compets {
-     width: 85%;
+   .row {
+      margin-left: 20%;
+      margin-right: 20%;
    }
    img.divider {
-     max-width: 30%;
+      max-width: 30%;
    }
-
    img.billow-mood {
-     margin-left: 10%;
-     width: 100%;
-   }
-   img.color {
-     width: 100%;
-   }
-   img.results {
-      max-width: 50%;
-   }
-   img.billow-logo {
       width: 100%;
    }
+   img.color {
+      width: 100%;
+   }
+   .results2,
+   .results3 {
+      margin-bottom: 3rem;
+   }
+   img.billow-logo {
+      width: 60%;
+   }
    .hero-image {
-     padding-top: 10rem;
-     padding-bottom: 0;
+      padding-top: 8rem;
+      padding-bottom: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
    }
    .process-intro1,
    .process-intro2,
@@ -619,10 +665,7 @@ img.pref-img {
       text-align: center;
    }
    .process8 {
-      padding-top: 5rem;
-   }
-   .process10, .finished_logo {
-     margin-left: 5rem;
+      padding-top: 6rem;
    }
    .slideshow-container1,
    .slideshow-container2,
@@ -636,7 +679,6 @@ img.pref-img {
       margin-right: auto;
       width: 80%;
    }
-
    .myslides1,
    .myslides2,
    .myslides3,

@@ -1,63 +1,108 @@
 /*orange D35D31, blue 1A4D6D, purple 4C1938, light purple 993271*/
-
 * {
    box-sizing: border-box;
 }
 
 html {
    font-size: 10px;
+   scroll-behavior: smooth;
 }
 
 body {
    display: grid;
-   grid-template-areas: "header" "hero" "process-intro" "billow" "billowsum" "capstone" "capsum" "footer";
+   grid-template-columns: 2fr 2fr;
+   grid-template-areas: "header header" "greeting shapes" "message message" "billow billow" "billowsum billowsum" "capstone capstone" "capsum capsum" "footer footer";
    margin: 0;
 }
 
 .header {
    grid-area: header;
    width: 100%;
+   position: fixed;
 }
 
 img.kc-logo {
    float: left;
-   width: 50%;
-}
-
-img.center {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 80%;
-   height: auto;
-   padding: 3rem;
-}
-
-img.caphome {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 80%;
-}
-
-.hero {
-   background-color: #ffffff;
-   grid-area: hero;
-   margin-bottom: 1rem;
-   padding: 15rem 2rem 5rem 2rem;
    width: 100%;
 }
 
-.process-intro {
-   grid-area: process-intro;
-   width: 100%;
-   background-color: #1A4D6D;
-   height: 3rem;
-   text-align: center;
+.greeting {
+   background-color: white;
+   color: black;
+   display: block;
+   grid-area: greeting;
+   line-height: 4rem;
+   margin-top: 12rem;
+   float: left;
 }
 
-.billow {
-   background: linear-gradient(to bottom, #de8767 0%, #D35D31 100%);
+h1.small {
+   font-family: "Solway", serif;
+   font-size: 2.7rem;
+   font-weight: 700;
+   margin-left: 4rem;
+}
+
+h1.big {
+   display: none;
+}
+
+.shapes {
+   display: block;
+   grid-area: shapes;
+   float: left;
+   margin-top: 12rem;
+   margin-right: 1.5rem;
+}
+
+img.index-shapes {
+   width: 100%;
+   padding-right: 2rem;
+}
+
+div.message {
+   background-color: white;
+   grid-area: message;
+   margin-top: 3rem;
+}
+
+p.p-top {
+   color: #000000;
+   font-family: 'Quicksand', sans-serif;
+   font-size: 2.4rem;
+   line-height: 4rem;
+   padding: 2rem;
+   margin-left: 1.5rem;
+   margin-right: 1.5rem;
+}
+
+p.p-project {
+   color: #ffffff;
+   font-family: 'Quicksand', sans-serif;
+   font-size: 2.4rem;
+   line-height: 4rem;
+   padding: 2rem;
+   margin-left: 1.5rem;
+}
+
+h2 {
+   font-family: 'Quicksand', sans-serif;
+   color: #ffffff;
+   font-size: 1.8rem;
+   padding-top: 1.5rem;
+}
+
+h3 {
+   color: #ffffff;
+   font-family: 'Quicksand', sans-serif;
+   font-size: 2.4rem;
+   margin-left: 1.5rem;
+   padding: 2rem;
+   font-weight: 700;
+}
+
+div.billow {
+   background-color: #D35D31;
    grid-area: billow;
    padding-top: 4rem;
    width: 100%;
@@ -65,27 +110,22 @@ img.caphome {
 
 img.billowhome {
    display: block;
+   width: 90%;
    margin-left: auto;
    margin-right: auto;
-   width: 70%;
+   padding-bottom: 4rem;
 }
 
 .billowsum {
-   background: linear-gradient(to bottom, #D35D31 0%, #ab4925 100%);
+   background-color: #D35D31;
    grid-area: billowsum;
-   padding-bottom: 4rem;
+   padding-bottom: 2rem;
+   text-align: left;
    width: 100%;
 }
 
-.capsum {
-   background: linear-gradient(to bottom, #993271 0%, #7a285a 100%);
-   grid-area: capsum;
-   padding-bottom: 4rem;
-   width: 100%;
-}
-
-.capstone {
-   background: linear-gradient(to bottom, #bf3e8d 0%, #993271 100%);
+div.capstone {
+   background-color: #993271;
    grid-area: capstone;
    margin-left: auto;
    margin-right: auto;
@@ -97,49 +137,14 @@ img.caphome {
    display: block;
    margin-left: auto;
    margin-right: auto;
-   width: 30%;
+   width: 50%;
 }
 
-h1 {
-   font-family: "Solway", serif;
-   font-size: 1.8rem;
-   font-weight: 700;
-   line-height: 4rem;
-   text-align: center;
-}
-
-h1.caption {
-   color: #ffffff;
-   font-size: 2.7rem;
-   padding: 2rem;
-}
-
-h2 {
-   font-family: 'Roboto', sans-serif;
-   font-size: 1.8rem;
-   line-height: 4rem;
-   text-align: center;
-}
-
-h3 {
-   color: #ffffff;
-   font-family: 'Roboto', sans-serif;
-   font-size: 1.6rem;
-}
-
-p {
-   color: #000000;
-   font-family: 'Roboto', sans-serif;
-   font-size: 1.8rem;
-   line-height: 3.5rem;
-   padding: 2rem;
-   margin-left: 3.5rem;
-   margin-right: 3.5rem;
-}
-
-p.caption2 {
-   color: #ffffff;
-   padding: 5rem;
+.capsum {
+   background-color: #993271;
+   grid-area: capsum;
+   padding-bottom: 2rem;
+   width: 100%;
 }
 
 
@@ -153,16 +158,16 @@ p.caption2 {
    cursor: pointer;
    display: block;
    font-family: 'Solway', serif;
-   font-size: 1.8rem;
    font-weight: 300;
+   font-size: 1.8rem;
    line-height: 3rem;
-   margin: 2rem auto;
-   margin-top: 2rem;
+   margin-top: 3rem;
+   margin-bottom: 3rem;
    outline: none;
-   padding: 1.7rem;
+   padding: 2rem;
    text-align: center;
    text-decoration: none;
-   width: 60%;
+   width: 70%;
 }
 
 .button1:hover {
@@ -186,12 +191,13 @@ p.caption2 {
    font-size: 1.8rem;
    font-weight: 300;
    line-height: 3rem;
-   margin: 2rem auto;
+   margin-top: 3rem;
+   margin-bottom: 3rem;
    outline: none;
-   padding: 1.7rem;
+   padding: 2rem;
    text-align: center;
    text-decoration: none;
-   width: 60%;
+   width: 70%;
 }
 
 .button2:hover {
@@ -217,6 +223,7 @@ p.caption2 {
 
 p.foot-text {
    color: #ffffff;
+   font-family: 'Quicksand', sans-serif;
    font-size: 1.8rem;
    line-height: 4rem;
    margin-left: auto;
@@ -253,27 +260,43 @@ a:focus {
 /* tablet */
 
 @media screen and (min-width: 600px) {
-   h1 {
-      font-size: 2.7rem;
-      line-height: 5rem;
+   .greeting {
+      margin-top: 25rem;
+      margin-left: 6rem;
    }
-   h1.caption {
+   .shapes {
+      margin-top: 18rem;
+      margin-right: 3.5rem;
+   }
+   .message {
+      margin-top: 5rem;
+   }
+   h1.small {
+      font-family: "Solway", serif;
       font-size: 4rem;
+      font-weight: 700;
+      line-height: 5rem;
+      margin-left: 1rem;
    }
    h2 {
       font-size: 2.5rem;
-      line-height: 5rem;
+      line-height: 7rem;
    }
    h3 {
-      font-size: 2.5rem;
+      font-size: 3.6rem;
       line-height: 5rem;
+      margin-left: 4.5rem;
    }
-   p {
-      font-size: 2.5rem;
+   p.p-top {
+      font-size: 3.6rem;
+      line-height: 6rem;
+      margin-left: 4.5rem;
+      margin-right: 4.5rem;
+   }
+   p.p-project {
+      font-size: 2.8rem;
       line-height: 5rem;
-   }
-   .process-intro {
-      height: 5rem;
+      margin-left: 4.5rem;
    }
    .billowhome {
       display: block;
@@ -287,7 +310,10 @@ a:focus {
    }
    .button1,
    .button2 {
-      width: 30%;
+      font-size: 2.3rem;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+      width: 50%;
    }
 }
 
@@ -296,36 +322,58 @@ a:focus {
 
 @media screen and (min-width: 1024px) {
    body {
-      grid-template-columns: 1fr 8fr 8fr 1fr;
-      grid-template-areas: "header header header header" ". hero hero ." "process-intro process-intro process-intro process-intro" "billow billow billowsum billowsum" "capsum capsum capstone capstone" "footer footer footer footer";
+      grid-template-columns: 2fr 4fr 4fr 2fr;
+      grid-template-areas: "header header header header" "greeting greeting shapes shapes" "message message shapes shapes" "billow billow billowsum billowsum" "capsum capsum capstone capstone" "footer footer footer footer";
    }
-   img.kc-logo-index {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 20%;
+   img.kc-logo {
+      width: 50%;
+   }
+   .greeting {
+      margin-left: 6.5rem;
+      padding-bottom: 0;
+      padding-top: 5rem;
+   }
+   .shapes {
+      margin-top: 18rem;
+      padding-bottom: 2rem;
+      margin-right: 8rem;
+   }
+   img.index-shapes {
+      float: right;
+      padding-right: 4rem;
+      width: 70%;
    }
    .button1 {
-      width: 20rem;
+      margin-top: 5rem;
+      width: 40%;
    }
    .button2 {
-      width: 20rem;
+      width: 40%;
    }
-   h1 {
-      font-size: 3.6rem;
-      line-height: 5rem;
+   h1.small {
+      display: none;
+   }
+   h1.big {
+      display: contents;
+      font-family: "Solway", serif;
+      font-size: 5rem;
+      font-weight: 700;
    }
    h2 {
       font-size: 3.2rem;
       line-height: 5rem;
    }
    h3 {
-      font-size: 2.1rem;
+      font-size: 2.7rem;
       line-height: 4rem;
    }
    p {
-      font-size: 2.1rem;
-      line-height: 3rem;
+      font-size: 3.2rem;
+      line-height: 5rem;
+   }
+   .billow,
+   .billowsum {
+      margin-top: 3rem;
    }
    .billow,
    .capstone {
@@ -341,17 +389,5 @@ a:focus {
    .capsum {
       padding-top: 4rem;
       padding-bottom: 0;
-   }
-   .billow {
-      background: linear-gradient(to right, #de8767 0%, #D35D31 100%);
-   }
-   .billowsum {
-      background: linear-gradient(to right, #D35D31 0%, #ab4925 100%);
-   }
-   .capsum {
-      background: linear-gradient(to left, #993271 0%, #7a285a 100%);
-   }
-   .capstone {
-      background: linear-gradient(to left, #bf3e8d 0%, #993271 100%);
    }
 }

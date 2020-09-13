@@ -11,7 +11,7 @@ html {
 body {
    display: grid;
    grid-template-columns: 2fr 2fr;
-   grid-template-areas: "header header" "greeting shapes" "message message" "billow billow" "billowsum billowsum" "capstone capstone" "capsum capsum" "footer footer";
+   grid-template-areas: "header header" "greeting shapes" "message message" "scroll scroll" "billow billow" "billowsum billowsum" "capstone capstone" "capsum capsum" "footer footer";
    margin: 0;
 }
 
@@ -55,6 +55,12 @@ h1.big {
    margin-right: 1.5rem;
 }
 
+.scroll {
+  grid-area: scroll;
+  display: block;
+  margin: 1rem auto 1rem auto;
+}
+
 img.index-shapes {
    width: 100%;
    padding-right: 2rem;
@@ -95,7 +101,7 @@ h2 {
 h3 {
    color: #ffffff;
    font-family: 'Quicksand', sans-serif;
-   font-size: 2.4rem;
+   font-size: 3rem;
    margin-left: 1.5rem;
    padding: 2rem;
    font-weight: 700;
@@ -323,7 +329,7 @@ a:focus {
 @media screen and (min-width: 1024px) {
    body {
       grid-template-columns: 2fr 4fr 4fr 2fr;
-      grid-template-areas: "header header header header" "greeting greeting shapes shapes" "message message shapes shapes" "billow billow billowsum billowsum" "capsum capsum capstone capstone" "footer footer footer footer";
+      grid-template-areas: "header header header header" "greeting greeting shapes shapes" "message message shapes shapes" ". scroll scroll ." "billow billow billowsum billowsum" "capsum capsum capstone capstone" "footer footer footer footer";
    }
    img.kc-logo {
       width: 50%;
@@ -331,17 +337,21 @@ a:focus {
    .greeting {
       margin-left: 6.5rem;
       padding-bottom: 0;
-      padding-top: 5rem;
+      padding-top: 0;
    }
    .shapes {
-      margin-top: 18rem;
+      margin-top: 23rem;
       padding-bottom: 2rem;
       margin-right: 8rem;
    }
    img.index-shapes {
-      float: right;
-      padding-right: 4rem;
       width: 70%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   .scroll {
+     margin: 3rem auto 3rem auto;
    }
    .button1 {
       margin-top: 5rem;
@@ -364,7 +374,7 @@ a:focus {
       line-height: 5rem;
    }
    h3 {
-      font-size: 2.7rem;
+      font-size: 3.6rem;
       line-height: 4rem;
    }
    p {

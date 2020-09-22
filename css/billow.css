@@ -410,7 +410,7 @@ p,
 p.p-hero {
    color: #000000;
    font-family: 'Quicksand', sans-serif;
-   font-size: 1.8rem;
+   font-size: 1.6rem;
    line-height: 3.5rem;
    margin-left: 3.5rem;
    margin-right: 3.5rem;
@@ -447,7 +447,7 @@ em {
    padding: 2rem;
    text-align: center;
    text-decoration: none;
-   width: 80%;
+   width: 25rem;
 }
 
 .button1:hover {
@@ -476,7 +476,7 @@ em {
    padding: 2rem;
    text-align: center;
    text-decoration: none;
-   width: 100%;
+   width: 25rem;
 }
 
 .button2:hover {
@@ -505,7 +505,7 @@ em {
    padding: 2rem;
    text-align: center;
    text-decoration: none;
-   width: 100%;
+   width: 25rem;
 }
 
 .button2:hover {
@@ -531,11 +531,12 @@ em {
 
 .foot-text {
    color: #ffffff;
-   font-size: 1.8rem;
+   font-size: 2.1rem;
    line-height: 4rem;
    margin-left: auto;
    margin-right: auto;
-   padding: 1rem;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
 }
 
 .icons li {
@@ -572,8 +573,11 @@ img.pref-img {
 /* tablet */
 
 @media screen and (min-width: 600px) {
-   hero-image {
-      margin-top: 10rem;
+  img.kc-logo {
+    width: 25rem;
+  }
+  hero-image {
+      margin-top: 7rem;
    }
    img.comp {
       padding-top: 7rem;
@@ -609,14 +613,14 @@ img.pref-img {
    }
    p,
    p.p-hero {
-      font-size: 2.5rem;
+      font-size: 1.8rem;
       line-height: 4rem;
    }
    p {
       padding: 1rem;
    }
-   .button1 {
-      width: 40%;
+   .button1, .button2 {
+      width: 25rem;
    }
    .divider {
       max-width: 30%;
@@ -635,18 +639,18 @@ img.pref-img {
       grid-template-areas: "header header header header" ". hero-image hero-image ." ". hero hero ." "process-intro1 process-intro1 process-intro2 process-intro2" "process1 process1 process2 process2" "process-intro3 process-intro3 process-intro3 process-intro3" ". process3 process3 ." "process-intro4 process-intro4 process-intro4 process-intro4" ". process4 process4 ." "process-intro5 process-intro5 process-intro5 process-intro5" ". process5 process5 ." ". results1 results1 ." ". process5-5 process5-5 ." ". user-persona user-persona ." "process-intro6 process-intro6 process-intro6 process-intro6" ". process6 process6 ." ". slideshow-container1 slideshow-container1 ." ". sketches sketches ." ". slideshow-container2 slideshow-container2 ." ". process7 process7 ." ". results2 results2 ." "process-intro8 process-intro8 process-intro8 process-intro8" ". process8 mood ." ". process9 process10 ." ". style-button style-button ." ". slideshow-container3 slideshow-container3 ." ". finished_logo finished_logo ." ". process11 process11 ." ". results3 results3 ." "process-intro12 process-intro12 process-intro12 process-intro12" ". process12 process12 ." "footer footer footer footer";
    }
    img.kc-logo {
-      width: 50%;
+      width: 30rem;
    }
    h1 {
-      font-size: 3.2rem;
+      font-size: 2rem;
       line-height: 5rem;
    }
    h2 {
-      font-size: 2.7rem;
+      font-size: 2rem;
       line-height: 4rem;
    }
    h3 {
-      font-size: 2.8rem;
+      font-size: 2rem;
       line-height: 4rem;
       padding-left: 0;
    }
@@ -656,7 +660,7 @@ img.pref-img {
       margin-left: 0;
    }
    h6 {
-      margin-left: 16rem;
+      margin-left: 1.6rem;
    }
    p {
       margin-left: 10%;
@@ -688,10 +692,10 @@ img.pref-img {
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 40%;
+      width: 25rem;
    }
    .button2 {
-      width: 100%;
+      width: 25rem;
    }
    img.center {
       width: 40%;
@@ -701,7 +705,7 @@ img.pref-img {
       margin-right: 20%;
    }
    img.divider {
-      max-width: 30%;
+      max-width: 25rem;
    }
    img.billow-mood {
       width: 100%;
@@ -714,10 +718,10 @@ img.pref-img {
       margin-bottom: 3rem;
    }
    img.billow-logo {
-      width: 50%;
+      width: 50rem;
    }
    .hero-image {
-      padding-top: 8rem;
+      padding-top: 4rem;
       padding-bottom: 0;
       margin-left: auto;
       margin-right: auto;

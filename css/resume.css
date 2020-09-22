@@ -79,7 +79,7 @@ img.divider {
 
 h1 {
    font-family: "Solway", serif;
-   font-size: 2.5rem;
+   font-size: 2.3rem;
    font-weight: 700;
    text-align: left;
    padding-left: 3rem;
@@ -88,7 +88,7 @@ h1 {
 
 h2 {
    font-family: 'Quicksand', sans-serif;
-   font-size: 2rem;
+   font-size: 1.8rem;
    font-style: italic;
    padding-left: 3rem;
    text-align: left;
@@ -96,7 +96,7 @@ h2 {
 
 h3 {
    font-family: 'Quicksand', sans-serif;
-   font-size: 2rem;
+   font-size: 1.8rem;
    line-height: 3rem;
    padding-left: 3rem;
 }
@@ -104,7 +104,7 @@ h3 {
 p {
    color: #000000;
    font-family: 'Quicksand', sans-serif;
-   font-size: 2rem;
+   font-size: 1.8rem;
    line-height: 3rem;
    margin-left: 3rem;
    margin-right: 3rem;
@@ -137,7 +137,7 @@ em {
    padding: 1.7rem;
    text-align: center;
    text-decoration: none;
-   width: 60%;
+   width: 25rem;
 }
 
 .button1:hover {
@@ -162,13 +162,15 @@ em {
 }
 
 p.foot-text {
-   color: #ffffff;
-   font-size: 1.8rem;
-   line-height: 4rem;
-   margin-left: auto;
-   margin-right: auto;
-   padding: 1rem;
-   text-align: center;
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.1rem;
+  line-height: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
 }
 
 .icons li {
@@ -200,8 +202,11 @@ a:focus {
 /* tablet */
 
 @media screen and (min-width: 600px) {
+  img.kc-logo {
+    width: 25rem;
+  }
    .button1 {
-      width: 30%;
+      width: 25rem;
    }
    img.divider {
       margin-left: 0;
@@ -220,12 +225,12 @@ a:focus {
       grid-template-areas: "header header header header" ". career-highlights career-highlights ." ". skills skills ." ". education education ." ". full-resume full-resume ." "footer footer footer footer";
    }
    .button1 {
-      width: 20rem;
+      width: 25rem;
    }
    .button2 {
-      width: 20rem;
+      width: 25rem;
    }
    img.kc-logo {
-      width: 50%;
+      width: 30rem;
    }
 }

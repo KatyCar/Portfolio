@@ -1,0 +1,237 @@
+/*orange D35D31, blue 1A4D6D, purple 4C1938, light purple 993271*/
+* {
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 10px;
+}
+
+body {
+   display: grid;
+   grid-template-columns: 5fr 5fr;
+   grid-template-areas: "header header" "title title" "pic1 pic2" "pic3 pic4" "pic5 pic5" "pic6 pic7" "pic8 pic9" "pic10 pic11" "pic12 pic12" "pic13 pic14" "pic15 pic16" "footer footer";
+   margin: 0;
+   padding: 0;
+}
+
+.header {
+   background-color: #ffffff;
+   grid-area: header;
+   position: fixed;
+}
+
+img.kc-logo {
+   float: left;
+   width: 100%;
+}
+
+.title {
+  grid-area: title;
+  margin-top: 15rem;
+}
+
+h1 {
+   font-family: "Solway", serif;
+   font-size: 2.3rem;
+   font-weight: 700;
+   text-align: center;
+   padding-bottom: 2rem;
+}
+
+.pic1 {
+  grid-area: pic1;
+}
+
+.pic2 {
+  grid-area: pic2;
+}
+
+.pic3 {
+  grid-area: pic3;
+}
+
+.pic4 {
+  grid-area: pic4;
+}
+
+.pic5 {
+  grid-area: pic5;
+}
+
+.pic6 {
+  grid-area: pic6;
+}
+
+.pic7 {
+  grid-area: pic7;
+}
+
+.pic8 {
+  grid-area: pic8;
+}
+
+.pic9 {
+  grid-area: pic9;
+}
+
+.pic10 {
+  grid-area: pic10;
+}
+
+.pic11 {
+  grid-area: pic11;
+}
+
+.pic12 {
+  grid-area: pic12;
+}
+
+.pic13 {
+  grid-area: pic13;
+}
+
+.pic14 {
+  grid-area: pic14;
+}
+
+.pic15 {
+  grid-area: pic15;
+}
+
+.pic16 {
+  grid-area: pic16;
+}
+
+img.shot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+/*buttons*/
+
+.button1 {
+   background-color: #D35D31;
+   border: none;
+   box-shadow: 0 .5rem #000000;
+   color: #FFFFFF;
+   cursor: pointer;
+   display: block;
+   font-family: 'Solway', serif;
+   font-size: 1.8rem;
+   font-weight: 300;
+   line-height: 3rem;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 1rem;
+   margin-bottom: 4rem;
+   outline: none;
+   padding: 1.7rem;
+   text-align: center;
+   text-decoration: none;
+   width: 29rem;
+}
+
+.button1:hover {
+   background-color: #1A4D6D
+}
+
+.button1:active {
+   background-color: #1A4D6D;
+   box-shadow: 0 .5rem #666;
+   transform: translateY(.4rem);
+}
+
+.footer {
+   background-color: #1A4D6D;
+   color: #ffffff;
+   font-size: 4rem;
+   grid-area: footer;
+   text-align: center;
+   margin-top: 1rem;
+   padding: 2rem;
+   width: 100%;
+}
+
+p.foot-text {
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.1rem;
+  line-height: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.icons li {
+   display: inline;
+   margin-left: auto;
+   margin-right: auto;
+   padding: .4rem 1rem;
+}
+
+.icons a {
+   color: #ffffff;
+}
+
+.icons a:visited {
+   color: #ffffff;
+}
+
+.icons a:hover,
+a:active,
+a:focus {
+   color: #D35D31;
+}
+
+.active {
+   display: flex;
+}
+
+
+/* tablet */
+
+@media screen and (min-width: 600px) {
+  body {
+    grid-template-columns: 5fr 5fr 5fr;
+    grid-template-areas: "header header header" "title title title" "pic1 pic2 pic3" "pic4 pic5 pic5" "pic6 pic7 pic8" "pic9 pic10 pic11" "pic12 pic12 pic13" "pic14 pic15 pic16" "footer footer footer";
+  }
+  img.kc-logo {
+    width: 25rem;
+  }
+  .title {
+    margin-top: 15rem;
+  }
+  .pic1, .pic2, .pic3, .pic4, .pic6, .pic7, .pic8, .pic9, .pic10, .pic11,
+  .pic13, .pic14, .pic15, .pic16 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .pic5, .pic12 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+
+
+/*desktop*/
+
+@media screen and (min-width: 900px) {
+   img.kc-logo {
+      width: 30rem;
+   }
+   .button1 {
+     width: 30rem;
+   }
+}

@@ -11,7 +11,7 @@ html {
 body {
    display: grid;
    grid-template-columns: 2fr 2fr;
-   grid-template-areas: "header header" "greeting shapes" "message message" "scroll scroll" "billow billow" "billowsum billowsum" "capstone capstone" "capsum capsum" "footer footer";
+   grid-template-areas: "header header" "greeting photo" "message message" "footer footer";
    margin: 0;
 }
 
@@ -48,21 +48,15 @@ h1.big {
    display: none;
 }
 
-.shapes {
+.photo {
    display: block;
-   grid-area: shapes;
+   grid-area: photo;
    float: left;
    margin-top: 10rem;
    margin-right: 1.5rem;
 }
 
-.scroll {
-  grid-area: scroll;
-  display: block;
-  margin: 1rem auto 1rem auto;
-}
-
-img.index-shapes {
+img.mainpic {
    width: 100%;
    padding-right: 2rem;
 }
@@ -83,15 +77,6 @@ p.p-top {
    margin-right: 1.5rem;
 }
 
-p.p-project {
-   color: #ffffff;
-   font-family: 'Quicksand', sans-serif;
-   font-size: 2.4rem;
-   line-height: 4rem;
-   padding: 2rem;
-   margin-left: 1.5rem;
-}
-
 h2 {
    font-family: 'Quicksand', sans-serif;
    color: #ffffff;
@@ -108,49 +93,9 @@ h3 {
    font-weight: 700;
 }
 
-div.billow {
-   background-color: #D35D31;
-   grid-area: billow;
-   padding-top: 4rem;
-   width: 100%;
-}
-
-img.billowhome, img.caphome {
-   display: block;
-   width: 90%;
-   margin-left: auto;
-   margin-right: auto;
-   padding-bottom: 4rem;
-}
-
-.billowsum {
-   background-color: #D35D31;
-   grid-area: billowsum;
-   padding-bottom: 2rem;
-   text-align: left;
-   width: 100%;
-}
-
-div.capstone {
-   background-color: #993271;
-   grid-area: capstone;
-   margin-left: auto;
-   margin-right: auto;
-   padding-top: 4rem;
-   width: 100%;
-}
-
-.capsum {
-   background-color: #993271;
-   grid-area: capsum;
-   padding-bottom: 2rem;
-   width: 100%;
-}
-
-
 /*buttons*/
 
-.button1 {
+.button1, .button2, .button3 {
    background-color: #D35D31;
    border: none;
    box-shadow: 0 .5rem #000000;
@@ -170,48 +115,41 @@ div.capstone {
    width: 25rem;
 }
 
+.button2 {
+  background-color: #1A4D6D;
+}
+
+.button3 {
+  background-color: #993271;
+}
 .button1:hover {
    background-color: #1A4D6D;
 }
 
-.button1:active {
+.button1:active, .button2:active,.button3:active {
    background-color: #1A4D6D;
    box-shadow: 0 .5rem #666;
    transform: translateY(.4rem);
-}
-
-.button2 {
-   background-color: #216088;
-   border: none;
-   box-shadow: 0 .5rem #000000;
-   color: #FFFFFF;
-   cursor: pointer;
-   display: block;
-   font-family: 'Solway', serif;
-   font-size: 1.8rem;
-   font-weight: 300;
-   line-height: 3rem;
-   margin-top: 3rem;
-   margin-bottom: 3rem;
-   outline: none;
-   padding: 2rem;
-   text-align: center;
-   text-decoration: none;
-   width: 25rem;
 }
 
 .button2:hover {
-   background-color: #4C1938;
+   background-color:#993271;
 }
 
 .button2:active {
-   background-color: #4C1938;
-   box-shadow: 0 .5rem #666;
-   transform: translateY(.4rem);
+   background-color:#993271;
+}
+
+.button3:hover {
+   background-color:#1A4D6D;
+}
+
+.button3:active {
+   background-color:#1A4D6D;
 }
 
 .footer {
-   background-color: #1A4D6D;
+   background-color:#1A4D6D;
    color: #ffffff;
    font-size: 4rem;
    grid-area: footer;
@@ -268,7 +206,7 @@ a:focus {
       margin-top: 25rem;
       margin-left: 6rem;
    }
-   .shapes {
+   .photo {
       margin-top: 10rem;
       margin-right: 3.5rem;
    }
@@ -297,23 +235,9 @@ a:focus {
       margin-left: 4.5rem;
       margin-right: 4.5rem;
    }
-   p.p-project {
-      font-size: 2.3rem;
-      line-height: 5rem;
-      margin-left: 4.5rem;
-   }
-   .billowhome {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-   }
-   .caphome {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-   }
    .button1,
-   .button2 {
+   .button2,
+   .button3 {
       font-size: 1.8rem;
       margin-bottom: 3rem;
       margin-top: 3rem;
@@ -327,7 +251,7 @@ a:focus {
 @media screen and (min-width: 1024px) {
    body {
       grid-template-columns: 2fr 4fr 4fr 2fr;
-      grid-template-areas: "header header header header" "greeting greeting shapes shapes" "message message shapes shapes" ". scroll scroll ." "billow billow billowsum billowsum" "capsum capsum capstone capstone" "footer footer footer footer";
+      grid-template-areas: "header header header header" "greeting greeting photo photo" "message message photo photo" "footer footer footer footer";
    }
    img.kc-logo {
       width: 30rem;
@@ -337,25 +261,22 @@ a:focus {
       padding-bottom: 0;
       padding-top: 0;
    }
-   .shapes {
+   .photo {
       margin-top: 18rem;
       padding-bottom: 2rem;
       margin-right: 8rem;
    }
-   img.index-shapes {
-      width: 70%;
+   img.mainpic {
+      width: 90%;
       display: block;
       margin-left: auto;
       margin-right: auto;
-   }
-   .scroll {
-     margin: 3rem auto 1rem auto;
    }
    .button1 {
       margin-top: 5rem;
       width: 25rem;
    }
-   .button2 {
+   .button2, .button3 {
       width: 25rem;
    }
    h1.small {
@@ -364,7 +285,7 @@ a:focus {
    h1.big {
       display: contents;
       font-family: "Solway", serif;
-      font-size: 3.2rem;
+      font-size: 4.5rem;
       font-weight: 700;
    }
    h2 {
@@ -378,24 +299,5 @@ a:focus {
    p {
       font-size: 2.3rem;
       line-height: 5rem;
-   }
-   .billow,
-   .billowsum {
-      margin-top: 2rem;
-   }
-   .billow,
-   .capstone {
-      padding-bottom: 0;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-   }
-   .caphome {
-      width: 20%;
-   }
-   .billowsum,
-   .capsum {
-      padding-top: 4rem;
-      padding-bottom: 0;
    }
 }

@@ -8,7 +8,7 @@ html {
 
 body {
    display: grid;
-   grid-template-areas: "header" "hero" "biotext1" "quote" "geos" "footer";
+   grid-template-areas: "header" "biotext1" "quote" "footer";
    margin: 0;
    padding: 0;
 }
@@ -25,37 +25,10 @@ img.kc-logo {
    width: 100%;
 }
 
-img.bio-pic {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   padding-top: 1rem;
-   width: 90%;
-}
-
-.hero {
-   background-color: #ffffff;
-   grid-area: hero;
-   margin-bottom: 1rem;
-   margin-top: 7rem;
-   width: 100%;
-}
-
 .biotext1 {
    grid-area: biotext1;
    width: 100%;
-}
-
-.geos {
-   grid-area: geos;
-   width: 100%;
-}
-
-img.flourish {
-   width: 60%;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
+   padding-top: 8rem;
 }
 
 .quote {
@@ -91,6 +64,24 @@ p {
    margin-bottom: 3rem;
 }
 
+img.pix {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:60%;
+}
+FIGCAPTION {
+  display: block;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  line-height: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  width: 60%;
+}
 
 /*buttons*/
 
@@ -124,34 +115,6 @@ p {
    transform: translateY(.4rem);
 }
 
-.button2 {
-   background-color: #1A4D6D;
-   border: none;
-   box-shadow: 0 .5rem #000000;
-   color: #FFFFFF;
-   cursor: pointer;
-   display: block;
-   font-family: 'Solway', serif;
-   font-size: 1.8rem;
-   font-weight: 300;
-   line-height: 3rem;
-   margin: 2rem auto;
-   outline: none;
-   padding: 1.7rem;
-   text-align: center;
-   text-decoration: none;
-   width: 25rem;
-}
-
-.button2:hover {
-   background-color: #1A4D6D
-}
-
-.button2:active {
-   background-color: #1A4D6D;
-   box-shadow: 0 .5rem #666;
-   transform: translateY(.4rem);
-}
 
 .footer {
    background-color: #1A4D6D;
@@ -216,16 +179,20 @@ a:focus {
       margin-left: 10rem;
       margin-right: 10rem;
    }
-   .button1,
-   .button2 {
+   .button1 {
       width: 25rem;
    }
-   .hero {
-      margin-top: 18rem;
+   .biotext1 {
+      margin-top: 12rem;
    }
-   img.bio-pic {
-      width: 55%;
+   img.pix {
+     width:50%;
    }
+   FIGCAPTION {
+     font-size: 1.8rem;
+     width: 50%;
+   }
+
 }
 
 
@@ -233,8 +200,8 @@ a:focus {
 
 @media screen and (min-width: 900px) {
    body {
-      grid-template-columns: 1fr 8fr 8fr 1fr;
-      grid-template-areas: "header header header header" "hero hero biotext1 biotext1" ". geos biotext1 biotext1" ". quote quote ." "footer footer footer footer";
+      grid-template-columns: 3fr 4fr 4fr 3fr;
+      grid-template-areas: "header header header header" ". biotext1 biotext1 ." ". biotext1 biotext1 ." ". quote quote . " "footer footer footer footer";
    }
    img.kc-logo {
       width:30rem;
@@ -248,21 +215,30 @@ a:focus {
    h1,
    h1.greeting {
       font-size: 2.7rem;
-      line-height: 4rem;
-   }
-   .hero {
-      margin-top: 18rem;
+      line-height: 3rem;
    }
    p {
       font-size: 1.8rem;
       line-height: 4rem;
-      padding-top: 2rem;
+      padding-top: 1rem;
    }
    .biotext1 {
-      margin-top: 23rem;
+      margin-top: 12rem;
    }
-   img.bio-pic {
-      padding-top: 2rem;
-      width: 70%;
+   img.pix {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width:40%;
+   }
+   FIGCAPTION {
+     display: block;
+     font-family: 'Quicksand', sans-serif;
+     font-size: 1.4rem;
+    font-style: italic;
+     line-height: 4rem;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
    }
 }

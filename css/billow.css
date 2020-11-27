@@ -9,7 +9,12 @@ html {
 
 body {
    display: grid;
-   grid-template-areas: "header" "hero-image" "hero" "process-intro1" "process1" "process-intro2" "process2" "process-intro3" "process3" "process-intro4" "process4" "process-intro5" "results1" "process5" "process5-5" "user-persona" "process-intro6" "process6" "slideshow-container1" "sketches" "slideshow-container2" "process7" "results2" "process-intro8" "process8" "mood" "process9" "process10" "style-button" "slideshow-container3" "finished_logo" "process11" "results3" "process-intro12" "process12" "footer";
+   grid-template-areas: "header" "hero-image" "hero" "process-intro1" "process1" "process-intro2"
+   "process2" "process-intro3" "process3" "process-intro4" "process4" "process-intro5" "results1"
+   "process5" "process5-5" "user-persona" "process-intro6" "process6" "slideshow-container1"
+   "sketches" "slideshow-container2" "process7" "results2" "process-intro8" "process8" "mood"
+   "process9" "process10" "style-button" "slideshow-container3" "finished_logo" "process11"
+   "results3" "process-intro12" "process12" "footer";
    margin: 0;
    padding: 0;
 }
@@ -17,20 +22,22 @@ body {
 .header {
    background-color: #ffffff;
    grid-area: header;
-   width: 100%;
+   max-width: 100%;
    position: fixed;
 }
 
 img.kc-logo {
    float: left;
-   width: 100%;
+   max-width:100%;
+   height: auto;
 }
 
 .hero-image {
    background-color: #ffffff;
    grid-area: hero-image;
    margin-top: 8rem;
-   width: 100%;
+   max-width:100%;
+   height: auto;
 }
 
 img.comp {
@@ -362,7 +369,7 @@ img.billow-logo {
 
 h1 {
    font-family: "Solway", serif;
-   font-size: 2rem;
+   font-size: 1.8rem;
    font-weight: 700;
    line-height: 4rem;
    text-align: center;
@@ -379,9 +386,10 @@ h2 {
 h3 {
    color: #ffffff;
    font-family: "Solway", serif;
-   font-size: 2rem;
+   font-size: 1.8rem;
    font-weight: 700;
    padding-left: 3.5rem;
+   padding-top: 2rem;
 }
 
 h4 {
@@ -410,18 +418,11 @@ p,
 p.p-hero {
    color: #000000;
    font-family: 'Quicksand', sans-serif;
-   font-size: 1.6rem;
-   line-height: 3.5rem;
+   font-size: 1.4rem;
+   line-height: 3rem;
    margin-left: 3.5rem;
    margin-right: 3.5rem;
    margin-top: 1rem;
-}
-
-.style-button {
-   display: block;
-   font-size: 1.8rem;
-   margin-left: auto;
-   margin-right: auto;
 }
 
 em {
@@ -430,24 +431,29 @@ em {
 
 
 /*buttons*/
-
 .button1 {
    background-color: #D35D31;
+ }
+
+.button1, .button2 {
    border: none;
    box-shadow: 0 .5rem #000000;
    color: #FFFFFF;
    cursor: pointer;
    display: block;
    font-family: 'Solway', serif;
-   font-size: 1.8rem;
+   font-size: 1.4rem;
    font-weight: 300;
    line-height: 3rem;
-   margin-top: 3rem;
+   margin-top: 2rem;
    margin-bottom: 4rem;
-   padding: 2rem;
+   padding: 1rem;
    text-align: center;
    text-decoration: none;
-   width: 25rem;
+   max-width: 50%;
+   max-height: auto;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .button1:hover {
@@ -461,22 +467,7 @@ em {
 }
 
 .button2 {
-   background-color: #216088;
-   border: none;
-   box-shadow: 0 .5rem #000000;
-   color: #FFFFFF;
-   cursor: pointer;
-   display: block;
-   font-family: 'Solway', serif;
-   font-size: 1.8rem;
-   font-weight: 300;
-   line-height: 3rem;
-   margin-top: 6rem;
-   margin-bottom: 4rem;
-   padding: 2rem;
-   text-align: center;
-   text-decoration: none;
-   width: 25rem;
+   background-color: #993271;
 }
 
 .button2:hover {
@@ -489,34 +480,6 @@ em {
    transform: translateY(.4rem);
 }
 
-.button2 {
-   background-color: #216088;
-   border: none;
-   box-shadow: 0 .5rem #000000;
-   color: #FFFFFF;
-   cursor: pointer;
-   display: block;
-   font-family: 'Solway', serif;
-   font-size: 1.8rem;
-   font-weight: 300;
-   line-height: 3rem;
-   margin-top: 6rem;
-   margin-bottom: 4rem;
-   padding: 2rem;
-   text-align: center;
-   text-decoration: none;
-   width: 25rem;
-}
-
-.button2:hover {
-   background-color: #1A4D6D
-}
-
-.button2:active {
-   background-color: #1A4D6D;
-   box-shadow: 0 .5rem #666;
-   transform: translateY(.4rem);
-}
 
 .footer {
    background-color: #1A4D6D;
@@ -531,8 +494,8 @@ em {
 
 .foot-text {
    color: #ffffff;
-   font-size: 2.1rem;
-   line-height: 4rem;
+   font-size: 1.5rem;
+   line-height: 3rem;
    margin-left: auto;
    margin-right: auto;
    padding-top: 1rem;

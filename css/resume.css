@@ -9,7 +9,7 @@ html {
 
 body {
    display: grid;
-   grid-template-areas: "header" "career-highlights" "skills" "education" "full-resume" "footer";
+   grid-template-areas: "header" "full-resume" "career-highlights" "skills" "education"  "footer";
    margin: 0;
    padding: 0;
 }
@@ -32,7 +32,7 @@ img.kc-logo {
    border-width: .5rem;
    display: block;
    grid-area: career-highlights;
-   margin-top: 10rem;
+   margin-top: 4rem;
    margin-left: 2rem;
    margin-right: 2rem;
    padding-bottom: 2rem;
@@ -88,7 +88,7 @@ h1 {
 
 h2 {
    font-family: 'Quicksand', sans-serif;
-   font-size: 1.8rem;
+   font-size: 1.6rem;
    font-style: italic;
    padding-left: 3rem;
    text-align: left;
@@ -96,7 +96,7 @@ h2 {
 
 h3 {
    font-family: 'Quicksand', sans-serif;
-   font-size: 1.8rem;
+   font-size: 1.5rem;
    line-height: 3rem;
    padding-left: 3rem;
 }
@@ -104,7 +104,7 @@ h3 {
 p {
    color: #000000;
    font-family: 'Quicksand', sans-serif;
-   font-size: 1.8rem;
+   font-size: 1.4rem;
    line-height: 3rem;
    margin-left: 3rem;
    margin-right: 3rem;
@@ -126,18 +126,18 @@ em {
    cursor: pointer;
    display: block;
    font-family: 'Solway', serif;
-   font-size: 1.8rem;
+   font-size: 1.4rem;
    font-weight: 300;
    line-height: 3rem;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 3rem;
-   margin-bottom: 3rem;
+   margin-top: 12rem;
    outline: none;
-   padding: 1.7rem;
+   padding: 1rem;
    text-align: center;
    text-decoration: none;
-   width: 25rem;
+   max-width: 50%;
+   max-height: auto;
 }
 
 .button1:hover {
@@ -164,8 +164,8 @@ em {
 p.foot-text {
   color: #ffffff;
   font-family: 'Quicksand', sans-serif;
-  font-size: 2.1rem;
-  line-height: 4rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   margin-left: auto;
   margin-right: auto;
   padding-top: 1rem;
@@ -222,7 +222,7 @@ a:focus {
 @media screen and (min-width: 900px) {
    body {
       grid-template-columns: 2fr 5fr 5fr 2fr;
-      grid-template-areas: "header header header header" ". career-highlights career-highlights ." ". skills skills ." ". education education ." ". full-resume full-resume ." "footer footer footer footer";
+      grid-template-areas: "header header header header" ". full-resume full-resume ." ". career-highlights career-highlights ." ". skills skills ." ". education education ." "footer footer footer footer";
    }
    .button1 {
       width: 25rem;

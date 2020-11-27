@@ -61,7 +61,7 @@ p {
    line-height: 3.5rem;
    margin-left: 3.5rem;
    margin-right: 3.5rem;
-   margin-bottom: 3rem;
+   margin-bottom: 2rem;
 }
 
 img.pix {
@@ -128,13 +128,14 @@ FIGCAPTION {
 }
 
 p.foot-text {
-   color: #ffffff;
-   font-size: 2.1rem;
-   line-height: 4rem;
-   margin-left: auto;
-   margin-right: auto;
-   padding-top: 1rem;
-   padding-bottom: 1rem;
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  font-size:1.5rem;
+  line-height: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+
 }
 
 .icons li {
@@ -158,6 +159,9 @@ a:focus {
    color: #D35D31;
 }
 
+.active {
+   display: flex;
+}
 
 /* tablet */
 

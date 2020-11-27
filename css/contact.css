@@ -76,7 +76,7 @@ color: #1A4D6D;
 
 h1 {
 font-family: "Solway", serif;
-font-size: 2.7rem;
+font-size: 2.3rem;
 font-weight: 700;
 line-height: 4rem;
 text-align: center;
@@ -88,7 +88,7 @@ padding: 1rem;
 p {
 color: #000000;
 font-family: 'Quicksand', sans-serif;
-font-size: 2.3rem;
+font-size: 1.8rem;
 margin-top: 3rem;
 text-align: center;
 }
@@ -106,7 +106,7 @@ margin: 5rem auto;
 .feedback-input {
 color: #000000;
 font-family: 'Quicksand', sans-serif;
-font-size: 1.8rem;
+font-size: 1.6rem;
 border-radius: .5rem;
 line-height: 2.2rem;
 background-color: transparent;
@@ -130,13 +130,13 @@ resize: vertical;
 
 [type="submit"] {
 font-family: 'Quicksand', sans-serif;
-width: 25rem;
+width: 50%;
 background: #4C1938;
 border-radius: .5rem;
 border: 0;
 cursor: pointer;
 color: white;
-font-size: 2.4rem;
+font-size: 1.8rem;
 display: block;
 margin-left: auto;
 margin-right: auto;
@@ -151,21 +151,23 @@ background: #993271;
 }
 
 .footer {
-background-color: #1A4D6D;
-color: #ffffff;
-grid-area: footer;
-text-align: center;
-margin-top: 2rem;
+   background-color:#1A4D6D;
+   color: #ffffff;
+   font-size: 4rem;
+   grid-area: footer;
+   text-align: center;
+   margin-top: 1rem;
+   padding: 2rem;
+   width: 100%;
 }
 
 p.foot-text {
   color: #ffffff;
   font-family: 'Quicksand', sans-serif;
-  font-size: 2.1rem;
-  line-height: 4rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 

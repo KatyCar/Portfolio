@@ -21,31 +21,35 @@ body {
 .header {
    background-color: #ffffff;
    grid-area: header;
-   width: 100%;
+   max-width: 100%;
    position: fixed;
 }
 
 img.kc-logo {
    float: left;
-   width: 100%;
+   max-width:100%;
+   height: auto;
 }
 
 .hero-image {
    background-color: #ffffff;
    grid-area: hero-image;
    margin-top: 8rem;
-   width: 100%;
+   max-width:100%;
+   height: auto;
 }
 
 img.comp {
    padding-top: 3rem;
-   width: 100%;
+   max-width:50%;
+   height: auto;
 }
 
 .hero {
    background-color: #ffffff;
    grid-area: hero;
-   width: 100%;
+   max-width:100%;
+   height: auto;
 }
 
 .process-intro1,

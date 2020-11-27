@@ -27,7 +27,7 @@ img.kc-logo {
 
 .title {
   grid-area: title;
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 
 
@@ -61,7 +61,7 @@ h1 {
 
 h2 {
    font-family: 'Quicksand', sans-serif;
-   font-size: 2.3rem;
+   font-size: 1.9rem;
    text-align: center;
    margin-left: 3rem;
    margin-right: 3rem;
@@ -85,10 +85,10 @@ img.pix {
 p {
    color: #000000;
    font-family: 'Quicksand', sans-serif;
-   font-size: 1.8rem;
+   font-size: 1.4rem;
    line-height: 3rem;
-   margin-left: 4rem;
-   margin-right: 4rem;
+   margin-left: 3rem;
+   margin-right: 3rem;
    padding-bottom: 4rem;
    text-align: center;
 }
@@ -103,18 +103,18 @@ p {
    cursor: pointer;
    display: block;
    font-family: 'Solway', serif;
-   font-size: 1.8rem;
+   font-size: 1.4rem;
    font-weight: 300;
    line-height: 3rem;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 1rem;
    margin-bottom: 4rem;
    outline: none;
-   padding: 1.7rem;
+   padding: 1rem;
    text-align: center;
    text-decoration: none;
-   width: 29rem;
+   max-width: 60%;
+   max-height: auto;
 }
 
 .button1:hover {
@@ -141,8 +141,8 @@ p {
 p.foot-text {
   color: #ffffff;
   font-family: 'Quicksand', sans-serif;
-  font-size: 2.1rem;
-  line-height: 4rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
   margin-left: auto;
   margin-right: auto;
   padding-top: 1rem;

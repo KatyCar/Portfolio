@@ -175,6 +175,10 @@ p.foot-text {
 /* tablet */
 
 @media screen and (min-width: 600px) {
+img.kc-logo {
+    width: 25rem;
+  }
+  
 .icons li {
    padding: 4rem;
 }

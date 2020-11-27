@@ -202,36 +202,26 @@ a:focus {
     grid-template-areas: "header header header header" "greeting greeting photo photo" "message message photo photo" "footer footer footer footer";
   }
 
+  h1.small {
+    margin-top: 5rem;
+  }
    img.kc-logo {
-     width: 50%;
+     width: 25rem;
    }
    .photo {
       margin-top: 10rem;
       padding-bottom: 2rem;
    }
    img.mainpic {
-      width: 10rem;
-   }
-   h1.small {
-      font-family: "Solway", serif;
-      font-size: 3rem;
-      font-weight: 700;
-      line-height: 4rem;
-      margin-left: 3rem;
+      max-width: 100%;
+      margin-right:1rem;
    }
    p.p-top {
-      font-size: 1.8rem;
-      line-height: 4rem;
-      margin-left:1.8rem;
+      font-size: 1.6rem;
+      line-height: 3rem;
+      margin-left:1rem;
    }
-   .button1,
-   .button2,
-   .button3 {
-      font-size: 1.8rem;
-      margin-bottom: 3rem;
-      margin-top: 3rem;
-      width: 25rem;
-   }
+
 }
 
 
@@ -248,7 +238,7 @@ a:focus {
    .greeting {
       margin-left: 6.5rem;
       padding-bottom: 0;
-      padding-top: 0;
+      padding-top:20rem;
    }
    .photo {
       margin-top: 18rem;
@@ -274,7 +264,7 @@ a:focus {
    h1.big {
       display: contents;
       font-family: "Solway", serif;
-      font-size: 4.5rem;
+      font-size: 3.6rem;
       font-weight: 700;
    }
    h2 {

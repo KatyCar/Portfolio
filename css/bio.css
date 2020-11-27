@@ -167,33 +167,36 @@ a:focus {
 
 @media screen and (min-width: 600px) {
    h1 {
-      font-size: 2.8rem;
-      line-height: 5rem;
+      font-size: 2.1rem;
+      line-height: 3rem;
    }
    h1.greeting {
-      font-size: 3.6rem;
+      font-size: 2.1rem;
    }
    h2 {
       font-size: 2.5rem;
       line-height: 5rem;
    }
    p {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       line-height: 4rem;
       margin-left: 10rem;
       margin-right: 10rem;
    }
+   img.kc-logo {
+     width: 25rem;
+   }
    .button1 {
-      width: 25rem;
+      max-width: 25rem;
    }
    .biotext1 {
-      margin-top: 12rem;
+      margin-top: 6rem;
    }
    img.pix {
      width:50%;
    }
    FIGCAPTION {
-     font-size: 1.8rem;
+     font-size: 1.4rem;
      width: 50%;
    }
 
@@ -218,11 +221,11 @@ a:focus {
    }
    h1,
    h1.greeting {
-      font-size: 2.7rem;
+      font-size: 2rem;
       line-height: 3rem;
    }
    p {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       line-height: 4rem;
       padding-top: 1rem;
    }
@@ -244,5 +247,8 @@ a:focus {
      margin-left: auto;
      margin-right: auto;
      text-align: center;
+   }
+   .quote {
+     margin-bottom: 4rem;
    }
 }

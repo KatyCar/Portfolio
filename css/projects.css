@@ -188,6 +188,12 @@ a:focus {
    .title {
       margin-top: 15rem;
    }
+   .button1 {
+     max-width: 30%;
+   }
+   img.pix {
+     margin-top: 2rem;
+   }
 }
 
 

@@ -206,13 +206,13 @@ a:focus {
     width: 25rem;
   }
    .button1 {
-      width: 25rem;
+    max-width: 25rem;
    }
    img.divider {
       margin-left: 0;
    }
    .career-highlights {
-      margin-top: 15rem;
+      margin-top: 5rem;
    }
 }
 

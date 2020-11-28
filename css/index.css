@@ -254,9 +254,11 @@ a:focus {
    .button1 {
       margin-top: 5rem;
       width: 25rem;
+      font-size: 2.1rem;
    }
    .button2, .button3 {
       width: 25rem;
+      font-size: 2.1rem;
    }
    h1.small {
       display: none;
@@ -264,8 +266,9 @@ a:focus {
    h1.big {
       display: contents;
       font-family: "Solway", serif;
-      font-size: 3.6rem;
+      font-size: 6.4rem;
       font-weight: 700;
+      text-align: center;
    }
    h2 {
       font-size: 3.2rem;
@@ -275,8 +278,12 @@ a:focus {
       font-size: 3.2rem;
       line-height: 4rem;
    }
-   p {
-      font-size: 2.3rem;
+   p.p-top {
+      color: #000000;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 3.2rem;
       line-height: 5rem;
+      max-width: 100%;
+      text-align: center;
    }
 }

@@ -196,17 +196,19 @@ a:focus {
 
 /* tablet */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 677px) {
   body {
-    grid-template-columns: 2fr 4fr 4fr 2fr;
-    grid-template-areas: "header header header header" "greeting greeting photo photo" "message message photo photo" "footer footer footer footer";
-  }
-
-  h1.small {
-    margin-top: 5rem;
-  }
+     grid-template-columns: 2fr 4fr 4fr 2fr;
+     grid-template-areas: "header header header header" "greeting greeting photo photo" "message message photo photo" "footer footer footer footer";
+   }
+   h1.small {
+     margin-top: 8rem;
+   }
    img.kc-logo {
      width: 25rem;
+   }
+   div.message{
+     margin-top: 0rem;
    }
    .photo {
       margin-top: 10rem;
@@ -227,7 +229,7 @@ a:focus {
 
 /*desktop*/
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1100px) {
    body {
       grid-template-columns: 2fr 4fr 4fr 2fr;
       grid-template-areas: "header header header header" "greeting greeting photo photo" "message message photo photo" "footer footer footer footer";
@@ -236,9 +238,17 @@ a:focus {
       width: 30rem;
    }
    .greeting {
-      margin-left: 6.5rem;
       padding-bottom: 0;
       padding-top:20rem;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+   }
+   div.message{
+     margin-top: 2rem;
+     margin-left: auto;
+     margin-right: auto;
+     width: 80%;
    }
    .photo {
       margin-top: 18rem;
@@ -266,7 +276,8 @@ a:focus {
    h1.big {
       display: contents;
       font-family: "Solway", serif;
-      font-size: 6.4rem;
+      font-size: 4.8rem;
+      width: 80%;
       font-weight: 700;
       text-align: center;
    }
@@ -281,9 +292,10 @@ a:focus {
    p.p-top {
       color: #000000;
       font-family: 'Quicksand', sans-serif;
-      font-size: 3.2rem;
+      font-size: 2.7rem;
       line-height: 5rem;
-      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
       text-align: center;
    }
 }

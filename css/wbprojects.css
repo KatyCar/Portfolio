@@ -1,0 +1,189 @@
+/*orange D35D31, blue 1A4D6D, purple 4C1938, light purple 993271*/
+* {
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 10px;
+}
+
+body {
+   display: grid;
+   grid-template-areas: "header" "title" "promos" "footer";
+   margin: 0;
+   padding: 0;
+}
+
+.header {
+   background-color: #ffffff;
+   grid-area: header;
+   position: fixed;
+}
+
+img.kc-logo {
+   float: left;
+   width: 100%;
+}
+
+.title {
+  grid-area: title;
+  margin-top: 10rem;
+}
+
+
+.promos {
+   background-color: #DDC1C6;
+   grid-area: promos;
+}
+
+h1 {
+   font-family: "Solway", serif;
+   font-size: 2.3rem;
+   font-weight: 700;
+   text-align: center;
+   padding-bottom: 2rem;
+}
+
+img.prjt {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+
+p {
+   color: #000000;
+   font-family: 'Quicksand', sans-serif;
+   font-size: 1.4rem;
+   line-height: 3rem;
+   margin-left: 3rem;
+   margin-right: 3rem;
+   padding-bottom: 4rem;
+   text-align: center;
+}
+
+/*buttons*/
+
+.button1 {
+   background-color: #D35D31;
+   border: none;
+   box-shadow: 0 .5rem #000000;
+   color: #FFFFFF;
+   cursor: pointer;
+   display: block;
+   font-family: 'Solway', serif;
+   font-size: 1.4rem;
+   font-weight: 300;
+   line-height: 3rem;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 4rem;
+   outline: none;
+   padding: 1rem;
+   text-align: center;
+   text-decoration: none;
+   max-width: 60%;
+   max-height: auto;
+}
+
+.button1:hover {
+   background-color: #1A4D6D
+}
+
+.button1:active {
+   background-color: #1A4D6D;
+   box-shadow: 0 .5rem #666;
+   transform: translateY(.4rem);
+}
+
+.footer {
+   background-color: #1A4D6D;
+   color: #ffffff;
+   font-size: 4rem;
+   grid-area: footer;
+   text-align: center;
+   margin-top: 1rem;
+   padding: 2rem;
+   width: 100%;
+}
+
+p.foot-text {
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.icons li {
+   display: inline;
+   margin-left: auto;
+   margin-right: auto;
+   padding: .4rem 1rem;
+}
+
+.icons a {
+   color: #ffffff;
+}
+
+.icons a:visited {
+   color: #ffffff;
+}
+
+.icons a:hover,
+a:active,
+a:focus {
+   color: #D35D31;
+}
+
+.active {
+   display: flex;
+}
+
+
+/* tablet */
+
+@media screen and (min-width: 600px) {
+  img.kc-logo {
+    width: 25rem;
+  }
+   img.divider {
+      margin-left: 0;
+   }
+   .title {
+      margin-top: 15rem;
+   }
+   .button1 {
+     max-width: 30%;
+   }
+   img.pix {
+     margin-top: 2rem;
+   }
+}
+
+
+/*desktop*/
+
+@media screen and (min-width: 900px) {
+   body {
+      grid-template-columns: 2fr 7fr 7fr 2fr;
+      grid-template-areas: "header header header header" "title title title title" ". promos promos ." "footer footer footer footer";
+   }
+   img.kc-logo {
+      width: 30rem;
+   }
+   .button1 {
+     width: 30rem;
+   }
+   p {
+     margin-left: 10rem;
+     margin-right: 10rem;
+   }
+}

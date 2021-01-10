@@ -137,12 +137,14 @@ img.shot {
 }
 
 .button1:hover {
-   background-color: #1A4D6D
+   background-color: #1A4D6D;
+   color: #FFFFFF;
 }
 
 .button1:active {
    background-color: #1A4D6D;
    box-shadow: 0 .5rem #666;
+   color: #FFFFFF;
    transform: translateY(.4rem);
 }
 
